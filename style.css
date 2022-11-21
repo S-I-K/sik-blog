@@ -59,6 +59,12 @@ ul, li {
 
 .wrap header .container .header-right {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrap header .container .header-right ul {
@@ -87,10 +93,16 @@ ul, li {
   font-size: 28px;
 }
 
+.wrap header .container .header-right .category-icon {
+  display: none;
+  height: 20px;
+}
+
 .wrap section {
   width: 100%;
   height: 969px;
   background: url("./img/toystoryx2.png") no-repeat center/cover;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,5 +264,32 @@ ul, li {
 
 .wrap section .profile-wrap .profile-btn:hover {
   background: #72c29a;
+}
+
+/* media query */
+@media (max-width: 375px) {
+  .wrap {
+    /* header */
+    /* intro */
+  }
+  .wrap header .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .wrap header .container .header-left a img {
+    width: 70px;
+  }
+  .wrap header .container .header-right ul {
+    display: none;
+  }
+  .wrap header .container .header-right .category-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .wrap .intro .container .profile-wrap {
+    width: 335px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
