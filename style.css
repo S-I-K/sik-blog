@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+/* init css */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* wrap */
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  /* header */
+  /* section */
+}
+
+.wrap header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* container */
+}
+
+.wrap header .container {
+  padding: 0 20px;
+  width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* header-left */
+  /* header-right */
+}
+
+.wrap header .container .header-left img {
+  width: 140px;
+  padding: 20px 0;
+}
+
+.wrap header .container .header-right {
+  height: 100%;
+}
+
+.wrap header .container .header-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap header .container .header-right ul li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.wrap header .container .header-right ul li a {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2a2a2a;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.wrap header .container .header-right ul li a:hover {
+  font-size: 28px;
+}
+
+.wrap section {
+  width: 100%;
+  height: 969px;
+  background: url("./img/bg4-1.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* profile */
+}
+
+.wrap section .profile-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 374px;
+  height: 473px;
+  border-radius: 30px;
+  background: rgba(226, 223, 216, 0.8);
+  /* profile img */
+  /* profile txt */
+  /* profile links */
+  /* profile btn */
+}
+
+.wrap section .profile-wrap .profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.wrap section .profile-wrap .profile-img img {
+  height: 110%;
+}
+
+.wrap section .profile-wrap .profile-txt {
+  color: #2a2a2a;
+}
+
+.wrap section .profile-wrap .profile-txt h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wrap section .profile-wrap .profile-txt p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.wrap section .profile-wrap .profile-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 40px 0;
+  /* instagram */
+  /* facebook */
+  /* naver */
+  /* github */
+}
+
+.wrap section .profile-wrap .profile-links ul li {
+  /* null */
+}
+
+.wrap section .profile-wrap .profile-links ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.wrap section .profile-wrap .profile-links ul a {
+  -webkit-transition: background .6s ease-in-out;
+  transition: background .6s ease-in-out;
+  display: block;
+  width: 44px;
+  height: 44px;
+  font-size: 0;
+}
+
+.wrap section .profile-wrap .profile-links ul li:nth-child(1) a {
+  background: url("./img/insta-icon.png") no-repeat;
+  background-position: center;
+}
+
+.wrap section .profile-wrap .profile-links ul li:nth-child(1) a:hover {
+  background: url("./img/insta-icon-hover.png") no-repeat;
+  background-position: center;
+}
+
+.wrap section .profile-wrap .profile-links ul li:nth-child(2) a {
+  background: url("./img/facebook-icon.png") no-repeat;
+  background-position: center;
+}
+
+.wrap section .profile-wrap .profile-links ul li:nth-child(2) a:hover {
+  background: url("./img/facebook-icon-hover.png") no-repeat;
+  background-position: center;
+}
+
+.wrap section .profile-wrap .profile-links ul li:nth-child(3) a {
+  background: url("./img/naver-icon.png") no-repeat;
+  background-position: center;
+}
+
+.wrap section .profile-wrap .profile-links ul li:nth-child(3) a:hover {
+  background: url("./img/naver-icon-hover.png") no-repeat;
+  background-position: center;
+}
+
+.wrap section .profile-wrap .profile-links ul li:nth-child(4) a {
+  background: url("./img/github-icon.png") no-repeat;
+  background-position: center;
+}
+
+.wrap section .profile-wrap .profile-links ul li:nth-child(4) a:hover {
+  background: url("./img/github-icon-hover.png") no-repeat;
+  background-position: center;
+}
+
+.wrap section .profile-wrap .profile-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  background: #25744D;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background .4s ease-in-out;
+  transition: background .4s ease-in-out;
+}
+
+.wrap section .profile-wrap .profile-btn:hover {
+  background: #72c29a;
+}
+/*# sourceMappingURL=style.css.map */
