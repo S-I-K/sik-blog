@@ -20,9 +20,10 @@ ul, li {
 /* wrap */
 .wrap {
   width: 100%;
-  height: 100vh;
+  height: auto;
   /* header */
-  /* intro */
+  /**** intro ****/
+  /**** about me ****/
 }
 
 .wrap header {
@@ -153,6 +154,8 @@ ul, li {
   height: 473px;
   border-radius: 30px;
   background: rgba(226, 223, 216, 0.8);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   /* profile img */
   /* profile txt */
   /* profile links */
@@ -174,6 +177,15 @@ ul, li {
 
 .wrap .intro .container .profile-wrap .profile-img img {
   height: 110%;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.wrap .intro .container .profile-wrap .profile-img:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .wrap .intro .container .profile-wrap .profile-txt {
@@ -315,6 +327,330 @@ ul, li {
   position: relative;
   -webkit-animation: mousedrop .8s infinite alternate;
           animation: mousedrop .8s infinite alternate;
+}
+
+.wrap .about {
+  width: 100%;
+  background: #CEC9BC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 160px;
+  /**** container ****/
+}
+
+.wrap .about .container {
+  padding: 0 20px;
+  width: 1440px;
+  /**** about title ****/
+  /**** about profile wrap ****/
+  /* about txt and skill wrap */
+  /* about favorite wrap */
+}
+
+.wrap .about .container .about-title {
+  text-align: left;
+}
+
+.wrap .about .container .about-title h2 {
+  display: inline;
+  position: relative;
+}
+
+.wrap .about .container .about-title h2 span {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2a2a2a;
+  position: relative;
+  z-index: 2;
+}
+
+.wrap .about .container .about-title h2 .title-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 12px;
+  right: -24px;
+}
+
+.wrap .about .container .about-profile-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 0;
+}
+
+.wrap .about .container .about-profile-wrap .about-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  overflow: hidden;
+  /* img hover */
+}
+
+.wrap .about .container .about-profile-wrap .about-img img {
+  width: 110%;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.wrap .about .container .about-profile-wrap .about-img:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.wrap .about .container .about-txt-skill-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  border-radius: 50px;
+  width: 1095px;
+  height: 400px;
+  padding: 40px 40px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  height: 100%;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-txt p {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-txt .about-github-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 220px;
+  height: 50px;
+  border-radius: 30px;
+  background: #D6B937;
+  color: #2A2A2A;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: background .4s;
+  transition: background .4s;
+  cursor: pointer;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-txt .about-github-btn span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #747474;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-txt .about-github-btn:hover {
+  background: #f4de7b;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  /* development */
+  /* ui/ux design */
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .development h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2A2A2A;
+  text-align: left;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .development .skill-bar {
+  width: 100%;
+  height: 41px;
+  border-radius: 30px;
+  background: #F2F2F2;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .development .skill-bar .bar {
+  width: 80%;
+  height: 100%;
+  background: #FF9393;
+  border-radius: 30px;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .development .skill-bar .rate {
+  position: absolute;
+  top: -34px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2A2A2A;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .development .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .development .skills img {
+  width: 48px;
+  height: 48px;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .design h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2A2A2A;
+  text-align: left;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .design .skill-bar {
+  width: 100%;
+  height: 41px;
+  border-radius: 30px;
+  background: #F2F2F2;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .design .skill-bar .bar {
+  width: 74%;
+  height: 100%;
+  background: #FFF59D;
+  border-radius: 30px;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .design .skill-bar .rate {
+  position: absolute;
+  top: -34px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2A2A2A;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .design .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.wrap .about .container .about-txt-skill-wrap .about-skill .design .skills img {
+  height: 48px;
+}
+
+.wrap .about .container .about-txt-skill-wrap::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: -16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.wrap .about .container .about-favorite-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.wrap .about .container .about-favorite-wrap .favorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .about .container .about-favorite-wrap .favorite img {
+  margin-right: 20px;
+}
+
+.wrap .about .container .about-favorite-wrap .favorite .favorite-txt h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+.wrap .about .container .about-favorite-wrap .favorite .favorite-txt p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a2a2a;
 }
 
 /* animation */
