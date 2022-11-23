@@ -132,6 +132,8 @@ ul, li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   /* profile */
   /* mouse area */
 }
@@ -680,6 +682,7 @@ ul, li {
   .wrap {
     /* header */
     /* intro */
+    /* about */
   }
   .wrap header .container {
     -webkit-box-orient: horizontal;
@@ -699,6 +702,102 @@ ul, li {
   }
   .wrap .intro .container .profile-wrap {
     width: 335px;
+  }
+  .wrap .about .container {
+    width: 375px;
+    /* title */
+    /* about profile wrap */
+    /* about favorite wrap */
+  }
+  .wrap .about .container .about-title {
+    text-align: center;
+  }
+  .wrap .about .container .about-profile-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* img */
+    /* about txt skill wrap */
+  }
+  .wrap .about .container .about-profile-wrap .about-img {
+    margin-bottom: 40px;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap {
+    width: 100%;
+    padding: 40px 40px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* text */
+    /* skill */
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt {
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt .about-github-btn {
+    width: 100%;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill {
+    width: 100%;
+    height: auto;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .development {
+    margin-bottom: 30px;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .development .skill-bar {
+    margin: 10px 0;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .development .skills {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .design .skill-bar {
+    margin: 10px 0;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .design .skills {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrap .about .container .about-profile-wrap .about-txt-skill-wrap::after {
+    top: -14px;
+    left: auto;
+  }
+  .wrap .about .container .about-favorite-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrap .about .container .about-favorite-wrap .favorite {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .wrap .about .container .about-favorite-wrap .favorite img {
+    margin-right: 10px;
+  }
+  .wrap .about .container .about-favorite-wrap .favorite .favorite-txt h2 {
+    font-size: 24px;
+  }
+  .wrap .about .container .about-favorite-wrap .favorite:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
