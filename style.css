@@ -678,7 +678,7 @@ ul, li {
 }
 
 /* media query */
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .wrap {
     /* header */
     /* intro */
@@ -748,6 +748,7 @@ ul, li {
   .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt p {
     font-size: 14px;
     margin-bottom: 20px;
+    text-align: center;
   }
   .wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt .about-github-btn {
     width: 100%;
