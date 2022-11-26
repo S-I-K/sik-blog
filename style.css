@@ -17,13 +17,19 @@ ul, li {
   list-style: none;
 }
 
+.container {
+  width: 1440px;
+  padding: 0 20px;
+}
+
 /* wrap */
 .wrap {
   width: 100%;
   height: auto;
-  /* header */
-  /**** intro ****/
-  /**** about me ****/
+  /**** HEADER ****/
+  /**** INTRO ****/
+  /**** ABOUT ****/
+  /**** EXPERIECE  ****/
 }
 
 .wrap header {
@@ -34,9 +40,10 @@ ul, li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   /* container */
 }
 
@@ -156,8 +163,12 @@ ul, li {
   height: 473px;
   border-radius: 30px;
   background: rgba(226, 223, 216, 0.8);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-transition: -webkit-box-shadow .6s;
+  transition: -webkit-box-shadow .6s;
+  transition: box-shadow .6s;
+  transition: box-shadow .6s, -webkit-box-shadow .6s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   /* profile img */
   /* profile txt */
   /* profile links */
@@ -179,15 +190,10 @@ ul, li {
 
 .wrap .intro .container .profile-wrap .profile-img img {
   height: 110%;
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-  transition: -webkit-transform .4s ease-in-out;
-  transition: transform .4s ease-in-out;
-  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
-}
-
-.wrap .intro .container .profile-wrap .profile-img:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
 }
 
 .wrap .intro .container .profile-wrap .profile-txt {
@@ -227,8 +233,8 @@ ul, li {
 }
 
 .wrap .intro .container .profile-wrap .profile-links ul a {
-  -webkit-transition: background .6s ease-in-out;
-  transition: background .6s ease-in-out;
+  -webkit-transition: background .4s;
+  transition: background .4s;
   display: block;
   width: 44px;
   height: 44px;
@@ -300,6 +306,16 @@ ul, li {
   background: #72c29a;
 }
 
+.wrap .intro .container .profile-wrap:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.wrap .intro .container .profile-wrap:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .wrap .intro .container .mouse-area {
   padding: 10px;
   position: absolute;
@@ -349,7 +365,6 @@ ul, li {
   width: 1440px;
   /**** about title ****/
   /**** about profile wrap ****/
-  /* about txt and skill wrap */
   /* about favorite wrap */
 }
 
@@ -386,6 +401,7 @@ ul, li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 50px 0;
+  /* about txt and skill wrap */
 }
 
 .wrap .about .container .about-profile-wrap .about-img {
@@ -407,10 +423,10 @@ ul, li {
 
 .wrap .about .container .about-profile-wrap .about-img img {
   width: 110%;
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-  transition: -webkit-transform .4s ease-in-out;
-  transition: transform .4s ease-in-out;
-  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
 }
 
 .wrap .about .container .about-profile-wrap .about-img:hover img {
@@ -418,7 +434,7 @@ ul, li {
           transform: scale(1.2);
 }
 
-.wrap .about .container .about-txt-skill-wrap {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,7 +448,7 @@ ul, li {
           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-txt {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,13 +466,13 @@ ul, li {
   height: 100%;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-txt p {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt p {
   font-family: 'IBM Plex Sans KR', sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-txt .about-github-btn {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt .about-github-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,17 +498,17 @@ ul, li {
   cursor: pointer;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-txt .about-github-btn span {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt .about-github-btn span {
   font-size: 13px;
   font-weight: 500;
   color: #747474;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-txt .about-github-btn:hover {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-txt .about-github-btn:hover {
   background: #f4de7b;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,14 +525,14 @@ ul, li {
   /* ui/ux design */
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .development h3 {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .development h3 {
   font-size: 24px;
   font-weight: bold;
   color: #2A2A2A;
   text-align: left;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .development .skill-bar {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .development .skill-bar {
   width: 100%;
   height: 41px;
   border-radius: 30px;
@@ -525,14 +541,14 @@ ul, li {
   margin: 10px 0 20px;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .development .skill-bar .bar {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .development .skill-bar .bar {
   width: 80%;
   height: 100%;
   background: #FF9393;
   border-radius: 30px;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .development .skill-bar .rate {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .development .skill-bar .rate {
   position: absolute;
   top: -34px;
   right: 20px;
@@ -541,7 +557,7 @@ ul, li {
   color: #2A2A2A;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .development .skills {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .development .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,19 +569,19 @@ ul, li {
   width: 100%;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .development .skills img {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .development .skills img {
   width: 48px;
   height: 48px;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .design h3 {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .design h3 {
   font-size: 24px;
   font-weight: bold;
   color: #2A2A2A;
   text-align: left;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .design .skill-bar {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .design .skill-bar {
   width: 100%;
   height: 41px;
   border-radius: 30px;
@@ -574,14 +590,14 @@ ul, li {
   margin: 10px 0 20px;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .design .skill-bar .bar {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .design .skill-bar .bar {
   width: 74%;
   height: 100%;
   background: #FFF59D;
   border-radius: 30px;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .design .skill-bar .rate {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .design .skill-bar .rate {
   position: absolute;
   top: -34px;
   right: 20px;
@@ -590,7 +606,7 @@ ul, li {
   color: #2A2A2A;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .design .skills {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .design .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,11 +618,11 @@ ul, li {
   width: 100%;
 }
 
-.wrap .about .container .about-txt-skill-wrap .about-skill .design .skills img {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap .about-skill .design .skills img {
   height: 48px;
 }
 
-.wrap .about .container .about-txt-skill-wrap::after {
+.wrap .about .container .about-profile-wrap .about-txt-skill-wrap::after {
   content: '';
   display: block;
   position: absolute;
@@ -653,6 +669,48 @@ ul, li {
   font-size: 14px;
   font-weight: 500;
   color: #2a2a2a;
+}
+
+.wrap .experience {
+  width: 100%;
+  height: auto;
+  padding-top: 160px;
+  background: #CEC9BC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrap .experience .container {
+  height: 774px;
+}
+
+.wrap .experience .container .experience-title {
+  text-align: left;
+}
+
+.wrap .experience .container .experience-title h2 {
+  display: inline;
+  position: relative;
+}
+
+.wrap .experience .container .experience-title h2 span {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2a2a2a;
+  position: relative;
+  z-index: 2;
+}
+
+.wrap .experience .container .experience-title h2 .title-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 12px;
+  right: -24px;
 }
 
 /* animation */
@@ -704,7 +762,6 @@ ul, li {
     width: 335px;
   }
   .wrap .about .container {
-    width: 375px;
     /* title */
     /* about profile wrap */
     /* about favorite wrap */

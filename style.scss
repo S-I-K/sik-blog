@@ -14,6 +14,10 @@ a {
 ul, li {
     list-style: none;
 }
+.container {
+    width: 1440px;
+    padding: 0 20px;
+}
 
 /* wrap */
 .wrap{
@@ -21,15 +25,16 @@ ul, li {
     // overflow-x: hidden;
     width: 100%;
     height: auto;
-    /* header */
+    /**** HEADER ****/
     header{
         width: 100%;
         // border: 1px solid red;
         display: flex;
         justify-content: center;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
+        z-index: 10;
         /* container */
         .container{
             padding: 0 20px;
@@ -76,7 +81,7 @@ ul, li {
             }
         }
     }
-    /**** intro ****/
+    /**** INTRO ****/
     .intro{
         width: 100%;
         height: 969px;
@@ -105,7 +110,8 @@ ul, li {
                 // border: 1px solid red;
                 border-radius: 30px;
                 background: rgba(226, 223, 216, 0.8);
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                transition: box-shadow .6s;
+                box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
                 /* profile img */
                 .profile-img {
                     width: 140px;
@@ -118,11 +124,8 @@ ul, li {
 
                     img {
                         height: 110%;
-                        transition: transform .4s ease-in-out;
+                        transition: transform .6s ease-in-out;
                     }
-                }
-                .profile-img:hover img {
-                    transform: scale(1.2);
                 }
                 /* profile txt */
                 .profile-txt{
@@ -151,7 +154,7 @@ ul, li {
                             margin-right: 20px;
                         }
                         a{
-                            transition: background .6s ease-in-out;
+                            transition: background .4s;
                             display: block;
                             width: 44px;
                             height: 44px;
@@ -214,6 +217,12 @@ ul, li {
                     background: #72c29a;
                 }
             }
+            .profile-wrap:hover  {
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                img {
+                    transform: scale(1.2);
+                }
+            }
             /* mouse area */
             .mouse-area{
                 // border: 1px solid red;
@@ -238,7 +247,7 @@ ul, li {
             }
         }
     }
-    /**** about me ****/
+    /**** ABOUT ****/
     .about{
         width: 100%;
         background: #CEC9BC;
@@ -282,177 +291,180 @@ ul, li {
                 justify-content: space-between;
                 margin: 50px 0;
                 .about-img{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 240px;
-                    height: 240px;
-                    border-radius: 100%;
-                    overflow: hidden;
-                    img {
-                        width: 110%;
-                        transition: transform .4s ease-in-out;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 240px;
+                        height: 240px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        img {
+                            width: 110%;
+                            transition: transform .6s ease-in-out;
+                        }
+                        /* img hover */
                     }
-                    /* img hover */
-                }
                 .about-img:hover img{
                     transform: scale(1.2);
-                }
-            }
-            /* about txt and skill wrap */
-            .about-txt-skill-wrap {
-                position: relative;
-                display: flex;
-                background: #fff;
-                border-radius: 50px;
-                width: 1095px;
-                height: 400px;
-                padding: 40px 40px;
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-                .about-txt {
-                    // border: 1px solid red;
+                }                
+                /* about txt and skill wrap */
+                .about-txt-skill-wrap {
+                    position: relative;
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 50%;
-                    height: 100%;
-                    p{
-                        font-family: 'IBM Plex Sans KR', sans-serif;
-                        font-weight: 500;
-                        font-size: 18px;
-                    }
-                    .about-github-btn{
+                    background: #fff;
+                    border-radius: 50px;
+                    width: 1095px;
+                    height: 400px;
+                    padding: 40px 40px;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+                    .about-txt {
+                        // border: 1px solid red;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        justify-content: center;
-                        width: 220px;
-                        height: 50px;
-                        border-radius: 30px;
-                        background: #D6B937;
-                        color: #2A2A2A;
-                        font-size: 20px;
-                        font-weight: bold;
-                        transition: background .4s;
-                        cursor: pointer;
-                        span{
-                            font-size: 13px;
+                        justify-content: space-between;
+                        width: 50%;
+                        height: 100%;
+                        p{
+                            font-family: 'IBM Plex Sans KR', sans-serif;
                             font-weight: 500;
-                            color: #747474;
+                            font-size: 18px;
+                        }
+                        .about-github-btn{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            width: 220px;
+                            height: 50px;
+                            border-radius: 30px;
+                            background: #D6B937;
+                            color: #2A2A2A;
+                            font-size: 20px;
+                            font-weight: bold;
+                            transition: background .4s;
+                            cursor: pointer;
+                            a {
+
+                            }
+                            span{
+                                font-size: 13px;
+                                font-weight: 500;
+                                color: #747474;
+                            }
+                        }
+                        .about-github-btn:hover{
+                            background: #f4de7b;
                         }
                     }
-                    .about-github-btn:hover{
-                        background: #f4de7b;
+                    .about-skill {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        // border: 1px solid red;
+                        width: 50%;
+                        height: 100%;
+                        /* development */
+                        .development {
+                            // border: 1px solid red;
+                            h3{
+                                font-size: 24px;
+                                font-weight: bold;
+                                color: #2A2A2A;
+                                text-align: left;
+                            }
+                            .skill-bar{
+                                width: 100%;
+                                height: 41px;
+                                border-radius: 30px;
+                                background: #F2F2F2;
+                                position: relative;
+                                margin: 10px 0 20px;
+                                .bar{
+                                    width: 80%;
+                                    height: 100%;
+                                    background: #FF9393;
+                                    border-radius: 30px;
+                                }
+                                .rate {
+                                    position: absolute;
+                                    top: -34px;
+                                    right: 20px;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    color: #2A2A2A;
+                                }
+                            }
+                            .skills {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                width: 100%;
+                                // border: 1px solid red;
+                                img {
+                                    width: 48px;
+                                    height: 48px;
+                                }
+                            }
+                        }
+                        /* ui/ux design */
+                        .design{
+                            // border: 1px solid red;
+                            h3{
+                                font-size: 24px;
+                                font-weight: bold;
+                                color: #2A2A2A;
+                                text-align: left;
+                            }
+                            .skill-bar{
+                                width: 100%;
+                                height: 41px;
+                                border-radius: 30px;
+                                background: #F2F2F2;
+                                position: relative;
+                                margin: 10px 0 20px;
+                                .bar{
+                                    width: 74%;
+                                    height: 100%;
+                                    background: #FFF59D;
+                                    border-radius: 30px;
+                                }
+                                .rate{
+                                    position: absolute;
+                                    top: -34px;
+                                    right: 20px;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    color: #2A2A2A;
+                                }
+                            }
+                            .skills{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                width: 100%;
+                                // border: 1px solid red;
+                                img {
+                                    height: 48px;
+                                }
+                            }
+                        }
                     }
                 }
-                .about-skill {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+                .about-txt-skill-wrap::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 100px;
+                    transform: rotate(45deg);
+                    left: -16px;
+                    width: 50px;
+                    height: 50px;
                     // border: 1px solid red;
-                    width: 50%;
-                    height: 100%;
-                    /* development */
-                    .development {
-                        // border: 1px solid red;
-                        h3{
-                            font-size: 24px;
-                            font-weight: bold;
-                            color: #2A2A2A;
-                            text-align: left;
-                        }
-                        .skill-bar{
-                            width: 100%;
-                            height: 41px;
-                            border-radius: 30px;
-                            background: #F2F2F2;
-                            position: relative;
-                            margin: 10px 0 20px;
-                            .bar{
-                                width: 80%;
-                                height: 100%;
-                                background: #FF9393;
-                                border-radius: 30px;
-                            }
-                            .rate {
-                                position: absolute;
-                                top: -34px;
-                                right: 20px;
-                                font-size: 16px;
-                                font-weight: 500;
-                                color: #2A2A2A;
-                            }
-                        }
-                        .skills {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-around;
-                            width: 100%;
-                            // border: 1px solid red;
-                            img {
-                                width: 48px;
-                                height: 48px;
-                            }
-                        }
-                    }
-                    /* ui/ux design */
-                    .design{
-                        // border: 1px solid red;
-                        h3{
-                            font-size: 24px;
-                            font-weight: bold;
-                            color: #2A2A2A;
-                            text-align: left;
-                        }
-                        .skill-bar{
-                            width: 100%;
-                            height: 41px;
-                            border-radius: 30px;
-                            background: #F2F2F2;
-                            position: relative;
-                            margin: 10px 0 20px;
-                            .bar{
-                                width: 74%;
-                                height: 100%;
-                                background: #FFF59D;
-                                border-radius: 30px;
-                            }
-                            .rate{
-                                position: absolute;
-                                top: -34px;
-                                right: 20px;
-                                font-size: 16px;
-                                font-weight: 500;
-                                color: #2A2A2A;
-                            }
-                        }
-                        .skills{
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-around;
-                            width: 100%;
-                            // border: 1px solid red;
-                            img {
-                                height: 48px;
-                            }
-                        }
-                    }
+                    border-radius: 12px;
+                    background: #fff;
                 }
-            }
-            .about-txt-skill-wrap::after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 100px;
-                transform: rotate(45deg);
-                left: -16px;
-                width: 50px;
-                height: 50px;
-                // border: 1px solid red;
-                border-radius: 12px;
-                background: #fff;
             }
             /* about favorite wrap */
             .about-favorite-wrap {
@@ -478,6 +490,43 @@ ul, li {
                             font-weight: 500;
                             color: #2a2a2a;
                         }
+                    }
+                }
+            }
+        }
+    }
+    /**** EXPERIECE  ****/
+    .experience {
+        // border: 1px solid red;
+        width: 100%;
+        height: auto;
+        padding-top: 160px;
+        background: #CEC9BC;
+        display: flex;
+        justify-content: center;
+        .container {
+            // border: 1px solid red;
+            height: 774px;
+            .experience-title{
+                // border: 1px solid red;
+                text-align: left;
+                h2{
+                    display: inline;
+                    position: relative;
+                    span{
+                        font-size: 36px;
+                        font-weight: bold;
+                        color: #2a2a2a;
+                        position: relative;
+                        z-index: 2;
+                    }
+                    .title-icon{
+                        // border: 1px solid red;
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        bottom: 12px;
+                        right: -24px;
                     }
                 }
             }
@@ -534,7 +583,6 @@ ul, li {
         /* about */
         .about {
             .container {
-                width: 375px;
                 /* title */
                 .about-title {
                     text-align: center;
@@ -631,6 +679,13 @@ ul, li {
                     .favorite:not(:last-child){
                         margin-bottom: 30px;
                     }
+                }
+            }
+        }
+        .experience {
+            .container {
+                .experience-title {
+                    h2{}
                 }
             }
         }
