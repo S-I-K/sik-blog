@@ -30,6 +30,7 @@ ul, li {
   /**** INTRO ****/
   /**** ABOUT ****/
   /**** EXPERIECE  ****/
+  /* WORKS */
 }
 
 .wrap header {
@@ -672,24 +673,27 @@ ul, li {
 }
 
 .wrap .experience {
+  background: #CEC9BC;
   width: 100%;
   height: auto;
   padding-top: 160px;
-  background: #CEC9BC;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /* container */
 }
 
 .wrap .experience .container {
-  height: 774px;
+  /* title */
+  /* experience-wrap */
 }
 
 .wrap .experience .container .experience-title {
   text-align: left;
+  margin-bottom: 50px;
 }
 
 .wrap .experience .container .experience-title h2 {
@@ -706,6 +710,243 @@ ul, li {
 }
 
 .wrap .experience .container .experience-title h2 .title-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 12px;
+  right: -24px;
+}
+
+.wrap .experience .container .experience-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* left-school's */
+  /* right-license's */
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap {
+  background: #fff;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 16px;
+  margin-right: 10px;
+  width: 50%;
+  padding: 40px;
+  /* contents */
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents {
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* icon */
+  /* txt wrap */
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents .icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents .icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -110px;
+  width: 6px;
+  height: 80px;
+  border-radius: 4px;
+  background: #2A2A2A;
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents .txt-wrap {
+  /* date */
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents .txt-wrap .date {
+  color: #747474;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents .txt-wrap .name {
+  margin: 5px 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2A2A2A;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents .txt-wrap .name span {
+  color: #747474;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents .txt-wrap .name span .info {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a1a1a1;
+}
+
+.wrap .experience .container .experience-wrap .experience-school-wrap .contents .txt-wrap .desc {
+  font-weight: 500;
+  font-size: 16px;
+  color: #2A2A2A;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap {
+  background: #fff;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 16px;
+  margin-right: 10px;
+  width: 50%;
+  padding: 40px;
+  /* contents */
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* icon */
+  /* txt wrap */
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents .icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents .icon::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -60px;
+  width: 6px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2A2A2A;
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents .txt-wrap {
+  /* date */
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents .txt-wrap .date {
+  color: #747474;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents .txt-wrap .name {
+  margin: 5px 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2A2A2A;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents .txt-wrap .name span {
+  color: #747474;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+.wrap .experience .container .experience-wrap .experience-license-wrap .contents .txt-wrap .name span .info {
+  font-size: 16px;
+  font-weight: 600;
+  color: #a1a1a1;
+}
+
+.wrap .works {
+  border: 1px solid red;
+  background: #CEC9BC;
+  width: 100%;
+  height: auto;
+  padding-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrap .works .container {
+  border: 1px solid red;
+}
+
+.wrap .works .container .works-title {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.wrap .works .container .works-title h2 {
+  display: inline;
+  position: relative;
+}
+
+.wrap .works .container .works-title h2 span {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2a2a2a;
+  position: relative;
+  z-index: 2;
+}
+
+.wrap .works .container .works-title h2 .title-icon {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -738,9 +979,10 @@ ul, li {
 /* media query */
 @media (max-width: 768px) {
   .wrap {
-    /* header */
-    /* intro */
-    /* about */
+    /* HEADER */
+    /* INTRO */
+    /* ABOUT */
+    /* EXPERIENCE */
   }
   .wrap header .container {
     -webkit-box-orient: horizontal;
@@ -762,6 +1004,7 @@ ul, li {
     width: 335px;
   }
   .wrap .about .container {
+    width: 100%;
     /* title */
     /* about profile wrap */
     /* about favorite wrap */
@@ -856,6 +1099,42 @@ ul, li {
   }
   .wrap .about .container .about-favorite-wrap .favorite:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .wrap .experience .container {
+    width: 100%;
+  }
+  .wrap .experience .container .experience-title {
+    text-align: center;
+  }
+  .wrap .experience .container .experience-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrap .experience .container .experience-wrap .experience-school-wrap {
+    width: 100%;
+    margin: 0 0 40px 0;
+    padding: 40px 20px;
+  }
+  .wrap .experience .container .experience-wrap .experience-school-wrap .contents .icon::after {
+    bottom: -180px;
+    height: 140px;
+  }
+  .wrap .experience .container .experience-wrap .experience-license-wrap {
+    width: 100%;
+    margin: 0;
+    padding: 40px 20px;
+  }
+  .wrap .experience .container .experience-wrap .experience-license-wrap .contents .icon::after {
+    bottom: -55px;
+    height: 40px;
+  }
+  .wrap .works .container .works-title {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

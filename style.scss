@@ -498,17 +498,202 @@ ul, li {
     /**** EXPERIECE  ****/
     .experience {
         // border: 1px solid red;
+        background: #CEC9BC;
         width: 100%;
         height: auto;
         padding-top: 160px;
+        display: flex;
+        justify-content: center;
+        // border: 1px solid red;
+        /* container */
+        .container {
+            // border: 1px solid red;
+            /* title */
+            .experience-title{
+                // border: 1px solid red;
+                text-align: left;
+                margin-bottom: 50px;
+                h2{
+                    display: inline;
+                    position: relative;
+                    span{
+                        font-size: 36px;
+                        font-weight: bold;
+                        color: #2a2a2a;
+                        position: relative;
+                        z-index: 2;
+                    }
+                    .title-icon{
+                        width: 40px;
+                        height: 40px;
+                        position: absolute;
+                        bottom: 12px;
+                        right: -24px;
+                    }
+                }
+            }
+            /* experience-wrap */
+            .experience-wrap {
+                display: flex;
+                justify-content: space-between;
+
+                /* left-school's */
+                .experience-school-wrap {
+                    background: #fff;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    border-radius: 16px;
+                    margin-right: 10px;
+                    width: 50%;
+                    padding: 40px;
+                    /* contents */
+                    .contents:not(:last-child) {
+                        margin-bottom: 40px;
+                    }
+                    .contents{
+                        border: 1px solid #fff;
+                        display: flex;
+                        align-items: flex-start;
+                        /* icon */
+                        .icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            width: 48px;
+                            height: 48px;
+                            margin-right: 20px;
+                            img{
+                                width: 48px;
+                                height: 48px;
+                            }
+                        }
+                        .icon::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            bottom: -110px;
+                            width: 6px;
+                            height: 80px;
+                            border-radius: 4px;
+                            background: #2A2A2A;
+                        }
+                        /* txt wrap */
+                        .txt-wrap {
+                            /* date */
+                            .date{
+                                color: #747474;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                            .name{
+                                margin: 5px 0 10px;
+                                font-size: 24px;
+                                font-weight: bold;
+                                color: #2A2A2A;
+                                font-family: 'IBM Plex Sans KR', sans-serif;
+                                span{
+                                    color: #747474;
+                                    font-family: 'IBM Plex Sans KR', sans-serif;
+                                    .info {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        color: #a1a1a1;
+                                    }
+                                }
+                            }
+                            .desc{
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: #2A2A2A;
+                                font-family: 'IBM Plex Sans KR', sans-serif;
+                            }
+                        }
+                    }
+                }
+                /* right-license's */
+                .experience-license-wrap {
+                    background: #fff;
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                    border-radius: 16px;
+                    margin-right: 10px;
+                    width: 50%;
+                    padding: 40px;
+                    /* contents */
+                    .contents:not(:last-child) {
+                        margin-bottom: 50px;
+                    }
+                    .contents{
+                        // border: 1px solid #fff;
+                        display: flex;
+                        align-items: flex-start;
+                        /* icon */
+                        .icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            width: 48px;
+                            height: 48px;
+                            margin-right: 20px;
+                            img{
+                                width: 48px;
+                                height: 48px;
+                            }
+                        }
+                        .icon::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            bottom: -60px;
+                            width: 6px;
+                            height: 50px;
+                            border-radius: 4px;
+                            background: #2A2A2A;
+                        }
+                        /* txt wrap */
+                        .txt-wrap {
+                            /* date */
+                            .date{
+                                color: #747474;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                            .name{
+                                margin: 5px 0 10px;
+                                font-size: 24px;
+                                font-weight: bold;
+                                color: #2A2A2A;
+                                font-family: 'IBM Plex Sans KR', sans-serif;
+                                span{
+                                    color: #747474;
+                                    font-family: 'IBM Plex Sans KR', sans-serif;
+                                    .info {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        color: #a1a1a1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* WORKS */
+    .works {
+        border: 1px solid red;
         background: #CEC9BC;
+        width: 100%;
+        height: auto;
+        padding-top: 160px;
         display: flex;
         justify-content: center;
         .container {
-            // border: 1px solid red;
-            height: 774px;
-            .experience-title{
+            border: 1px solid red;
+            .works-title{
                 // border: 1px solid red;
+                margin-bottom: 50px;
                 text-align: left;
                 h2{
                     display: inline;
@@ -521,7 +706,6 @@ ul, li {
                         z-index: 2;
                     }
                     .title-icon{
-                        // border: 1px solid red;
                         width: 40px;
                         height: 40px;
                         position: absolute;
@@ -550,7 +734,7 @@ ul, li {
 /* media query */
 @media (max-width:768px){
     .wrap {
-        /* header */
+        /* HEADER */
         header{
             .container{
                 flex-direction: row-reverse;
@@ -572,7 +756,7 @@ ul, li {
                 }
             }
         }
-        /* intro */
+        /* INTRO */
         .intro {
             .container {
                 .profile-wrap {
@@ -580,18 +764,13 @@ ul, li {
                 }
             }
         }
-        /* about */
+        /* ABOUT */
         .about {
             .container {
+                width: 100%;
                 /* title */
                 .about-title {
                     text-align: center;
-                    h2{
-                        span{
-                        }
-                        img{
-                        }
-                    }
                 }
                 /* about profile wrap */
                 .about-profile-wrap{
@@ -682,10 +861,47 @@ ul, li {
                 }
             }
         }
+        /* EXPERIENCE */
         .experience {
             .container {
+                width: 100%;
                 .experience-title {
-                    h2{}
+                    text-align: center;
+                }
+                .experience-wrap{
+                    flex-direction: column;
+                    align-items: center;
+
+                    .experience-school-wrap{
+                        width: 100%;
+                        margin: 0 0 40px 0;
+                        padding: 40px 20px;
+                        .contents {
+                            .icon::after {
+                                bottom: -180px;
+                                height: 140px;
+
+                            }
+                        }
+                    }
+                    .experience-license-wrap{
+                        width: 100%;
+                        margin: 0;
+                        padding: 40px 20px;
+                        .contents{
+                            .icon::after {
+                                bottom: -55px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .works {
+            .container {
+                .works-title {
+                    text-align: center;
                 }
             }
         }
