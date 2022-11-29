@@ -738,10 +738,17 @@ ul, li {
   /* right-license's */
 }
 
+.wrap .experience .container .experience-wrap .experience-school-wrap:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 .wrap .experience .container .experience-wrap .experience-school-wrap {
+  -webkit-transition: all .4s;
+  transition: all .4s;
   background: #fff;
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -webkit-box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+          box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 16px;
   margin-right: 10px;
   width: 50%;
@@ -833,10 +840,17 @@ ul, li {
   font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
+.wrap .experience .container .experience-wrap .experience-license-wrap:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 .wrap .experience .container .experience-wrap .experience-license-wrap {
+  -webkit-transition: all .4s;
+  transition: all .4s;
   background: #fff;
-  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  -webkit-box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+          box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 16px;
   margin-right: 10px;
   width: 50%;
@@ -921,7 +935,6 @@ ul, li {
 }
 
 .wrap .works {
-  border: 1px solid red;
   background: #CEC9BC;
   width: 100%;
   height: auto;
@@ -932,10 +945,6 @@ ul, li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.wrap .works .container {
-  border: 1px solid red;
 }
 
 .wrap .works .container .works-title {
@@ -962,6 +971,61 @@ ul, li {
   position: absolute;
   bottom: 12px;
   right: -24px;
+}
+
+.wrap .works .container .works-wrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrap .works .container .works-wrap .works-item {
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+}
+
+.wrap .works .container .works-wrap .works-item img {
+  width: 100%;
+}
+
+.wrap .works .container .works-wrap .works-item .works-desc {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.wrap .works .container .works-wrap .works-item:hover .works-desc {
+  opacity: 1;
 }
 
 /* animation */
@@ -1145,6 +1209,14 @@ ul, li {
   }
   .wrap .works .container .works-title {
     text-align: center;
+  }
+  .wrap .works .container .works-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrap .works .container .works-wrap .works-item:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
