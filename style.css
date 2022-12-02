@@ -1208,6 +1208,9 @@ ul, li {
     bottom: -55px;
     height: 40px;
   }
+  .wrap .works .container {
+    width: 100%;
+  }
   .wrap .works .container .works-title {
     text-align: center;
   }
