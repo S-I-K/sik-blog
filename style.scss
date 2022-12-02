@@ -750,6 +750,14 @@ ul, li {
                     align-items: center;
                     justify-content: center;
                     position: relative;
+                    overflow: hidden;
+                    .img-big {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .works-desc a:hover {
+                        color: #fff;
+                    }
                     .works-desc {
                         opacity: 0;
                         position: absolute;
@@ -758,11 +766,14 @@ ul, li {
                         width: 100%;
                         height: 100%;
                         background: rgba(0, 0, 0, .6);
-                        color: #fff;
+                        color: #ccc;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         transition: all .4s;
+                        a{
+                            transition: color .4s;
+                        }
                     }
                 }
             }

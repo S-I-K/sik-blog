@@ -1005,6 +1005,16 @@ ul, li {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  overflow: hidden;
+}
+
+.wrap .works .container .works-wrap .works-item .img-big {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .works .container .works-wrap .works-item .works-desc a:hover {
+  color: #fff;
 }
 
 .wrap .works .container .works-wrap .works-item .works-desc {
@@ -1015,7 +1025,7 @@ ul, li {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  color: #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1027,6 +1037,11 @@ ul, li {
           justify-content: center;
   -webkit-transition: all .4s;
   transition: all .4s;
+}
+
+.wrap .works .container .works-wrap .works-item .works-desc a {
+  -webkit-transition: color .4s;
+  transition: color .4s;
 }
 
 /* animation */
