@@ -113,6 +113,8 @@ li {
 
 #wrap main .intro video {
   height: 120%;
+  position: relative;
+  z-index: 0;
 }
 
 #wrap main .intro .profile {
