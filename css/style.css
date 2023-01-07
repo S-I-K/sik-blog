@@ -117,6 +117,7 @@ li {
 
 #wrap main .intro .profile {
   position: absolute;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
