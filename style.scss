@@ -83,12 +83,9 @@ li {
             position: relative;
             video {
                 height: 120%;
-                position: relative;
-                z-index: 0;
             }
             .profile {
                 position: absolute;
-                z-index: 2;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
