@@ -7,7 +7,6 @@
 }
 
 /* 
-    font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
 */
@@ -30,6 +29,19 @@ li {
 .container {
   width: 1440px;
   padding: 0 20px;
+}
+
+.title-wrap .bar {
+  width: 50%;
+  height: 8px;
+  background: #3FA9E8;
+  -webkit-animation: line 2s alternate infinite ease-in-out;
+          animation: line 2s alternate infinite ease-in-out;
+}
+
+.title-wrap .title {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -.025em;
 }
 
 #wrap {
@@ -93,6 +105,7 @@ li {
 #wrap main {
   width: 100%;
   /* intro */
+  /* about */
 }
 
 #wrap main .intro {
@@ -130,17 +143,9 @@ li {
   color: #fff;
 }
 
-#wrap main .intro .profile .title-wrap .bar {
-  width: 50%;
-  height: 8px;
-  background: #3FA9E8;
-  -webkit-animation: line 2s alternate infinite ease-in-out;
-          animation: line 2s alternate infinite ease-in-out;
-}
-
 #wrap main .intro .profile .title-wrap .title {
+  font-weight: 500;
   font-size: 40px;
-  letter-spacing: -.025em;
 }
 
 #wrap main .intro .profile .comment {
@@ -171,10 +176,190 @@ li {
   height: 100%;
   -webkit-transition: all .4s;
   transition: all .4s;
+  -webkit-animation: heart 1s alternate infinite ease-in-out;
+          animation: heart 1s alternate infinite ease-in-out;
 }
 
 #wrap main .intro .profile .img-wrap a:hover img {
-  height: 110%;
+  -webkit-animation: none;
+          animation: none;
+}
+
+#wrap main .about {
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap main .about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* title */
+  /* about box */
+}
+
+#wrap main .about .container .title-wrap .title {
+  color: #1a1a1c;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+#wrap main .about .container .about-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  /* left */
+  /* center */
+  /* right */
+}
+
+#wrap main .about .container .about-box .sik-info .about-img {
+  width: 440px;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+#wrap main .about .container .about-box .sik-info .about-img img {
+  width: 100%;
+}
+
+#wrap main .about .container .about-box .sik-info .about-name-sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#wrap main .about .container .about-box .sik-info .about-name-sns .user-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#wrap main .about .container .about-box .sik-info .about-name-sns .user-box .name {
+  font-family: 'SUIT-Regular';
+  color: #1a1a1c;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -.03em;
+  margin-bottom: 10px;
+}
+
+#wrap main .about .container .about-box .sik-info .about-name-sns .user-box .birth {
+  font-family: 'Montserrat', sans-serif;
+  color: #1a1a1c;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -.03em;
+}
+
+#wrap main .about .container .about-box .sik-info .about-name-sns .sns-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li a {
+  display: block;
+  width: 38px;
+  height: 38px;
+  border: 1px solid red;
+}
+
+#wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li:not(:first-child) {
+  margin-left: 10px;
+}
+
+#wrap main .about .container .about-box .sik-comment {
+  width: 440px;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 40px 0;
+  background: #fff;
+}
+
+#wrap main .about .container .about-box .sik-comment img {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 72px;
+}
+
+#wrap main .about .container .about-box .sik-comment p {
+  text-align: center;
+  font-family: 'SUIT-Regular';
+  color: #1a1a1c;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -.03%;
+  line-height: 32.4px;
+  z-index: 1;
+}
+
+#wrap main .about .container .about-box .school-license {
+  width: 440px;
+  height: 477px;
+  background: #fff;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @-webkit-keyframes line {
@@ -192,5 +377,27 @@ li {
   }
   100% {
     width: 100%;
+  }
+}
+
+@-webkit-keyframes heart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes heart {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }

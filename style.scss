@@ -6,7 +6,6 @@
     font-style: normal;
 }
 /* 
-    font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
 */
@@ -25,6 +24,19 @@ li {
 .container {
     width: 1440px;
     padding: 0 20px;
+}
+.title-wrap {
+    .bar {
+        width: 50%;
+        height: 8px;
+        background: #3FA9E8;
+        animation: line 2s alternate infinite ease-in-out;
+    }
+    .title {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: -.025em;
+        
+    }
 }
 
 #wrap {
@@ -91,15 +103,9 @@ li {
                 align-items: center;
                 color: #fff;
                 .title-wrap {
-                    .bar {
-                        width: 50%;
-                        height: 8px;
-                        background: #3FA9E8;
-                        animation: line 2s alternate infinite ease-in-out;
-                    }
                     .title {
+                        font-weight: 500;
                         font-size: 40px;
-                        letter-spacing: -.025em;
                     }
                 }
                 .comment {
@@ -121,12 +127,137 @@ li {
                         img {
                             height: 100%;
                             transition: all .4s;
+                            animation: heart 1s alternate infinite ease-in-out;
                         }
                     }
                     a:hover {
                         img {
-                            height: 110%;
+                            animation: none;
                         }
+                    }
+                }
+            }
+        }
+        /* about */
+        .about {
+            margin-top: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .container {
+                // border: 1px solid red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                /* title */
+                .title-wrap {
+                    .title {
+                        color: #1a1a1c;
+                        font-weight: 700;
+                        font-size: 42px;
+                    }
+                }
+                /* about box */
+                .about-box {
+                    // border: 1px solid red;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    /* left */
+                    .sik-info{
+                        .about-img {
+                            // border: 1px solid red;
+                            width: 440px;
+                            height: 320px;
+                            border-radius: 12px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 10px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .about-name-sns {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            .user-box{
+                                display: flex;
+                                flex-direction: column;
+                                .name {
+                                    font-family: 'SUIT-Regular';
+                                    color: #1a1a1c;
+                                    font-size: 32px;
+                                    font-weight: 700;
+                                    letter-spacing: -.03em;
+                                    margin-bottom: 10px;
+                                }
+                                .birth {
+                                    font-family: 'Montserrat', sans-serif;
+                                    color: #1a1a1c;
+                                    font-size: 32px;
+                                    font-weight: 500;
+                                    letter-spacing: -.03em;
+                                }
+                            }
+                            .sns-box {
+                                display: flex;
+                                li {
+                                    a{
+                                        display: block;
+                                        width: 38px;
+                                        height: 38px;
+                                        border: 1px solid red;
+                                    }
+                                }
+                                li:not(:first-child){
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                    /* center */
+                    .sik-comment {
+                        // border: 1px solid red;
+                        width: 440px;
+                        border-radius: 18px;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        padding: 40px 0;
+                        background: #fff;
+                        img {
+                            position: absolute;
+                            z-index: 0;
+                            top: 0;
+                            left: 0;
+                            width: 72px;
+                        }
+                        p {
+                            text-align: center;
+                            font-family: 'SUIT-Regular';
+                            color: #1a1a1c;
+                            font-size: 18px;
+                            font-weight: 500;
+                            letter-spacing: -.03%;
+                            line-height: 32.4px;
+                            z-index: 1;
+                        }
+                    }
+                    /* right */
+                    .school-license {
+                        // border: 1px solid red;
+                        width: 440px;
+                        height: 477px;
+                        background: #fff;
+                        border-radius: 18px;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                     }
                 }
             }
@@ -140,5 +271,13 @@ li {
     }
     100% {
         width: 100%;
+    }
+}
+@keyframes heart {
+    0% {
+        transform:scale(1);
+    }
+    100% {
+        transform: scale(1.1);
     }
 }
