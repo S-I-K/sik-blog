@@ -127,12 +127,7 @@ li {
                         img {
                             height: 100%;
                             transition: all .4s;
-                            animation: heart 1s alternate infinite ease-in-out;
-                        }
-                    }
-                    a:hover {
-                        img {
-                            animation: none;
+                            // animation: heart 1s alternate infinite ease-in-out;
                         }
                     }
                 }
@@ -165,6 +160,7 @@ li {
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
+                    flex-wrap: wrap;
                     /* left */
                     .sik-info{
                         .about-img {

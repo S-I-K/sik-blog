@@ -176,13 +176,6 @@ li {
   height: 100%;
   -webkit-transition: all .4s;
   transition: all .4s;
-  -webkit-animation: heart 1s alternate infinite ease-in-out;
-          animation: heart 1s alternate infinite ease-in-out;
-}
-
-#wrap main .intro .profile .img-wrap a:hover img {
-  -webkit-animation: none;
-          animation: none;
 }
 
 #wrap main .about {
@@ -233,6 +226,8 @@ li {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /* left */
   /* center */
   /* right */
