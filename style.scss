@@ -5,10 +5,6 @@
     font-weight: normal;
     font-style: normal;
 }
-/* 
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Noto Sans KR', sans-serif;
-*/
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +34,13 @@ li {
         
     }
 }
+/* css 변수 */
+$main-color: #3FA9E8;
+$kr-font: 'SUIT-Regular';
+$en-font: 'Montserrat', sans-serif;
+$main-font-color: #1a1a1c;
+$sub-font-color: #BCBCBC;
+$white-color: #fff;
 
 #wrap {
     width: 100%;
@@ -260,6 +263,38 @@ li {
                         background: #fff;
                         border-radius: 18px;
                         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .toggle-wrap{
+                            position: relative;
+                            transition: all .4s ease-in-out;
+                            // border: 1px solid red;
+                            border-radius: 500px;
+                            background: $sub-font-color;
+                            width: 100px;
+                            height: 48px;
+                            display: flex;
+                            align-items: center;
+                            .toggle-switch {
+                                width: 40px;
+                                height: 40px;
+                                background: #fff;
+                                border-radius: 500px;
+                                position: absolute;
+                                left: 4px;
+                                transition: all .4s ease-in-out;
+                            }
+                        }
+                        .toggle-wrap.active {
+                            background: $main-color;
+                            .toggle-switch {
+                                left: 56px;
+                            }
+                        }
+                        .license {
+                            display: none;
+                        }
                     }
                 }
             }
