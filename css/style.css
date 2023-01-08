@@ -253,10 +253,17 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 10px;
+  position: relative;
 }
 
 #wrap main .about .container .about-box .sik-info .about-img img {
   width: 100%;
+}
+
+#wrap main .about .container .about-box .sik-info .about-img .remove-img {
+  position: absolute;
+  -webkit-animation: heart 1s alternate infinite ease-in-out;
+          animation: heart 1s alternate infinite ease-in-out;
 }
 
 #wrap main .about .container .about-box .sik-info .about-name-sns {

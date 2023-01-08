@@ -177,8 +177,14 @@ li {
                             align-items: center;
                             justify-content: center;
                             margin-bottom: 10px;
+                            position: relative;
                             img {
                                 width: 100%;
+                            }
+                            .remove-img {
+                                position: absolute;
+                                // display: none;
+                                animation: heart 1s alternate infinite ease-in-out;
                             }
                         }
                         .about-name-sns {
