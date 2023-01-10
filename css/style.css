@@ -353,7 +353,8 @@ li {
   z-index: 1;
 }
 
-#wrap main .about .container .about-box .school-license {
+#wrap main .about .container .about-box .education-license {
+  padding: 20px;
   width: 440px;
   height: 477px;
   background: #fff;
@@ -370,9 +371,24 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
-#wrap main .about .container .about-box .school-license .toggle-wrap {
+#wrap main .about .container .about-box .education-license .toggle-text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10px;
+}
+
+#wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap {
   position: relative;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -388,7 +404,7 @@ li {
           align-items: center;
 }
 
-#wrap main .about .container .about-box .school-license .toggle-wrap .toggle-switch {
+#wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap .toggle-switch {
   width: 40px;
   height: 40px;
   background: #fff;
@@ -399,15 +415,46 @@ li {
   transition: all .4s ease-in-out;
 }
 
-#wrap main .about .container .about-box .school-license .toggle-wrap.active {
+#wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap.active {
   background: #3FA9E8;
 }
 
-#wrap main .about .container .about-box .school-license .toggle-wrap.active .toggle-switch {
+#wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap.active .toggle-switch {
   left: 56px;
 }
 
-#wrap main .about .container .about-box .school-license .license {
+#wrap main .about .container .about-box .education-license .education ul li .day,
+#wrap main .about .container .about-box .education-license .license ul li .day {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1a1a1c;
+  margin-bottom: 4px;
+  letter-spacing: -.025em;
+}
+
+#wrap main .about .container .about-box .education-license .education ul li .name,
+#wrap main .about .container .about-box .education-license .license ul li .name {
+  font-family: "SUIT-Regular";
+  font-size: 22px;
+  font-weight: 500;
+  color: #1a1a1c;
+}
+
+#wrap main .about .container .about-box .education-license .education ul li .name span,
+#wrap main .about .container .about-box .education-license .license ul li .name span {
+  font-family: "SUIT-Regular";
+  font-size: 18px;
+  font-weight: 500;
+  color: #BCBCBC;
+}
+
+#wrap main .about .container .about-box .education-license .education ul li:not(:last-child),
+#wrap main .about .container .about-box .education-license .license ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+#wrap main .about .container .about-box .education-license .license {
   display: none;
 }
 

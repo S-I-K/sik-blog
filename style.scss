@@ -36,6 +36,7 @@ li {
 }
 /* css 변수 */
 $main-color: #3FA9E8;
+$sub-color: #1C3866;
 $kr-font: 'SUIT-Regular';
 $en-font: 'Montserrat', sans-serif;
 $main-font-color: #1a1a1c;
@@ -256,8 +257,9 @@ $white-color: #fff;
                         }
                     }
                     /* right */
-                    .school-license {
+                    .education-license {
                         // border: 1px solid red;
+                        padding: 20px;
                         width: 440px;
                         height: 477px;
                         background: #fff;
@@ -266,30 +268,69 @@ $white-color: #fff;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        .toggle-wrap{
-                            position: relative;
-                            transition: all .4s ease-in-out;
-                            // border: 1px solid red;
-                            border-radius: 500px;
-                            background: $sub-font-color;
-                            width: 100px;
-                            height: 48px;
+                        justify-content: center;
+                        position: relative;
+                        .toggle-text-wrap{
                             display: flex;
                             align-items: center;
-                            .toggle-switch {
-                                width: 40px;
-                                height: 40px;
-                                background: #fff;
-                                border-radius: 500px;
-                                position: absolute;
-                                left: 4px;
+                            position: absolute;
+                            top: 10px;
+                            .toggle-wrap{
+                                position: relative;
                                 transition: all .4s ease-in-out;
+                                // border: 1px solid red;
+                                border-radius: 500px;
+                                background: $sub-font-color;
+                                width: 100px;
+                                height: 48px;
+                                display: flex;
+                                align-items: center;
+                                .toggle-switch {
+                                    width: 40px;
+                                    height: 40px;
+                                    background: #fff;
+                                    border-radius: 500px;
+                                    position: absolute;
+                                    left: 4px;
+                                    transition: all .4s ease-in-out;
+                                }
+                            }
+                            .toggle-wrap.active {
+                                background: $main-color;
+                                .toggle-switch {
+                                    left: 56px;
+                                }
                             }
                         }
-                        .toggle-wrap.active {
-                            background: $main-color;
-                            .toggle-switch {
-                                left: 56px;
+                        .education,
+                        .license {
+                            // border: 1px solid red;
+                            ul {
+                                li{
+                                    .day{
+                                        font-family: $en-font;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: $main-font-color;
+                                        margin-bottom: 4px;
+                                        letter-spacing: -.025em;
+                                    }
+                                    .name {
+                                        font-family: $kr-font;
+                                        font-size: 22px;
+                                        font-weight: 500;
+                                        color: $main-font-color;
+                                        span{
+                                            font-family: $kr-font;
+                                            font-size: 18px;
+                                            font-weight: 500;
+                                            color: $sub-font-color;
+                                        }
+                                    }
+                                }
+                                li:not(:last-child){
+                                    margin-bottom: 20px;
+                                }
                             }
                         }
                         .license {

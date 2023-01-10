@@ -13,9 +13,9 @@ $(()=>{
         $(this).toggleClass('active');
         if($(this).hasClass('active')){
             $('.license').show();
-            $('.school').hide();
+            $('.education').hide();
         }else{
-            $('.school').show();
+            $('.education').show();
             $('.license').hide();
         }
     });
