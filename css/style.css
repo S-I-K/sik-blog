@@ -207,6 +207,10 @@ li {
   /* about box */
 }
 
+#wrap main .about .container .title-wrap {
+  margin-bottom: 60px;
+}
+
 #wrap main .about .container .title-wrap .title {
   color: #1a1a1c;
   font-weight: 700;
@@ -464,6 +468,102 @@ li {
   display: none;
 }
 
+#wrap main .hobby {
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap main .hobby .container {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap main .hobby .container .title-wrap {
+  margin-bottom: 60px;
+}
+
+#wrap main .hobby .container .title-wrap .title {
+  color: #1a1a1c;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+#wrap main .hobby .container .hobby-box {
+  border: 1px solid red;
+  width: 100%;
+}
+
+#wrap main .hobby .container .hobby-box .char-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap main .hobby .container .hobby-box .char-wrap li {
+  -webkit-animation: char 3s alternate infinite ease-in-out;
+          animation: char 3s alternate infinite ease-in-out;
+}
+
+#wrap main .hobby .container .hobby-box .char-wrap li img {
+  width: 280px;
+}
+
+#wrap main .hobby .container .hobby-box .char-wrap li:not(:last-child) {
+  margin-right: 40px;
+}
+
+#wrap main .hobby .container .hobby-box .bg-wrap {
+  position: absolute;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap main .hobby .container .hobby-box .bg-wrap .circle {
+  width: 240px;
+  height: 240px;
+  background: #3FA9E8;
+  border-radius: 500px;
+}
+
+#wrap main .hobby .container .hobby-box .bg-wrap .circle:not(:last-child) {
+  margin-right: 120px;
+}
+
 @-webkit-keyframes line {
   0% {
     width: 50%;
@@ -501,5 +601,35 @@ li {
   100% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes char {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateX(-45px) rotate(-45deg);
+            transform: translateX(-45px) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateX(45px) rotate(45deg);
+            transform: translateX(45px) rotate(45deg);
+  }
+}
+
+@keyframes char {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateX(-45px) rotate(-45deg);
+            transform: translateX(-45px) rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: translateX(45px) rotate(45deg);
+            transform: translateX(45px) rotate(45deg);
   }
 }

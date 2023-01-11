@@ -31,7 +31,6 @@ li {
     .title {
         font-family: 'Montserrat', sans-serif;
         letter-spacing: -.025em;
-        
     }
 }
 /* css 변수 */
@@ -151,8 +150,9 @@ $white-color: #fff;
                 justify-content: center;
                 /* title */
                 .title-wrap {
+                    margin-bottom: 60px;
                     .title {
-                        color: #1a1a1c;
+                        color: $main-font-color;
                         font-weight: 700;
                         font-size: 42px;
                     }
@@ -345,6 +345,63 @@ $white-color: #fff;
                 }
             }
         }
+        .hobby {
+            margin-top: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .container {
+                border: 1px solid red;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .title-wrap{
+                    margin-bottom: 60px;
+                    .title{
+                        color: $main-font-color;
+                        font-weight: 700;
+                        font-size: 42px;
+                    }
+                }
+                .hobby-box {
+                    border: 1px solid red;
+                    width: 100%;
+                    .char-wrap {
+                        position: relative;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        // flex-wrap: wrap;
+                        li {
+                            animation: char 3s alternate infinite ease-in-out;
+                            img {
+                                width: 280px;
+                            }
+                        }
+                        li:not(:last-child){
+                            margin-right: 40px;
+                        }
+                    }
+                    .bg-wrap {
+                        position: absolute;
+                        z-index: -1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .circle {
+                            width: 240px;
+                            height: 240px;
+                            background: $main-color;
+                            border-radius: 500px;
+                        }
+                        .circle:not(:last-child){
+                            margin-right: 120px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -362,5 +419,16 @@ $white-color: #fff;
     }
     100% {
         transform: scale(1.1);
+    }
+}
+@keyframes char {
+    0%{
+        transform: translateX(0px) rotate(0deg);
+    }
+    50%{
+        transform: translateX(-45px) rotate(-45deg);
+    }
+    100%{
+        transform: translateX(45px) rotate(45deg);
     }
 }
