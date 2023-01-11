@@ -231,6 +231,44 @@ li {
   /* right */
 }
 
+#wrap main .about .container .about-box .sik-comment {
+  width: 440px;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 40px 0;
+  background: #fff;
+}
+
+#wrap main .about .container .about-box .sik-comment img {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 72px;
+}
+
+#wrap main .about .container .about-box .sik-comment p {
+  text-align: center;
+  font-family: 'SUIT-Regular';
+  color: #1a1a1c;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -.03%;
+  line-height: 32.4px;
+  z-index: 1;
+}
+
 #wrap main .about .container .about-box .sik-info .about-img {
   width: 440px;
   height: 320px;
@@ -284,16 +322,22 @@ li {
 #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .name {
   font-family: 'SUIT-Regular';
   color: #1a1a1c;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   letter-spacing: -.03em;
-  margin-bottom: 10px;
 }
 
 #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .birth {
   font-family: 'Montserrat', sans-serif;
   color: #1a1a1c;
-  font-size: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -.03em;
+}
+
+#wrap main .about .container .about-box .sik-info .about-name-sns .user-box .email {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: -.03em;
 }
@@ -313,44 +357,6 @@ li {
 
 #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li:not(:first-child) {
   margin-left: 10px;
-}
-
-#wrap main .about .container .about-box .sik-comment {
-  width: 440px;
-  border-radius: 18px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  padding: 40px 0;
-  background: #fff;
-}
-
-#wrap main .about .container .about-box .sik-comment img {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  width: 72px;
-}
-
-#wrap main .about .container .about-box .sik-comment p {
-  text-align: center;
-  font-family: 'SUIT-Regular';
-  color: #1a1a1c;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: -.03%;
-  line-height: 32.4px;
-  z-index: 1;
 }
 
 #wrap main .about .container .about-box .education-license {

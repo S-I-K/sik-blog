@@ -166,6 +166,36 @@ $white-color: #fff;
                     align-items: flex-start;
                     flex-wrap: wrap;
                     /* left */
+                    .sik-comment {
+                        // border: 1px solid red;
+                        width: 440px;
+                        border-radius: 18px;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        padding: 40px 0;
+                        background: #fff;
+                        img {
+                            position: absolute;
+                            z-index: 0;
+                            top: 0;
+                            left: 0;
+                            width: 72px;
+                        }
+                        p {
+                            text-align: center;
+                            font-family: 'SUIT-Regular';
+                            color: #1a1a1c;
+                            font-size: 18px;
+                            font-weight: 500;
+                            letter-spacing: -.03%;
+                            line-height: 32.4px;
+                            z-index: 1;
+                        }
+                    }
+                    /* center */
                     .sik-info{
                         .about-img {
                             // border: 1px solid red;
@@ -197,15 +227,20 @@ $white-color: #fff;
                                 .name {
                                     font-family: 'SUIT-Regular';
                                     color: #1a1a1c;
-                                    font-size: 32px;
-                                    font-weight: 700;
+                                    font-size: 18px;
+                                    font-weight: 600;
                                     letter-spacing: -.03em;
-                                    margin-bottom: 10px;
                                 }
                                 .birth {
                                     font-family: 'Montserrat', sans-serif;
                                     color: #1a1a1c;
-                                    font-size: 32px;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    letter-spacing: -.03em;
+                                }
+                                .email {
+                                    font-family: $en-font;
+                                    font-size: 14px;
                                     font-weight: 500;
                                     letter-spacing: -.03em;
                                 }
@@ -224,36 +259,6 @@ $white-color: #fff;
                                     margin-left: 10px;
                                 }
                             }
-                        }
-                    }
-                    /* center */
-                    .sik-comment {
-                        // border: 1px solid red;
-                        width: 440px;
-                        border-radius: 18px;
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        position: relative;
-                        padding: 40px 0;
-                        background: #fff;
-                        img {
-                            position: absolute;
-                            z-index: 0;
-                            top: 0;
-                            left: 0;
-                            width: 72px;
-                        }
-                        p {
-                            text-align: center;
-                            font-family: 'SUIT-Regular';
-                            color: #1a1a1c;
-                            font-size: 18px;
-                            font-weight: 500;
-                            letter-spacing: -.03%;
-                            line-height: 32.4px;
-                            z-index: 1;
                         }
                     }
                     /* right */
