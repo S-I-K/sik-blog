@@ -448,12 +448,19 @@ li {
 #wrap main .skill .container .skill-box .keyword li {
   font-family: "Montserrat", sans-serif;
   color: #1a1a1c;
+  font-weight: 500;
   letter-spacing: -0.03em;
   font-size: 14px;
   padding: 10px 20px;
   border: 1px solid #BCBCBC;
   border-radius: 100px;
   margin: 10px 0 20px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+#wrap main .skill .container .skill-box .keyword li:hover {
+  background: #BCBCBC;
+  color: #fff;
 }
 #wrap main .skill .container .skill-box .keyword li:not(:last-child) {
   margin-right: 20px;

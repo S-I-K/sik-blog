@@ -479,12 +479,19 @@ $white-color: #fff;
                         li{
                             font-family: $en-font;
                             color: $main-font-color;
+                            font-weight: 500;
                             letter-spacing: -.03em;
                             font-size: 14px;
                             padding: 10px 20px;
                             border: 1px solid $sub-font-color;
                             border-radius: 100px;
                             margin: 10px 0 20px;
+                            transition: all .4s;
+                            cursor: pointer;
+                        }
+                        li:hover{
+                            background: $sub-font-color;
+                            color: #fff;
                         }
                         li:not(:last-child){
                             margin-right: 20px;
