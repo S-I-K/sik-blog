@@ -164,7 +164,7 @@ $white-color: #fff;
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
-                    flex-wrap: wrap;
+                    // flex-wrap: wrap;
                     /* left */
                     .sik-comment {
                         // border: 1px solid red;
@@ -351,13 +351,13 @@ $white-color: #fff;
             align-items: center;
             justify-content: center;
             .container {
-                border: 1px solid red;
+                // border: 1px solid red;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 .title-wrap{
-                    margin-bottom: 60px;
+                    margin-bottom: 180px;
                     .title{
                         color: $main-font-color;
                         font-weight: 700;
@@ -365,7 +365,7 @@ $white-color: #fff;
                     }
                 }
                 .hobby-box {
-                    border: 1px solid red;
+                    // border: 1px solid red;
                     width: 100%;
                     .char-wrap {
                         position: relative;
@@ -374,9 +374,47 @@ $white-color: #fff;
                         justify-content: center;
                         // flex-wrap: wrap;
                         li {
-                            animation: char 3s alternate infinite ease-in-out;
-                            img {
-                                width: 280px;
+                            height: 270px;
+                            position: relative;
+                            // border: 1px solid blue;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-end;
+                            .img-box{
+                                animation: char 3s alternate infinite ease-in-out;
+                                img {
+                                    width: 280px;
+                                }
+                            }
+                            .txt-box{
+                                position: absolute;
+                                bottom: -120px;
+                                // border: 1px solid red;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: center;
+                                width: 110%;
+                                .num{
+                                    font-family: $en-font;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    letter-spacing: -.03em;
+                                    color: $main-font-color;
+                                }
+                                .txt{
+                                    font-family: $kr-font;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    letter-spacing: -.03em;
+                                    color: $main-font-color;
+                                }
+                            }
+                        }
+                        li:nth-child(even){
+                            .txt-box {
+                                bottom: auto;
+                                top: -120px;
                             }
                         }
                         li:not(:last-child){

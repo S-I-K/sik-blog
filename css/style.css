@@ -1,17 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 @font-face {
-  font-family: 'SUIT-Regular';
+  font-family: "SUIT-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -35,10 +33,9 @@ li {
   -webkit-animation: line 2s alternate infinite ease-in-out;
           animation: line 2s alternate infinite ease-in-out;
 }
-
 .title-wrap .title {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: -.025em;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.025em;
 }
 
 /* css 변수 */
@@ -49,211 +46,128 @@ li {
   /* header */
   /* main */
 }
-
 #wrap header {
   background: rgba(28, 56, 102, 0.9);
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
 }
-
 #wrap header .container {
   padding: 13px 20px;
 }
-
 #wrap header .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: center;
+  justify-content: flex-start;
 }
-
 #wrap header .container ul li a {
   display: block;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   font-weight: 500;
 }
-
 #wrap header .container ul li a .header-logo {
   height: 54px;
 }
-
 #wrap header .container ul li:not(:last-child) {
   margin-right: 40px;
 }
-
 #wrap main {
   width: 100%;
   /* intro */
   /* about */
 }
-
 #wrap main .intro {
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   position: relative;
 }
-
 #wrap main .intro video {
   height: 120%;
 }
-
 #wrap main .intro .profile {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   color: #fff;
 }
-
 #wrap main .intro .profile .title-wrap .title {
   font-weight: 500;
   font-size: 40px;
 }
-
 #wrap main .intro .profile .comment {
-  font-family: 'SUIT-Regular';
+  font-family: "SUIT-Regular";
   font-size: 24px;
   font-weight: 600;
-  letter-spacing: -.025em;
+  letter-spacing: -0.025em;
   margin: 10px 0 30px 0;
 }
-
 #wrap main .intro .profile .img-wrap a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 240px;
   height: 240px;
   border-radius: 400px;
   overflow: hidden;
 }
-
 #wrap main .intro .profile .img-wrap a img {
   height: 100%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  transition: all 0.4s;
 }
-
 #wrap main .about {
   margin-top: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #wrap main .about .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* title */
   /* about box */
 }
-
 #wrap main .about .container .title-wrap {
   margin-bottom: 60px;
 }
-
 #wrap main .about .container .title-wrap .title {
   color: #1a1a1c;
   font-weight: 700;
   font-size: 42px;
 }
-
 #wrap main .about .container .about-box {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   /* left */
   /* center */
   /* right */
 }
-
 #wrap main .about .container .about-box .sik-comment {
   width: 440px;
   border-radius: 18px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   padding: 40px 0;
   background: #fff;
 }
-
 #wrap main .about .container .about-box .sik-comment img {
   position: absolute;
   z-index: 0;
@@ -261,159 +175,105 @@ li {
   left: 0;
   width: 72px;
 }
-
 #wrap main .about .container .about-box .sik-comment p {
   text-align: center;
-  font-family: 'SUIT-Regular';
+  font-family: "SUIT-Regular";
   color: #1a1a1c;
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: -.03%;
+  letter-spacing: -0.03%;
   line-height: 32.4px;
   z-index: 1;
 }
-
 #wrap main .about .container .about-box .sik-info .about-img {
   width: 440px;
   height: 320px;
   border-radius: 12px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 10px;
   position: relative;
 }
-
 #wrap main .about .container .about-box .sik-info .about-img img {
   width: 100%;
 }
-
 #wrap main .about .container .about-box .sik-info .about-img .remove-img {
   position: absolute;
   -webkit-animation: heart 1s alternate infinite ease-in-out;
           animation: heart 1s alternate infinite ease-in-out;
 }
-
 #wrap main .about .container .about-box .sik-info .about-name-sns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-
 #wrap main .about .container .about-box .sik-info .about-name-sns .user-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .name {
-  font-family: 'SUIT-Regular';
+  font-family: "SUIT-Regular";
   color: #1a1a1c;
   font-size: 18px;
   font-weight: 600;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
 }
-
 #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .birth {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #1a1a1c;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
 }
-
 #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .email {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
 }
-
 #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li a {
   display: block;
   width: 38px;
   height: 38px;
   border: 1px solid red;
 }
-
 #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li:not(:first-child) {
   margin-left: 10px;
 }
-
 #wrap main .about .container .about-box .education-license {
   padding: 20px;
   width: 440px;
   height: 477px;
   background: #fff;
   border-radius: 18px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
-
 #wrap main .about .container .about-box .education-license .toggle-text-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: absolute;
   top: 10px;
 }
-
 #wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap {
   position: relative;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   border-radius: 500px;
   background: #BCBCBC;
   width: 100px;
   height: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap .toggle-switch {
   width: 40px;
   height: 40px;
@@ -421,18 +281,14 @@ li {
   border-radius: 500px;
   position: absolute;
   left: 4px;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-
 #wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap.active {
   background: #3FA9E8;
 }
-
 #wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap.active .toggle-switch {
   left: 56px;
 }
-
 #wrap main .about .container .about-box .education-license .education ul li .day,
 #wrap main .about .container .about-box .education-license .license ul li .day {
   font-family: "Montserrat", sans-serif;
@@ -440,9 +296,8 @@ li {
   font-weight: 400;
   color: #1a1a1c;
   margin-bottom: 4px;
-  letter-spacing: -.025em;
+  letter-spacing: -0.025em;
 }
-
 #wrap main .about .container .about-box .education-license .education ul li .name,
 #wrap main .about .container .about-box .education-license .license ul li .name {
   font-family: "SUIT-Regular";
@@ -450,7 +305,6 @@ li {
   font-weight: 500;
   color: #1a1a1c;
 }
-
 #wrap main .about .container .about-box .education-license .education ul li .name span,
 #wrap main .about .container .about-box .education-license .license ul li .name span {
   font-family: "SUIT-Regular";
@@ -458,108 +312,99 @@ li {
   font-weight: 500;
   color: #BCBCBC;
 }
-
 #wrap main .about .container .about-box .education-license .education ul li:not(:last-child),
 #wrap main .about .container .about-box .education-license .license ul li:not(:last-child) {
   margin-bottom: 20px;
 }
-
 #wrap main .about .container .about-box .education-license .license {
   display: none;
 }
-
 #wrap main .hobby {
   margin-top: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #wrap main .hobby .container {
-  border: 1px solid red;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 #wrap main .hobby .container .title-wrap {
-  margin-bottom: 60px;
+  margin-bottom: 180px;
 }
-
 #wrap main .hobby .container .title-wrap .title {
   color: #1a1a1c;
   font-weight: 700;
   font-size: 42px;
 }
-
 #wrap main .hobby .container .hobby-box {
-  border: 1px solid red;
   width: 100%;
 }
-
 #wrap main .hobby .container .hobby-box .char-wrap {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: flex-end;
+  justify-content: center;
 }
-
 #wrap main .hobby .container .hobby-box .char-wrap li {
+  height: 270px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#wrap main .hobby .container .hobby-box .char-wrap li .img-box {
   -webkit-animation: char 3s alternate infinite ease-in-out;
           animation: char 3s alternate infinite ease-in-out;
 }
-
-#wrap main .hobby .container .hobby-box .char-wrap li img {
+#wrap main .hobby .container .hobby-box .char-wrap li .img-box img {
   width: 280px;
 }
-
+#wrap main .hobby .container .hobby-box .char-wrap li .txt-box {
+  position: absolute;
+  bottom: -120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 110%;
+}
+#wrap main .hobby .container .hobby-box .char-wrap li .txt-box .num {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #1a1a1c;
+}
+#wrap main .hobby .container .hobby-box .char-wrap li .txt-box .txt {
+  font-family: "SUIT-Regular";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #1a1a1c;
+}
+#wrap main .hobby .container .hobby-box .char-wrap li:nth-child(even) .txt-box {
+  bottom: auto;
+  top: -120px;
+}
 #wrap main .hobby .container .hobby-box .char-wrap li:not(:last-child) {
   margin-right: 40px;
 }
-
 #wrap main .hobby .container .hobby-box .bg-wrap {
   position: absolute;
   z-index: -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #wrap main .hobby .container .hobby-box .bg-wrap .circle {
   width: 240px;
   height: 240px;
   background: #3FA9E8;
   border-radius: 500px;
 }
-
 #wrap main .hobby .container .hobby-box .bg-wrap .circle:not(:last-child) {
   margin-right: 120px;
 }
@@ -581,55 +426,41 @@ li {
     width: 100%;
   }
 }
-
 @-webkit-keyframes heart {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
-
 @keyframes heart {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
-
 @-webkit-keyframes char {
   0% {
-    -webkit-transform: translateX(0px) rotate(0deg);
-            transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
   }
   50% {
-    -webkit-transform: translateX(-45px) rotate(-45deg);
-            transform: translateX(-45px) rotate(-45deg);
+    transform: translateX(-45px) rotate(-45deg);
   }
   100% {
-    -webkit-transform: translateX(45px) rotate(45deg);
-            transform: translateX(45px) rotate(45deg);
+    transform: translateX(45px) rotate(45deg);
   }
 }
-
 @keyframes char {
   0% {
-    -webkit-transform: translateX(0px) rotate(0deg);
-            transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
   }
   50% {
-    -webkit-transform: translateX(-45px) rotate(-45deg);
-            transform: translateX(-45px) rotate(-45deg);
+    transform: translateX(-45px) rotate(-45deg);
   }
   100% {
-    -webkit-transform: translateX(45px) rotate(45deg);
-            transform: translateX(45px) rotate(45deg);
+    transform: translateX(45px) rotate(45deg);
   }
 }
