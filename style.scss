@@ -70,11 +70,15 @@ $white-color: #fff;
                         display: block;
                         font-size: 18px;
                         font-family: 'Montserrat', sans-serif;
-                        color: #fff;
                         font-weight: 500;
+                        color: #a8a8a8;
+                        transition: all .4s;
                         .header-logo {
                             height: 54px;
                         }
+                    }
+                    a:hover {
+                        color: #fff;
                     }
                 }
                 li:not(:last-child){
@@ -385,6 +389,7 @@ $white-color: #fff;
                                 animation: char 3s alternate infinite ease-in-out;
                                 img {
                                     width: 280px;
+                                    pointer-events: none;
                                 }
                             }
                             .txt-box{
@@ -420,6 +425,9 @@ $white-color: #fff;
                         }
                         li:not(:last-child){
                             margin-right: 40px;
+                        }
+                        li:nth-child(4){
+                            margin-right: 0;
                         }
                     }
                     .bg-wrap {
@@ -529,6 +537,107 @@ $white-color: #fff;
                 }
             }
         }
+        /* work */
+        .work {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 160px;
+            .container {
+                // border: 1px solid red;
+                text-align: center;
+                .title-wrap{
+                    display: inline-block;
+                    margin-bottom: 60px;
+                    .bar{}
+                    .title {
+                        color: $main-font-color;
+                        font-weight: 700;
+                        font-size: 42px;
+                    }
+                }
+                #work {
+                    width: 100%;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            // border: 1px solid orange;
+                            width: 100%;
+                            height: 460px;
+                            position: relative;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: center;
+                            border-radius: 40px;
+                            .item-bg {
+                                width: 100%;
+                                height: 340px;
+                                background: #2F589B;
+                                border-radius: 40px;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                z-index: -1;
+                            }
+                            .item-box {
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: center;
+                                img {
+                                    width: 400px;
+                                    margin-right: 40px;
+                                }
+                                .text-box{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    justify-content: center;
+                                    .title{
+                                        color: #fff;
+                                        font-family: $en-font;
+                                        letter-spacing: -3%;
+                                        font-size: 28px;
+                                        font-weight: 600;
+                                    }
+                                    .period{
+                                        color: #fff;
+                                        font-family: $en-font;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        letter-spacing: -.03em;
+                                    }
+                                    .desc{
+                                        color: #ccc;
+                                        font-family: $kr-font;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        text-align: left;
+                                        letter-spacing: -.03em;
+                                        margin: 20px 0;
+                                    }
+                                    .btn-area{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        a{
+                                            color: #fff;
+                                            font-size: 14px;
+                                            font-family: $kr-font;
+                                            font-weight: 600;
+                                            padding: 10px 20px;
+                                            background: #1a1a1c;
+                                            border-radius: 300px;
+                                        }
+                                        a:not(:last-child){
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -553,9 +662,9 @@ $white-color: #fff;
         transform: translateX(0px) rotate(0deg);
     }
     50%{
-        transform: translateX(-45px) rotate(-45deg);
+        transform: translateX(-45px) rotate(-15deg);
     }
     100%{
-        transform: translateX(45px) rotate(45deg);
+        transform: translateX(45px) rotate(15deg);
     }
 }

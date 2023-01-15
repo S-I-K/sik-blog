@@ -69,11 +69,15 @@ li {
   display: block;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
-  color: #fff;
   font-weight: 500;
+  color: #a8a8a8;
+  transition: all 0.4s;
 }
 #wrap header .container ul li a .header-logo {
   height: 54px;
+}
+#wrap header .container ul li a:hover {
+  color: #fff;
 }
 #wrap header .container ul li:not(:last-child) {
   margin-right: 40px;
@@ -84,6 +88,7 @@ li {
   /* about */
   /* hobby */
   /* skill */
+  /* work */
 }
 #wrap main .intro {
   width: 100%;
@@ -363,6 +368,7 @@ li {
 }
 #wrap main .hobby .container .hobby-box .char-wrap li .img-box img {
   width: 280px;
+  pointer-events: none;
 }
 #wrap main .hobby .container .hobby-box .char-wrap li .txt-box {
   position: absolute;
@@ -393,6 +399,9 @@ li {
 }
 #wrap main .hobby .container .hobby-box .char-wrap li:not(:last-child) {
   margin-right: 40px;
+}
+#wrap main .hobby .container .hobby-box .char-wrap li:nth-child(4) {
+  margin-right: 0;
 }
 #wrap main .hobby .container .hobby-box .bg-wrap {
   position: absolute;
@@ -494,6 +503,101 @@ li {
 #wrap main .skill .container .skill-box:nth-child(2) {
   margin-bottom: 40px;
 }
+#wrap main .work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 160px;
+}
+#wrap main .work .container {
+  text-align: center;
+}
+#wrap main .work .container .title-wrap {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+#wrap main .work .container .title-wrap .title {
+  color: #1a1a1c;
+  font-weight: 700;
+  font-size: 42px;
+}
+#wrap main .work .container #work {
+  width: 100%;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 460px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 40px;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-bg {
+  width: 100%;
+  height: 340px;
+  background: #2F589B;
+  border-radius: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box img {
+  width: 400px;
+  margin-right: 40px;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .title {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -3%;
+  font-size: 28px;
+  font-weight: 600;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .period {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .desc {
+  color: #ccc;
+  font-family: "SUIT-Regular";
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: -0.03em;
+  margin: 20px 0;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .btn-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .btn-area a {
+  color: #fff;
+  font-size: 14px;
+  font-family: "SUIT-Regular";
+  font-weight: 600;
+  padding: 10px 20px;
+  background: #1a1a1c;
+  border-radius: 300px;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .btn-area a:not(:last-child) {
+  margin-right: 10px;
+}
 
 @-webkit-keyframes line {
   0% {
@@ -533,10 +637,10 @@ li {
     transform: translateX(0px) rotate(0deg);
   }
   50% {
-    transform: translateX(-45px) rotate(-45deg);
+    transform: translateX(-45px) rotate(-15deg);
   }
   100% {
-    transform: translateX(45px) rotate(45deg);
+    transform: translateX(45px) rotate(15deg);
   }
 }
 @keyframes char {
@@ -544,9 +648,9 @@ li {
     transform: translateX(0px) rotate(0deg);
   }
   50% {
-    transform: translateX(-45px) rotate(-45deg);
+    transform: translateX(-45px) rotate(-15deg);
   }
   100% {
-    transform: translateX(45px) rotate(45deg);
+    transform: translateX(45px) rotate(15deg);
   }
 }

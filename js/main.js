@@ -19,4 +19,13 @@ $(()=>{
             $('.license').hide();
         }
     });
+    /* swiper.js: slide */
+    var work = new Swiper("#work", {
+        slidesPerView: 'auto',
+        spaceBetween: 40,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 });
