@@ -180,7 +180,7 @@ li {
   z-index: 0;
   top: 0;
   left: 0;
-  width: 72px;
+  width: 58px;
 }
 #wrap main .about .container .about-box .sik-comment p {
   text-align: center;
@@ -276,14 +276,14 @@ li {
   transition: all 0.4s ease-in-out;
   border-radius: 500px;
   background: #BCBCBC;
-  width: 100px;
-  height: 48px;
+  width: 80px;
+  height: 38px;
   display: flex;
   align-items: center;
 }
 #wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap .toggle-switch {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: #fff;
   border-radius: 500px;
   position: absolute;
@@ -294,7 +294,7 @@ li {
   background: #3FA9E8;
 }
 #wrap main .about .container .about-box .education-license .toggle-text-wrap .toggle-wrap.active .toggle-switch {
-  left: 56px;
+  left: 46px;
 }
 #wrap main .about .container .about-box .education-license .education ul li .day,
 #wrap main .about .container .about-box .education-license .license ul li .day {

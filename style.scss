@@ -186,7 +186,7 @@ $white-color: #fff;
                             z-index: 0;
                             top: 0;
                             left: 0;
-                            width: 72px;
+                            width: 58px;
                         }
                         p {
                             text-align: center;
@@ -290,13 +290,13 @@ $white-color: #fff;
                                 // border: 1px solid red;
                                 border-radius: 500px;
                                 background: $sub-font-color;
-                                width: 100px;
-                                height: 48px;
+                                width: 80px;
+                                height: 38px;
                                 display: flex;
                                 align-items: center;
                                 .toggle-switch {
-                                    width: 40px;
-                                    height: 40px;
+                                    width: 30px;
+                                    height: 30px;
                                     background: #fff;
                                     border-radius: 500px;
                                     position: absolute;
@@ -307,7 +307,7 @@ $white-color: #fff;
                             .toggle-wrap.active {
                                 background: $main-color;
                                 .toggle-switch {
-                                    left: 56px;
+                                    left: 46px;
                                 }
                             }
                         }
