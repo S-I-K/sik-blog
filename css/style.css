@@ -463,7 +463,7 @@ li {
   padding: 10px 20px;
   border: 1px solid #BCBCBC;
   border-radius: 100px;
-  margin: 10px 0 20px;
+  margin: 24px 0 14px;
   transition: all 0.4s;
   cursor: pointer;
 }
@@ -557,6 +557,7 @@ li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  width: 400px;
 }
 #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .title {
   color: #fff;

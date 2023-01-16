@@ -493,7 +493,7 @@ $white-color: #fff;
                             padding: 10px 20px;
                             border: 1px solid $sub-font-color;
                             border-radius: 100px;
-                            margin: 10px 0 20px;
+                            margin: 24px 0 14px;
                             transition: all .4s;
                             cursor: pointer;
                         }
@@ -591,6 +591,7 @@ $white-color: #fff;
                                     flex-direction: column;
                                     align-items: flex-start;
                                     justify-content: center;
+                                    width: 400px;
                                     .title{
                                         color: #fff;
                                         font-family: $en-font;
