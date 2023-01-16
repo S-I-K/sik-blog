@@ -6,8 +6,8 @@ for(let i=0; i<a.length; i++) {
     });
 }
 
-/* 코드 이게 최선인가 리펙토링 필요해보임 */
 $(()=>{
+    /* 코드 이게 최선인가 리펙토링 필요해보임 */
     let toggleWrap = $('.toggle-wrap');
     toggleWrap.click(function(){
         $(this).toggleClass('active');
@@ -23,6 +23,10 @@ $(()=>{
     var work = new Swiper("#work", {
         slidesPerView: 'auto',
         spaceBetween: 40,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

@@ -189,7 +189,7 @@ $white-color: #fff;
                             width: 58px;
                         }
                         p {
-                            text-align: center;
+                            text-align: left;
                             font-family: 'SUIT-Regular';
                             color: #1a1a1c;
                             font-size: 18px;
@@ -562,7 +562,7 @@ $white-color: #fff;
                         .swiper-slide {
                             // border: 1px solid orange;
                             width: 100%;
-                            height: 460px;
+                            height: 440px;
                             position: relative;
                             display: flex;
                             align-items: flex-end;
@@ -636,6 +636,9 @@ $white-color: #fff;
                             }
                         }
                     }
+                }
+                #work:not(:last-child){
+                    margin-bottom: 40px;
                 }
             }
         }
