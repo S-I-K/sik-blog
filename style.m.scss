@@ -13,13 +13,15 @@
         header {
             // display: none;
             .container {
+                .logo-area {
+                    .header-logo {
+                        height: 38px;
+                    }
+                }
                 ul {
                     li {
                         a {
                             font-size: .9rem;
-                            .header-logo {
-                                height: 38px;
-                            }
                         }
                     }
                 }
@@ -239,6 +241,307 @@
                 }
                 .copy {
                     width: auto;
+                }
+            }
+        }
+    }
+}
+/* html <= 375px */
+@media (max-width: 375px) {
+    #wrap {
+        /* header */
+        header {
+            .container {
+                ul {
+                    li {
+                        a {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        /* main */
+        main {
+            /* intro */
+            .intro {
+                video {
+                    height: 100%;
+                }
+                .profile {
+                    .title-wrap {
+                        .title {
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .comment {
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                    .img-wrap {
+                        a{
+                            img{
+                                width:180px;
+                                height: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+            /* about */
+            .about {
+                .container {
+                    .title-wrap{
+                        .bar{}
+                        .title{
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .about-box {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .sik-comment {
+                            width: 100%;
+                            margin-bottom: 60px;
+                            img {
+                                width: 48px;
+                                top: 20px;
+                                left: -10px;
+                            }
+                            p {
+                                font-size: .9rem;
+                            }
+                        }
+                        .sik-info {
+                            margin-bottom: 60px;
+                            .about-img {
+                                width: 100%;
+                                height: 240px;
+                            }
+                            .about-name-sns {
+                                .user-box {
+                                    .name {
+                                        font-size: 1rem;
+                                    }
+                                    .birth {
+                                        font-size: 1rem;
+                                    }
+                                    .phone {
+                                        font-size: 1rem;
+                                    }
+                                    .email {
+                                        font-size: 1rem;
+                                    }
+                                }
+                                .sns-box {
+                                    li {
+                                        a {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .education-license {
+                            width: 100%;
+                            .education,
+                            .license {
+                                ul {
+                                    li {
+                                        .day {
+                                            font-size: .8rem;
+                                        }
+                                        .name {
+                                            font-size: 1.1rem;
+                                            span {
+                                                font-size: .8rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /* hobby */
+            .hobby {
+                .container {
+                    .title-wrap {
+                        .title {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .hobby-box {
+                        .char-wrap {
+                            li {
+                                height: 187px;
+                                width: 100%;
+                                .img-box {
+                                    img {
+                                        width: 200px;
+                                    }
+                                }
+                                .txt-box {
+                                    // position: static;
+                                    width: 260px;
+                                    top: auto;
+                                    bottom: -60px;
+                                    left: auto;
+                                    right: auto;
+                                    .num {
+                                        font-size: 1.4rem;
+                                    }
+                                    .txt {
+                                        font-size: .8rem;
+                                    }
+                                }
+                            }
+                            li:nth-child(even) {
+                                .txt-box {
+                                    top: auto;
+                                    bottom: -60px;
+                                    left: auto;
+                                    right: auto;
+                                }
+                            }
+                            li:not(:last-child){
+                                margin-right: 0;
+                                margin-bottom: 40px;
+                            }
+                            li:nth-child(4){
+                                margin-bottom: 0;
+                            }
+                        }
+                        .bg-wrap {
+                            flex-direction: column;
+                            top: 100px;
+                            .circle {
+                                width: 200px;
+                                height: 200px;
+                            }
+                            .circle:not(:last-child){
+                                margin-right: 0;
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            /* skill */
+            .skill {
+                .container {
+                    .title-wrap {
+                        .title {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .skill-box {
+                        width: 80%;
+                        .title {
+                            font-size: 1.1rem;
+                        }
+                        .keyword {
+                            flex-wrap: wrap;
+                            li {
+                                font-size: .6rem;
+                                margin: 2px 2px;
+                            }
+                        }
+                        .word {
+                            li {
+                                font-size: .9rem;
+                                span {
+                                    width: 4px;
+                                    height: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /* work */
+            .work {
+                .container {
+                    .title-wrap {
+                        .title {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    #work {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                // border: 1px solid red;
+                                width: 100%;
+                                height: auto;
+                                background: #2F589B;
+                                padding: 20px 20px;
+                                border-radius: 18px;
+                                .item-bg {
+                                    display: none;
+                                }
+                                .item-box {
+                                    flex-direction: column;
+                                    a {
+                                        img {
+                                            width: 100%;
+                                            margin-right: 30px;
+                                        }
+                                    }
+                                    .text-box {
+                                        width: 100%;
+                                        align-items: center;
+                                        .title {
+                                            font-size: 1.2rem;
+                                        }
+                                        .period {
+                                            font-size: .9rem;
+                                        }
+                                        .desc {
+                                            font-size: .8rem;
+                                            text-align: center;
+                                        }
+                                        .btn-area {
+                                            a{
+                                                font-size: .6rem;
+                                                padding: 8px 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /* footer */
+        footer {
+            .container {
+                .footer-img-box {
+                    width: 100px;
+                    display: none;
+                    img {
+                        height: 32px;
+                    }
+                }
+                .footer-sns {
+                    order: 1;
+                    width: auto;
+                    li {
+                        a {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+                .copy {
+                    width: auto;
+                    text-align: center;
+                    font-size: .7rem;
+                    font-weight: 400;
                 }
             }
         }

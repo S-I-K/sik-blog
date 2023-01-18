@@ -8,11 +8,11 @@
     /* header */
     /* main */
   }
+  #wrap header .container .logo-area .header-logo {
+    height: 38px;
+  }
   #wrap header .container ul li a {
     font-size: 0.9rem;
-  }
-  #wrap header .container ul li a .header-logo {
-    height: 38px;
   }
   #wrap main {
     /* intro */
@@ -165,5 +165,225 @@
   }
   #wrap footer .container .copy {
     width: auto;
+  }
+}
+/* html <= 375px */
+@media (max-width: 375px) {
+  #wrap {
+    /* header */
+    /* main */
+    /* footer */
+  }
+  #wrap header .container ul li a {
+    display: none;
+  }
+  #wrap main {
+    /* intro */
+    /* about */
+    /* hobby */
+    /* skill */
+    /* work */
+  }
+  #wrap main .intro video {
+    height: 100%;
+  }
+  #wrap main .intro .profile .title-wrap .title {
+    font-size: 1.6rem;
+  }
+  #wrap main .intro .profile .comment {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  #wrap main .intro .profile .img-wrap a img {
+    width: 180px;
+    height: 180px;
+  }
+  #wrap main .about .container .title-wrap .title {
+    font-size: 1.4rem;
+  }
+  #wrap main .about .container .about-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #wrap main .about .container .about-box .sik-comment {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  #wrap main .about .container .about-box .sik-comment img {
+    width: 48px;
+    top: 20px;
+    left: -10px;
+  }
+  #wrap main .about .container .about-box .sik-comment p {
+    font-size: 0.9rem;
+  }
+  #wrap main .about .container .about-box .sik-info {
+    margin-bottom: 60px;
+  }
+  #wrap main .about .container .about-box .sik-info .about-img {
+    width: 100%;
+    height: 240px;
+  }
+  #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .name {
+    font-size: 1rem;
+  }
+  #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .birth {
+    font-size: 1rem;
+  }
+  #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .phone {
+    font-size: 1rem;
+  }
+  #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .email {
+    font-size: 1rem;
+  }
+  #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li a {
+    width: 20px;
+    height: 20px;
+  }
+  #wrap main .about .container .about-box .education-license {
+    width: 100%;
+  }
+  #wrap main .about .container .about-box .education-license .education ul li .day,
+#wrap main .about .container .about-box .education-license .license ul li .day {
+    font-size: 0.8rem;
+  }
+  #wrap main .about .container .about-box .education-license .education ul li .name,
+#wrap main .about .container .about-box .education-license .license ul li .name {
+    font-size: 1.1rem;
+  }
+  #wrap main .about .container .about-box .education-license .education ul li .name span,
+#wrap main .about .container .about-box .education-license .license ul li .name span {
+    font-size: 0.8rem;
+  }
+  #wrap main .hobby .container .title-wrap .title {
+    font-size: 1.4rem;
+  }
+  #wrap main .hobby .container .hobby-box .char-wrap li {
+    height: 187px;
+    width: 100%;
+  }
+  #wrap main .hobby .container .hobby-box .char-wrap li .img-box img {
+    width: 200px;
+  }
+  #wrap main .hobby .container .hobby-box .char-wrap li .txt-box {
+    width: 260px;
+    top: auto;
+    bottom: -60px;
+    left: auto;
+    right: auto;
+  }
+  #wrap main .hobby .container .hobby-box .char-wrap li .txt-box .num {
+    font-size: 1.4rem;
+  }
+  #wrap main .hobby .container .hobby-box .char-wrap li .txt-box .txt {
+    font-size: 0.8rem;
+  }
+  #wrap main .hobby .container .hobby-box .char-wrap li:nth-child(even) .txt-box {
+    top: auto;
+    bottom: -60px;
+    left: auto;
+    right: auto;
+  }
+  #wrap main .hobby .container .hobby-box .char-wrap li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  #wrap main .hobby .container .hobby-box .char-wrap li:nth-child(4) {
+    margin-bottom: 0;
+  }
+  #wrap main .hobby .container .hobby-box .bg-wrap {
+    flex-direction: column;
+    top: 100px;
+  }
+  #wrap main .hobby .container .hobby-box .bg-wrap .circle {
+    width: 200px;
+    height: 200px;
+  }
+  #wrap main .hobby .container .hobby-box .bg-wrap .circle:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  #wrap main .skill .container .title-wrap .title {
+    font-size: 1.4rem;
+  }
+  #wrap main .skill .container .skill-box {
+    width: 80%;
+  }
+  #wrap main .skill .container .skill-box .title {
+    font-size: 1.1rem;
+  }
+  #wrap main .skill .container .skill-box .keyword {
+    flex-wrap: wrap;
+  }
+  #wrap main .skill .container .skill-box .keyword li {
+    font-size: 0.6rem;
+    margin: 2px 2px;
+  }
+  #wrap main .skill .container .skill-box .word li {
+    font-size: 0.9rem;
+  }
+  #wrap main .skill .container .skill-box .word li span {
+    width: 4px;
+    height: 4px;
+  }
+  #wrap main .work .container .title-wrap .title {
+    font-size: 1.4rem;
+  }
+  #wrap main .work .container #work .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: auto;
+    background: #2F589B;
+    padding: 20px 20px;
+    border-radius: 18px;
+  }
+  #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-bg {
+    display: none;
+  }
+  #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box {
+    flex-direction: column;
+  }
+  #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a img {
+    width: 100%;
+    margin-right: 30px;
+  }
+  #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box {
+    width: 100%;
+    align-items: center;
+  }
+  #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .title {
+    font-size: 1.2rem;
+  }
+  #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .period {
+    font-size: 0.9rem;
+  }
+  #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .desc {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .btn-area a {
+    font-size: 0.6rem;
+    padding: 8px 14px;
+  }
+  #wrap footer .container .footer-img-box {
+    width: 100px;
+    display: none;
+  }
+  #wrap footer .container .footer-img-box img {
+    height: 32px;
+  }
+  #wrap footer .container .footer-sns {
+    order: 1;
+    width: auto;
+  }
+  #wrap footer .container .footer-sns li a {
+    width: 18px;
+    height: 18px;
+  }
+  #wrap footer .container .copy {
+    width: auto;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 400;
   }
 }

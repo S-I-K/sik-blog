@@ -59,11 +59,20 @@ li {
 }
 #wrap header .container {
   padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap header .container .logo-area {
+  margin-right: 40px;
+}
+#wrap header .container .logo-area .header-logo {
+  height: 54px;
 }
 #wrap header .container ul {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 #wrap header .container ul li a {
   display: block;
@@ -72,9 +81,6 @@ li {
   font-weight: 500;
   color: #a8a8a8;
   transition: all 0.4s;
-}
-#wrap header .container ul li a .header-logo {
-  height: 54px;
 }
 #wrap header .container ul li a:hover {
   color: #fff;
@@ -179,7 +185,7 @@ li {
   position: absolute;
   z-index: 0;
   top: 0;
-  left: 0;
+  left: -20px;
   width: 58px;
 }
 #wrap main .about .container .about-box .sik-comment p {
@@ -231,20 +237,20 @@ li {
   font-family: "Montserrat", sans-serif;
   color: #1a1a1c;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.03em;
 }
 #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .phone {
   color: #1a1a1c;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.03em;
 }
 #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .email {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.03em;
 }
 #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box {
@@ -660,7 +666,7 @@ li {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
-  letter-spacing: -0.03%;
+  letter-spacing: -0.03em;
 }
 
 @-webkit-keyframes line {
