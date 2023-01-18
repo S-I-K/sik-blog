@@ -665,7 +665,7 @@ $white-color: #fff;
     footer {
         margin-top: 160px;
         width: 100%;
-        height: 140px;
+        height: 80px;
         background: $main-font-color;
         color: #fff;
         display: flex;
@@ -679,7 +679,7 @@ $white-color: #fff;
             .footer-img-box {
                 width: 240px;
                 img {
-                    height: 70px;
+                    height: 40px;
                 }
             }
             .footer-sns {
@@ -690,8 +690,8 @@ $white-color: #fff;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 28px;
-                        height: 28px;
+                        width: 24px;
+                        height: 24px;
                         img {
                             width: 100%;
                         }

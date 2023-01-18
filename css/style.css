@@ -621,7 +621,7 @@ li {
 #wrap footer {
   margin-top: 160px;
   width: 100%;
-  height: 140px;
+  height: 80px;
   background: #1a1a1c;
   color: #fff;
   display: flex;
@@ -637,7 +637,7 @@ li {
   width: 240px;
 }
 #wrap footer .container .footer-img-box img {
-  height: 70px;
+  height: 40px;
 }
 #wrap footer .container .footer-sns {
   display: flex;
@@ -646,8 +646,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 }
 #wrap footer .container .footer-sns li a img {
   width: 100%;
