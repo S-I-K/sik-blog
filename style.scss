@@ -494,6 +494,7 @@ $white-color: #fff;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        margin: 20px 0;
                         li{
                             font-family: $en-font;
                             color: $main-font-color;
@@ -503,7 +504,6 @@ $white-color: #fff;
                             padding: 10px 20px;
                             border: 1px solid $sub-font-color;
                             border-radius: 100px;
-                            margin: 24px 0 14px;
                             transition: all .4s;
                             cursor: pointer;
                         }
@@ -704,6 +704,7 @@ $white-color: #fff;
             .copy {
                 width: 240px;
                 font-family: $en-font;
+                font-weight: 500;
                 font-size: 12px;
                 letter-spacing: -.03%;
             }

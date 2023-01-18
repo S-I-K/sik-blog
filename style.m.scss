@@ -1,0 +1,246 @@
+/* html <= 768px */
+@media (max-width: 768px){
+    .container {
+        width: 100%;
+    }
+    .title-wrap {
+        .bar {}
+        .title {}
+    }
+    /* wrap */
+    #wrap {
+        /* header */
+        header {
+            // display: none;
+            .container {
+                ul {
+                    li {
+                        a {
+                            font-size: .9rem;
+                            .header-logo {
+                                height: 38px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /* main */
+        main {
+            /* intro */
+            .intro {
+                video {
+                    height: 100%;
+                }
+                .profile {
+                    .title-wrap {
+                        .title {
+                            font-size: 2.4rem;
+                        }
+                    }
+                    .comment {
+                        font-size: 1.4rem;
+                    }
+                    .img-wrap {
+                        a{
+                            img{
+
+                            }
+                        }
+                    }
+                }
+            }
+            /* about */
+            .about {
+                .container {
+                    .title-wrap{
+                        .bar{}
+                        .title{
+                            font-size: 2rem;
+                        }
+                    }
+                    .about-box {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .sik-comment {
+                            margin-bottom: 40px;
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+                        .sik-info {
+                            order: -1;
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+            /* hobby */
+            .hobby {
+                padding: 160px 0 0 0;
+                .container {
+                    .title-wrap {
+                        margin-bottom: 60px;
+                        .title {
+                            font-size: 2rem;
+                        }
+                    }
+                    .hobby-box {
+                        .char-wrap {
+                            flex-direction: column;
+                            align-items: center;
+                            li {
+                                height: 224px;
+                                width: 100%;
+                                .img-box {
+                                    img {
+                                        width: 240px;
+                                    }
+                                }
+                                .txt-box {
+                                    // position: static;
+                                    width: 260px;
+                                    top: auto;
+                                    bottom: 0px;
+                                    left: auto;
+                                    right: 0px;
+                                    .num {
+                                        font-size: 1.4rem;
+                                    }
+                                    .txt {
+                                        font-size: .9rem;
+                                    }
+                                }
+                            }
+                            li:nth-child(even) {
+                                .txt-box {
+                                    top: auto;
+                                    bottom: 0;
+                                    left: auto;
+                                    right: 0;
+                                }
+                            }
+                            li:not(:last-child){
+                                margin-right: 0;
+                                margin-bottom: 40px;
+                            }
+                            li:nth-child(4){
+                                margin-bottom: 0;
+                            }
+                        }
+                        .bg-wrap {
+                            flex-direction: column;
+                            top: 130px;
+                            .circle {
+                            }
+                            .circle:not(:last-child){
+                                margin-right: 0;
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            /* skill */
+            .skill {
+                .container {
+                    .title-wrap {
+                        .title {
+                            font-size: 2rem;
+                        }
+                    }
+                    .skill-box {
+                        width: 80%;
+                        .title {
+                            font-size: 1.4rem;
+                        }
+                        .keyword {
+                            li {
+                                font-size: .8rem;
+                            }
+                        }
+                        .word {
+                            li {
+                                font-size: 1rem;
+                                span {
+                                    width: 6px;
+                                    height: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /* work */
+            .work {
+                .container {
+                    .title-wrap {
+                        .title {
+                            font-size: 2rem;
+                        }
+                    }
+                    #work {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                height: 380px;
+                                .item-bg {
+                                    height: 300px;
+                                }
+                                .item-box {
+                                    a {
+                                        img {
+                                            width: 320px;
+                                            margin-right: 30px;
+                                        }
+                                    }
+                                    .text-box {
+                                        width: 260px;
+                                        .title {
+                                            font-size: 1.4rem;
+                                        }
+                                        .period {
+                                            font-size: 1rem;
+                                        }
+                                        .desc {
+                                            font-size: .8rem;
+                                        }
+                                        .btn-area {
+                                            a{
+                                                font-size: .8rem;
+                                                // padding: 8px 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .container {
+                .footer-img-box {
+                    width: 100px;
+                    img {
+                        height: 36px;
+                    }
+                }
+                .footer-sns {
+                    order: 1;
+                    width: 100px;
+                    li {
+                        a {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+                .copy {
+                    width: auto;
+                }
+            }
+        }
+    }
+}

@@ -462,6 +462,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px 0;
 }
 #wrap main .skill .container .skill-box .keyword li {
   font-family: "Montserrat", sans-serif;
@@ -472,7 +473,6 @@ li {
   padding: 10px 20px;
   border: 1px solid #BCBCBC;
   border-radius: 100px;
-  margin: 24px 0 14px;
   transition: all 0.4s;
   cursor: pointer;
 }
@@ -658,6 +658,7 @@ li {
 #wrap footer .container .copy {
   width: 240px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 12px;
   letter-spacing: -0.03%;
 }
