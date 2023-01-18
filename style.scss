@@ -230,14 +230,21 @@ $white-color: #fff;
                                 flex-direction: column;
                                 .name {
                                     font-family: 'SUIT-Regular';
-                                    color: #1a1a1c;
+                                    color: $main-font-color;
                                     font-size: 18px;
                                     font-weight: 600;
                                     letter-spacing: -.03em;
                                 }
                                 .birth {
                                     font-family: 'Montserrat', sans-serif;
-                                    color: #1a1a1c;
+                                    color: $main-font-color;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    letter-spacing: -.03em;
+                                }
+                                .phone {
+                                    color: $main-font-color;
+                                    font-family: $en-font;
                                     font-size: 14px;
                                     font-weight: 500;
                                     letter-spacing: -.03em;
@@ -254,9 +261,12 @@ $white-color: #fff;
                                 li {
                                     a{
                                         display: block;
-                                        width: 38px;
-                                        height: 38px;
-                                        border: 1px solid red;
+                                        width: 28px;
+                                        height: 28px;
+                                        // border: 1px solid red;
+                                        img {
+                                            width: 100%;
+                                        }
                                     }
                                 }
                                 li:not(:first-child){
@@ -582,9 +592,18 @@ $white-color: #fff;
                                 display: flex;
                                 align-items: flex-start;
                                 justify-content: center;
-                                img {
-                                    width: 400px;
-                                    margin-right: 40px;
+                                a {
+                                    display: block;
+                                    img {
+                                        width: 400px;
+                                        margin-right: 40px;
+                                        transition: all .4s;
+                                    }
+                                }
+                                a:hover {
+                                    img {
+                                        transform: scale(1.1);
+                                    }
                                 }
                                 .text-box{
                                     display: flex;
@@ -640,6 +659,53 @@ $white-color: #fff;
                 #work:not(:last-child){
                     margin-bottom: 40px;
                 }
+            }
+        }
+    }
+    footer {
+        margin-top: 160px;
+        width: 100%;
+        height: 140px;
+        background: $main-font-color;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container{
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .footer-img-box {
+                width: 240px;
+                img {
+                    height: 70px;
+                }
+            }
+            .footer-sns {
+                display: flex;
+                li {
+                    a {
+                        // border: 1px solid red;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 28px;
+                        height: 28px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                li:not(:last-child){
+                    margin-right: 20px;
+                }
+            }
+            .copy {
+                width: 240px;
+                font-family: $en-font;
+                font-size: 12px;
+                letter-spacing: -.03%;
             }
         }
     }

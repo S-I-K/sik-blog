@@ -234,6 +234,13 @@ li {
   font-weight: 500;
   letter-spacing: -0.03em;
 }
+#wrap main .about .container .about-box .sik-info .about-name-sns .user-box .phone {
+  color: #1a1a1c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
 #wrap main .about .container .about-box .sik-info .about-name-sns .user-box .email {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -245,9 +252,11 @@ li {
 }
 #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li a {
   display: block;
-  width: 38px;
-  height: 38px;
-  border: 1px solid red;
+  width: 28px;
+  height: 28px;
+}
+#wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li a img {
+  width: 100%;
 }
 #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li:not(:first-child) {
   margin-left: 10px;
@@ -548,9 +557,16 @@ li {
   align-items: flex-start;
   justify-content: center;
 }
-#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box img {
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a {
+  display: block;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a img {
   width: 400px;
   margin-right: 40px;
+  transition: all 0.4s;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a:hover img {
+  transform: scale(1.1);
 }
 #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box {
   display: flex;
@@ -601,6 +617,49 @@ li {
 }
 #wrap main .work .container #work:not(:last-child) {
   margin-bottom: 40px;
+}
+#wrap footer {
+  margin-top: 160px;
+  width: 100%;
+  height: 140px;
+  background: #1a1a1c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#wrap footer .container .footer-img-box {
+  width: 240px;
+}
+#wrap footer .container .footer-img-box img {
+  height: 70px;
+}
+#wrap footer .container .footer-sns {
+  display: flex;
+}
+#wrap footer .container .footer-sns li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+#wrap footer .container .footer-sns li a img {
+  width: 100%;
+}
+#wrap footer .container .footer-sns li:not(:last-child) {
+  margin-right: 20px;
+}
+#wrap footer .container .copy {
+  width: 240px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.03%;
 }
 
 @-webkit-keyframes line {
