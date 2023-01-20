@@ -1,560 +1,762 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="김대식 포트폴리오">
-    <meta name="Keywords" content="웹디자이너, 웹퍼블리셔, 웹디자인, 디자이너, 디자인, 퍼블리셔, 퍼블리싱, 포트폴리오, HTML, CSS, Javascript, React, Photoshop, Illustrator, XD, Figma">
-    <meta name="Description" content="I'm a UI/UX designer & developer">
-    <meta name="robots" content="ALL">
-    <meta name="NaverBot" content="ALL">
-    <meta name="NaverBot" content="index,follow">
-    <meta name="Googlebot" content="index,follow">
-    <meta name="daumoa" content="index,follow">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="김대식 포트폴리오" />
+    <meta
+      name="Keywords"
+      content="웹디자이너, 웹퍼블리셔, 웹디자인, 디자이너, 디자인, 퍼블리셔, 퍼블리싱, 포트폴리오, HTML, CSS, Javascript, React, Photoshop, Illustrator, XD, Figma"
+    />
+    <meta name="Description" content="I'm a UI/UX designer & developer" />
+    <meta name="robots" content="ALL" />
+    <meta name="NaverBot" content="ALL" />
+    <meta name="NaverBot" content="index,follow" />
+    <meta name="Googlebot" content="index,follow" />
+    <meta name="daumoa" content="index,follow" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="./img/ss-favicon.png">
+    <!-- <link rel="shortcut icon" href="./img/ss-favicon.png"> -->
+    <link rel="shortcut icon" href="./img/ss-favicon-blue.png" />
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style.m.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.m.css" />
     <!-- jq -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
     <!-- swiper.js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+      defer
+    ></script>
     <!-- js -->
     <script src="./js/main.js" defer></script>
 
     <title>SIK</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrap">
-        <!-- header -->
-        <header>
-            <div class="container">
-                <div class="logo-area">
-                    <a href="#"><img class='header-logo' src="./img/header-logo.png" alt="header logo"></a>
-                </div>
-                <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">hobby</a></li>
-                    <li><a href="#">skill</a></li>
-                    <li><a href="#">works</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </div>
-        </header>
+      <!-- header -->
+      <header>
+        <div class="container">
+          <div class="logo-area">
+            <a href="#"
+              ><img
+                class="header-logo"
+                src="./img/header-logo.png"
+                alt="header logo"
+            /></a>
+          </div>
+          <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">hobby</a></li>
+            <li><a href="#">skill</a></li>
+            <li><a href="#">works</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </header>
 
-        <!-- main -->
-        <main>
-            <!-- intro -->
-            <div class="intro">
-                <video src="./img/intro2.mp4" muted autoplay loop playsinline></video>
-                <div class="profile">
-                    <div class="title-wrap">
-                        <div class="bar"></div>
-                        <h1 class="title">Web Desinger Portfolio</h1>
-                    </div>
-                    <p class="comment">상상한 것을 그래픽으로 표현하는 디자이너</p>
-                    <div class="img-wrap">
-                        <a href="#">
-                            <img src="./img/intro-profile.png" alt="">
-                        </a>
-                    </div>
-                </div>
+      <!-- main -->
+      <main>
+        <!-- intro -->
+        <div class="intro">
+          <video src="./img/intro2.mp4" muted autoplay loop playsinline></video>
+          <div class="profile">
+            <div class="title-wrap">
+              <div class="bar"></div>
+              <h1 class="title">Web Desinger Portfolio</h1>
             </div>
-            <!-- about -->
-            <div class="about">
-                <div class="container">
-                    <!-- title -->
-                    <div class="title-wrap">
-                        <div class="bar"></div>
-                        <h2 class="title">about</h2>
-                    </div>
-                    <!-- about box -->
-                    <div class="about-box">
-                        <!-- left -->
-                        <div class="sik-comment">
-                            <img src="./img/icon-comment.png" alt="">
-                            <p>
-                                안녕하세요. 둥글둥글한 성격의 소유자, 김대식 입니다️ <br/>
-                                사용자의 시각적인 편안함과 인터렉션을 제공해주는 <br/>
-                                웹 개발에 흥미와 재미를 느끼게 되어 <br/>
-                                웹 디자이너와 웹 개발자로 성장하고 있습니다.
-                            </p>
-                        </div>
-                        <!-- center -->
-                        <div class="sik-info">
-                            <div class="about-img">
-                                <img class='remove-img' src="./img/about-profile-remove.png" alt="">
-                                <img src="./img/about-profile.jpg" alt="it's me">
-                            </div>
-                            <div class="about-name-sns">
-                                <div class="user-box">
-                                    <span class="name">김대식</span>
-                                    <span class="birth">1999.8.5</span>
-                                    <span class="phone">010-2801-7386</span>
-                                    <span class="email">daesik99@naver.com</span>
-                                </div>
-                                <ul class="sns-box">
-                                    <li><a href="https://github.com/S-I-K"><img src="./img/about-icon-github.png" alt="github"></a></li>
-                                    <li><a href="https://www.instagram.com/99.8.5.22.44/"><img src="./img/about-icon-instagram.png" alt="instagram"></a></li>
-                                    <li><a href="https://blog.naver.com/daesik99"><img src="./img/about-icon-naver.png" alt="naver"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- right -->
-                        <div class="education-license">
-                            <div class="toggle-text-wrap">
-                                education
-                                <div class="toggle-wrap">
-                                    <div class="toggle-switch">
-                                        <!-- toggle -->
-                                    </div>
-                                </div>
-                                license
-                            </div>
-                            <!-- school -->
-                            <div class="education">
-                                <ul>
-                                    <li>
-                                        <div class="day">2022.10-2023.01</div>
-                                        <div class="name">이젠컴퓨터아트서비스학원<br/><span>SNS마케팅, 웹디자인 제작 전문가 양성과정</span></div>
-                                    </li>
-                                    <li>
-                                        <div class="day">2021.03-2022.02</div>
-                                        <div class="name">전주비전대학교 <span>컴퓨터정보과</span></div>
-                                    </li>
-                                    <li>
-                                        <div class="day">2019.09-2021.03</div>
-                                        <div class="name">대한민국 경찰청 <span>방범순찰대</span></div>
-                                    </li>
-                                    <li>
-                                        <div class="day">2018.03-2019.08</div>
-                                        <div class="name">전주비전대학교 <span>컴퓨터정보과</span></div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- license -->
-                            <div class="license">
-                                <ul>
-                                    <li>
-                                        <div class="day">2017.11</div>
-                                        <div class="name">워드프로세서1급</div>
-                                    </li>
-                                    <li>
-                                        <div class="day">2017.11</div>
-                                        <div class="name">지게차운전기능사</div>
-                                    </li>
-                                    <li>
-                                        <div class="day">2017.09</div>
-                                        <div class="name">정보처리기능사</div>
-                                    </li>
-                                    <li>
-                                        <div class="day">2017.05</div>
-                                        <div class="name">컴퓨터활용능력2급</div>
-                                    </li>
-                                    <li>
-                                        <div class="day">2016.03</div>
-                                        <div class="name">ITQ master</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <p class="comment">상상한 것을 그래픽으로 표현하는 디자이너</p>
+            <div class="img-wrap">
+              <a href="#">
+                <img src="./img/intro-profile.png" alt="" />
+              </a>
             </div>
-            <!-- hobby -->
-            <div class="hobby">
-                <div class="container">
-                    <!-- title -->
-                    <div class="title-wrap">
-                        <div class="bar"></div>
-                        <h2 class="title">hobby</h2>
-                    </div>
-                    <!-- hobby box -->
-                    <div class="hobby-box">
-                        <ul class="char-wrap">
-                            <!-- drawing -->
-                            <li>
-                                <!-- character -->
-                                <div class="img-box">
-                                    <img src="./img/char-drawing.png" alt="">
-                                </div>
-                                <!-- explanation -->
-                                <div class="txt-box">
-                                    <span class="num">01</span>
-                                    <span class="txt">
-                                        저는 낙서하는 취미를 가지고 있습니다.<br/>
-                                        일상에서의 재미있던 순간이나<br/>
-                                        특별한 순간을 간단하게 그리는게<br/>
-                                        저의 소소한 취미입니다.
-                                    </span>
-                                </div>
-                            </li>
-                            <!-- music -->
-                            <li>
-                                <div class="img-box">
-                                    <img src="./img/char-music.png" alt="">
-                                </div>
-                                <div class="txt-box">
-                                    <span class="num">02</span>
-                                    <span class="txt">
-                                        음악은 제 일상에서 70%를 차지 할 정도로<br/>
-                                        상당히 즐겨 듣는 편입니다.<br/>
-                                        음악에 따라 그 때의 분위기와 상황을<br/>
-                                        전환 시킬 수 있기 때문입니다.
-                                    </span>
-                                </div>
-                            </li>
-                            <!-- wear -->
-                            <li>
-                                <div class="img-box">
-                                    <img src="./img/char-wear.png" alt="">
-                                </div>
-                                <div class="txt-box">
-                                    <span class="num">03</span>
-                                    <span class="txt">
-                                        저는 패션도 취미 중 하나라고 생각합니다.<br/>
-                                        자신에게 어울리는 옷을 고르는 과정과<br/>
-                                        그 과정속에서 패션 트랜드를 알아가는 것이<br/>
-                                        재미있습니다.
-                                    </span>
-                                </div>
-                            </li>
-                            <!-- cafe -->
-                            <li>
-                                <div class="img-box">
-                                    <img src="./img/char-cafe.png" alt="">
-                                </div>
-                                <div class="txt-box">
-                                    <span class="num">04</span>
-                                    <span class="txt">
-                                        커피의 맛은 잘 모르지만 카페의 분위기가<br/>
-                                        좋아서 종종 시간이 날 때 마다<br/>
-                                        예쁜카페를 찾아다니는게<br/>
-                                        저의 취미입니다.
-                                    </span>
-                                </div>
-                            </li>
-                            <div class="bg-wrap">
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <!-- about -->
+        <div class="about">
+          <div class="container">
+            <!-- title -->
+            <div class="title-wrap">
+              <div class="bar"></div>
+              <h2 class="title">about</h2>
             </div>
-            <!-- skill -->
-            <div class="skill">
-                <div class="container">
-                    <!-- title-wrap -->
-                    <div class="title-wrap">
-                        <div class="bar"></div>
-                        <h2 class="title">skill</h2>
-                    </div>
-                    <!-- skill-box -->
-                    <div class="skill-box">
-                        <div class="title">design skill</div>
-                        <ul class="keyword">
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>Figma</li>
-                        </ul>
-                        <ul class="word">
-                            <li><span></span>전반적인 사이트의 컨셉을 잡고 와이어프레임을 제작하여 웹페이지로 구현 할 수 있습니다.</li>
-                            <li><span></span>레이아웃 배치와 컬러 선택을 적절히 하여 사용자들에게 편안한 느낌을 주는 디자인을 할 수 있습니다.</li>
-                            <li><span></span>자신만의 관점이 아닌 팀원 혹은 주변사람의 의견을 반영하여 더 좋은 결과물을 만들어갑니다.</li>
-                            <li><span></span>Photoshop, Illustrator를 이용하여 디자인 및 편집이 가능합니다.</li>
-                            <li><span></span>로고 디자인 기획을 할 수 있습니다.</li>
-                        </ul>
-                    </div>
-                    <!-- skill-box -->
-                    <div class="skill-box">
-                        <div class="title">develop skill</div>
-                        <ul class="keyword">
-                            <li>HTML5</li>
-                            <li>CSS</li>
-                            <li>SCSS</li>
-                            <li>Javascript(ES6+)</li>
-                            <li>jQuery</li>
-                            <li>React</li>
-                        </ul>
-                        <ul class="word">
-                            <li><span></span>적절한 Sementic tag를 사용하여 SEO 최적화 된 마크업 하는 것을 지향합니다.</li>
-                            <li><span></span>웹 표준과 웹 접근성을 준수하는 마크업을 할 수 있습니다.</li>
-                            <li><span></span>CSS, SCSS를 이용한 디자인 결과물과 흡사한 웹 페이지를 구현 할 수 있습니다.</li>
-                            <li><span></span>Mobile 환경에서도 웹 페이지를 이용할 수 있게 mediaquery를 활용한 반응형 웹 페이지를 제작 할 수 있습니다.</li>
-                            <li><span></span>Javascript, Jquery를 사용하여 웹 페이지를 인터렉티브하게 꾸밀 수 있습니다.</li>
-                        </ul>
-                    </div>
+            <!-- about box -->
+            <div class="about-box">
+              <!-- left -->
+              <div class="sik-comment">
+                <img src="./img/icon-comment.png" alt="" />
+                <p>
+                  안녕하세요. 둥글둥글한 성격의 소유자, 김대식 입니다️ <br />
+                  사용자의 시각적인 편안함과 인터렉션을 제공해주는 <br />
+                  웹 개발에 흥미와 재미를 느끼게 되어 <br />
+                  웹 디자이너와 웹 개발자로 성장하고 있습니다.
+                </p>
+              </div>
+              <!-- center -->
+              <div class="sik-info">
+                <div class="about-img">
+                  <img
+                    class="remove-img"
+                    src="./img/about-profile-remove.png"
+                    alt=""
+                  />
+                  <img src="./img/about-profile.jpg" alt="it's me" />
                 </div>
-            </div>
-            <!-- work -->
-            <div class="work">
-                <div class="container">
-                    <!-- title-wrap -->
-                    <div class="title-wrap">
-                        <div class="bar"></div>
-                        <h2 class="title">work</h2>
-                    </div>
-                    <!-- slide -->
-                    <div id='work' class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <!-- slide1 -->
-                            <div class="swiper-slide">
-                                <!-- item-bg -->
-                                <div class="item-bg"></div>
-                                <!-- item-box -->
-                                <div class="item-box">
-                                    <!-- img -->
-                                    <a href="https://s-i-k.github.io/lego-renewal/" target="_blank">
-                                        <img src="./img/work-lego.png" alt="">
-                                    </a>
-                                    <!-- text-box -->
-                                    <div class="text-box">
-                                        <div class="title">LEGO renewal site</div>
-                                        <div class="period">22.12.22 - 23.1.6</div>
-                                        <div class="desc">
-                                            레고 사이트의 디자인을 리뉴얼 하여 반응형 웹으로 제작하였으며<br/>
-                                            원래의 디자인 컨셉을 해치지 않도록 고안하였습니다.
-                                        </div>
-                                        <div class="btn-area">
-                                            <a href="https://github.com/S-I-K/lego-renewal.git" target="_blank">깃허브 보기</a>
-                                            <a href="https://s-i-k.github.io/lego-renewal/" target="_blank">사이트 바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slide2 -->
-                            <div class="swiper-slide">
-                                <!-- item-bg -->
-                                <div class="item-bg"></div>
-                                <!-- item-box -->
-                                <div class="item-box">
-                                    <!-- img -->
-                                    <a href="https://s-i-k.github.io/ezen-crayon/" target="_blank">
-                                        <img src="./img/work-crayon.png" alt="">
-                                    </a>
-                                    <!-- text-box -->
-                                    <div class="text-box">
-                                        <div class="title">CRAYON</div>
-                                        <div class="period">23.1.11 - 23.1.14</div>
-                                        <div class="desc">
-                                            4명으로 팀을 구성하여 역할을 나누어<br/>
-                                            로고제작, 디자인요소구성, 와이어프레임제작 후<br/>
-                                            제작 하였으며, 현재 반응형 웹 구현중에 있습니다.
-                                        </div>
-                                        <div class="btn-area">
-                                            <a href="https://github.com/S-I-K/ezen-crayon.git" target="_blank">깃허브 보기</a>
-                                            <a href="https://s-i-k.github.io/ezen-crayon/" target="_blank">사이트 바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slide3 -->
-                            <div class="swiper-slide">
-                                <!-- item-bg -->
-                                <div class="item-bg"></div>
-                                <!-- item-box -->
-                                <div class="item-box">
-                                    <!-- img -->
-                                    <a href="https://s-i-k.github.io/best-seller/" target="_blank">
-                                        <img src="./img/work-bestseller.png" alt="">
-                                    </a>
-                                    <!-- text-box -->
-                                    <div class="text-box">
-                                        <div class="title">Best Seller</div>
-                                        <div class="period">22.12.20 - 22.12.29</div>
-                                        <div class="desc">
-                                            디바이스에 따른 반응형 웹사이트로 제작된 쇼핑몰입니다.<br/>
-                                            반응형 슬라이드와 카드UI, 아코디언 메뉴를 중점적으로 디자인하여 배치하였습니다.
-                                        </div>
-                                        <div class="btn-area">
-                                            <a href="https://github.com/S-I-K/best-seller.git" target="_blank">깃허브 보기</a>
-                                            <a href="https://s-i-k.github.io/best-seller/" target="_blank">사이트 바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slide4 -->
-                            <div class="swiper-slide">
-                                <!-- item-bg -->
-                                <div class="item-bg"></div>
-                                <!-- item-box -->
-                                <div class="item-box">
-                                    <!-- img -->
-                                    <a href="https://s-i-k.github.io/ssiikk-shopping-mall/" target="_blank">
-                                        <img src="./img/work-ssiik.png" alt="">
-                                    </a>
-                                    <!-- text-box -->
-                                    <div class="text-box">
-                                        <div class="title">SSIIK shopping mall</div>
-                                        <div class="period">22.11.18 - 22.11.29</div>
-                                        <div class="desc">
-                                            웹 디자인을 배우고 처음으로 제작된 저만의 웹 쇼핑몰입니다.<br/>
-                                            로고, 파비콘, 와이어프레임, 컨셉을 기획하여 제작하였습니다.<br/>
-                                        </div>
-                                        <div class="btn-area">
-                                            <a href="https://github.com/S-I-K/ssiikk-shopping-mall.git" target="_blank">깃허브 보기</a>
-                                            <a href="https://s-i-k.github.io/ssiikk-shopping-mall/" target="_blank">사이트 바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slide5 -->
-                            <div class="swiper-slide">
-                                <!-- item-bg -->
-                                <div class="item-bg"></div>
-                                <!-- item-box -->
-                                <div class="item-box">
-                                    <!-- img -->
-                                    <a href="https://s-i-k.github.io/espa-shopping-mall/" target="_blank">
-                                        <img src="./img/work-lego.png" alt="">
-                                    </a>
-                                    <!-- text-box -->
-                                    <div class="text-box">
-                                        <div class="title">ESPA</div>
-                                        <div class="period">22.11.24 - 22.11.29</div>
-                                        <div class="desc">
-                                            메인 배너 슬라이드와 컨텐츠 슬라이드 부분을 학습하기 위해 제작된 홈페이지입니다.<br/>
-                                            css만을 이용해 카테고리별로 컨텐츠가 다르게 보여지게 하였습니다.
-                                        </div>
-                                        <div class="btn-area">
-                                            <a href="https://github.com/S-I-K/lego-renewal.git" target="_blank">깃허브 보기</a>
-                                            <a href="https://s-i-k.github.io/espa-shopping-mall/" target="_blank">사이트 바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                    <!-- slide -->
-                    <div id='work' class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <!-- slide1 -->
-                            <div class="swiper-slide">
-                                <!-- item-bg -->
-                                <div class="item-bg"></div>
-                                <!-- item-box -->
-                                <div class="item-box">
-                                    <!-- img -->
-                                    <a href="#" target="_blank">
-                                        <img src="./img/work-item1.png" alt="">
-                                    </a>
-                                    <!-- text-box -->
-                                    <div class="text-box">
-                                        <div class="title">Maplestory charactor</div>
-                                        <div class="desc">
-                                            학창시절을 책임져준 게임, 메이플스토리<br/>
-                                            가끔 마구 스케치하다보면<br/>
-                                            어느새 메이플스토리 팬아트를 그리곤 합니다.
-                                        </div>
-                                        <div class="btn-area">
-                                            <a href="https://s-i-k.github.io/lego-renewal/" target="_blank">사이트 바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slide2 -->
-                            <div class="swiper-slide">
-                                <!-- item-bg -->
-                                <div class="item-bg"></div>
-                                <!-- item-box -->
-                                <div class="item-box">
-                                    <!-- img -->
-                                    <a href="#" target="_blank">
-                                        <img src="./img/work-item2.png" alt="">
-                                    </a>
-                                    <!-- text-box -->
-                                    <div class="text-box">
-                                        <div class="title">-</div>
-                                        <div class="desc">
-                                            여자친구와 100일 기념으로 주문제작케이크를 주문할 때<br/>
-                                            그렸던 여자친구와 저의 캐릭터 그림입니다.
-                                        </div>
-                                        <div class="btn-area">
-                                            <a href="https://s-i-k.github.io/lego-renewal/" target="_blank">사이트 바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slide3 -->
-                            <div class="swiper-slide">
-                                <!-- item-bg -->
-                                <div class="item-bg"></div>
-                                <!-- item-box -->
-                                <div class="item-box">
-                                    <!-- img -->
-                                    <a href="https://s-i-k.github.io/lego-renewal/" target="_blank">
-                                        <img src="./img/work-item3.png" alt="">
-                                    </a>
-                                    <!-- text-box -->
-                                    <div class="text-box">
-                                        <div class="title">-</div>
-                                        <div class="desc">
-                                            핀터레스트를 돌아다니다가 귀여운 그림이 있길래<br/>
-                                            모작하여 그린 낙서입니다.
-                                        </div>
-                                        <div class="btn-area">
-                                            <a href="https://s-i-k.github.io/lego-renewal/" target="_blank">사이트 바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- slide4 -->
-                            <div class="swiper-slide">
-                                <!-- item-bg -->
-                                <div class="item-bg"></div>
-                                <!-- item-box -->
-                                <div class="item-box">
-                                    <!-- img -->
-                                    <a href="https://s-i-k.github.io/lego-renewal/" target="_blank">
-                                        <img src="./img/work-item4.png" alt="">
-                                    </a>
-                                    <!-- text-box -->
-                                    <div class="text-box">
-                                        <div class="title">Maplestory</div>
-                                        <div class="desc">
-                                            어느 게임이든 조용히 플레이하는걸 좋아합니다.<br/>
-                                            그런데 메이플에서는 친구목록에 친구가 없으면<br/>
-                                            이야기 할 친구가 없다고 뜨는게 마음이 아픕니다 흩흩,,
-                                        </div>
-                                        <div class="btn-area">
-                                            <a href="https://s-i-k.github.io/lego-renewal/" target="_blank">사이트 바로가기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
+                <div class="about-name-sns">
+                  <div class="user-box">
+                    <span class="name">김대식</span>
+                    <span class="birth">1999.8.5</span>
+                    <span class="phone">010-2801-7386</span>
+                    <span class="email">daesik99@naver.com</span>
+                  </div>
+                  <ul class="sns-box">
+                    <li>
+                      <a href="https://github.com/S-I-K"
+                        ><img src="./img/about-icon-github.png" alt="github"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/99.8.5.22.44/"
+                        ><img
+                          src="./img/about-icon-instagram.png"
+                          alt="instagram"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="https://blog.naver.com/daesik99"
+                        ><img src="./img/about-icon-naver.png" alt="naver"
+                      /></a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <!-- right -->
+              <div class="education-license">
+                <div class="toggle-text-wrap">
+                  education
+                  <div class="toggle-wrap">
+                    <div class="toggle-switch">
+                      <!-- toggle -->
+                    </div>
+                  </div>
+                  license
+                </div>
+                <!-- school -->
+                <div class="education">
+                  <ul>
+                    <li>
+                      <div class="day">2022.10-2023.01</div>
+                      <div class="name">
+                        이젠컴퓨터아트서비스학원<br /><span
+                          >SNS마케팅, 웹디자인 제작 전문가 양성과정</span
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="day">2021.03-2022.02</div>
+                      <div class="name">
+                        전주비전대학교 <span>컴퓨터정보과</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="day">2019.09-2021.03</div>
+                      <div class="name">
+                        대한민국 경찰청 <span>방범순찰대</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="day">2018.03-2019.08</div>
+                      <div class="name">
+                        전주비전대학교 <span>컴퓨터정보과</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- license -->
+                <div class="license">
+                  <ul>
+                    <li>
+                      <div class="day">2017.11</div>
+                      <div class="name">워드프로세서1급</div>
+                    </li>
+                    <li>
+                      <div class="day">2017.11</div>
+                      <div class="name">지게차운전기능사</div>
+                    </li>
+                    <li>
+                      <div class="day">2017.09</div>
+                      <div class="name">정보처리기능사</div>
+                    </li>
+                    <li>
+                      <div class="day">2017.05</div>
+                      <div class="name">컴퓨터활용능력2급</div>
+                    </li>
+                    <li>
+                      <div class="day">2016.03</div>
+                      <div class="name">ITQ master</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </main>
+          </div>
+        </div>
+        <!-- hobby -->
+        <div class="hobby">
+          <div class="container">
+            <!-- title -->
+            <div class="title-wrap">
+              <div class="bar"></div>
+              <h2 class="title">hobby</h2>
+            </div>
+            <!-- hobby box -->
+            <div class="hobby-box">
+              <ul class="char-wrap">
+                <!-- drawing -->
+                <li>
+                  <!-- character -->
+                  <div class="img-box">
+                    <img src="./img/char-drawing.png" alt="" />
+                  </div>
+                  <!-- explanation -->
+                  <div class="txt-box">
+                    <span class="num">01</span>
+                    <span class="txt">
+                      저는 낙서하는 취미를 가지고 있습니다.<br />
+                      일상에서의 재미있던 순간이나<br />
+                      특별한 순간을 간단하게 그리는게<br />
+                      저의 소소한 취미입니다.
+                    </span>
+                  </div>
+                </li>
+                <!-- music -->
+                <li>
+                  <div class="img-box">
+                    <img src="./img/char-music.png" alt="" />
+                  </div>
+                  <div class="txt-box">
+                    <span class="num">02</span>
+                    <span class="txt">
+                      음악은 제 일상에서 70%를 차지 할 정도로<br />
+                      상당히 즐겨 듣는 편입니다.<br />
+                      음악에 따라 그 때의 분위기와 상황을<br />
+                      전환 시킬 수 있기 때문입니다.
+                    </span>
+                  </div>
+                </li>
+                <!-- wear -->
+                <li>
+                  <div class="img-box">
+                    <img src="./img/char-wear.png" alt="" />
+                  </div>
+                  <div class="txt-box">
+                    <span class="num">03</span>
+                    <span class="txt">
+                      저는 패션도 취미 중 하나라고 생각합니다.<br />
+                      자신에게 어울리는 옷을 고르는 과정과<br />
+                      그 과정속에서 패션 트랜드를 알아가는 것이<br />
+                      재미있습니다.
+                    </span>
+                  </div>
+                </li>
+                <!-- cafe -->
+                <li>
+                  <div class="img-box">
+                    <img src="./img/char-cafe.png" alt="" />
+                  </div>
+                  <div class="txt-box">
+                    <span class="num">04</span>
+                    <span class="txt">
+                      커피의 맛은 잘 모르지만 카페의 분위기가<br />
+                      좋아서 종종 시간이 날 때 마다<br />
+                      예쁜카페를 찾아다니는게<br />
+                      저의 취미입니다.
+                    </span>
+                  </div>
+                </li>
+                <div class="bg-wrap">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- skill -->
+        <div class="skill">
+          <div class="container">
+            <!-- title-wrap -->
+            <div class="title-wrap">
+              <div class="bar"></div>
+              <h2 class="title">skill</h2>
+            </div>
+            <!-- skill-box -->
+            <div class="skill-box">
+              <div class="title">design skill</div>
+              <ul class="skill-icons">
+                <li>
+                  <img src="./img/skill-ps.png" alt="" />
+                  <div class="progress">70%</div>
+                </li>
+                <li>
+                  <img src="./img/skill-ai.png" alt="" />
+                  <div class="progress">80%</div>
+                </li>
+                <li>
+                  <img src="./img/skill-figma.png" alt="" />
+                  <div class="progress">60%</div>
+                </li>
+              </ul>
+              <ul class="keyword">
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Figma</li>
+              </ul>
+              <ul class="word">
+                <li>
+                  <span></span>전반적인 사이트의 컨셉을 잡고 와이어프레임을
+                  제작하여 웹페이지로 구현 할 수 있습니다.
+                </li>
+                <li>
+                  <span></span>레이아웃 배치와 컬러 선택을 적절히 하여
+                  사용자들에게 편안한 느낌을 주는 디자인을 할 수 있습니다.
+                </li>
+                <li>
+                  <span></span>자신만의 관점이 아닌 팀원 혹은 주변사람의 의견을
+                  반영하여 더 좋은 결과물을 만들어갑니다.
+                </li>
+                <li>
+                  <span></span>Photoshop, Illustrator를 이용하여 디자인 및
+                  편집이 가능합니다.
+                </li>
+                <li><span></span>로고 디자인 기획을 할 수 있습니다.</li>
+              </ul>
+            </div>
+            <!-- skill-box -->
+            <div class="skill-box">
+              <div class="title">develop skill</div>
+              <ul class="skill-icons">
+                <li>
+                  <img src="./img/skill-html.png" alt="" />
+                  <div class="progress">100%</div>
+                </li>
+                <li>
+                  <img src="./img/skill-css.png" alt="" />
+                  <div class="progress">100%</div>
+                </li>
+                <li>
+                  <img src="./img/skill-js.png" alt="" />
+                  <div class="progress">70%</div>
+                </li>
+                <li>
+                  <img src="./img/skill-jq.png" alt="" />
+                  <div class="progress">80%</div>
+                </li>
+                <li>
+                  <img src="./img/skill-react.png" alt="" />
+                  <div class="progress">60%</div>
+                </li>
+              </ul>
+              <ul class="keyword">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>SCSS</li>
+                <li>Javascript(ES6+)</li>
+                <li>jQuery</li>
+                <li>React</li>
+              </ul>
+              <ul class="word">
+                <li>
+                  <span></span>적절한 Sementic tag를 사용하여 SEO 최적화 된
+                  마크업 하는 것을 지향합니다.
+                </li>
+                <li>
+                  <span></span>웹 표준과 웹 접근성을 준수하는 마크업을 할 수
+                  있습니다.
+                </li>
+                <li>
+                  <span></span>CSS, SCSS를 이용한 디자인 결과물과 흡사한 웹
+                  페이지를 구현 할 수 있습니다.
+                </li>
+                <li>
+                  <span></span>Mobile 환경에서도 웹 페이지를 이용할 수 있게
+                  mediaquery를 활용한 반응형 웹 페이지를 제작 할 수 있습니다.
+                </li>
+                <li>
+                  <span></span>Javascript, Jquery를 사용하여 웹 페이지를
+                  인터렉티브하게 꾸밀 수 있습니다.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- work -->
+        <div class="work">
+          <div class="container">
+            <!-- title-wrap -->
+            <div class="title-wrap">
+              <div class="bar"></div>
+              <h2 class="title">work</h2>
+            </div>
+            <!-- slide -->
+            <div id="work" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- slide1 -->
+                <div class="swiper-slide">
+                  <!-- item-bg -->
+                  <div class="item-bg"></div>
+                  <!-- item-box -->
+                  <div class="item-box">
+                    <!-- img -->
+                    <a
+                      href="https://s-i-k.github.io/lego-renewal/"
+                      target="_blank"
+                    >
+                      <img src="./img/work-lego.png" alt="" />
+                    </a>
+                    <!-- text-box -->
+                    <div class="text-box">
+                      <div class="title">LEGO renewal site</div>
+                      <div class="period">22.12.22 - 23.1.6</div>
+                      <div class="desc">
+                        레고 사이트의 디자인을 리뉴얼 하여 반응형 웹으로
+                        제작하였으며<br />
+                        원래의 디자인 컨셉을 해치지 않도록 고안하였습니다.
+                      </div>
+                      <div class="btn-area">
+                        <a
+                          href="https://github.com/S-I-K/lego-renewal.git"
+                          target="_blank"
+                          >깃허브 보기</a
+                        >
+                        <a
+                          href="https://s-i-k.github.io/lego-renewal/"
+                          target="_blank"
+                          >사이트 바로가기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide2 -->
+                <div class="swiper-slide">
+                  <!-- item-bg -->
+                  <div class="item-bg"></div>
+                  <!-- item-box -->
+                  <div class="item-box">
+                    <!-- img -->
+                    <a
+                      href="https://s-i-k.github.io/ezen-crayon/"
+                      target="_blank"
+                    >
+                      <img src="./img/work-crayon.png" alt="" />
+                    </a>
+                    <!-- text-box -->
+                    <div class="text-box">
+                      <div class="title">CRAYON</div>
+                      <div class="period">23.1.11 - 23.1.14</div>
+                      <div class="desc">
+                        4명으로 팀을 구성하여 역할을 나누어<br />
+                        로고제작, 디자인요소구성, 와이어프레임제작 후<br />
+                        제작 하였으며, 현재 반응형 웹 구현중에 있습니다.
+                      </div>
+                      <div class="btn-area">
+                        <a
+                          href="https://github.com/S-I-K/ezen-crayon.git"
+                          target="_blank"
+                          >깃허브 보기</a
+                        >
+                        <a
+                          href="https://s-i-k.github.io/ezen-crayon/"
+                          target="_blank"
+                          >사이트 바로가기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide3 -->
+                <div class="swiper-slide">
+                  <!-- item-bg -->
+                  <div class="item-bg"></div>
+                  <!-- item-box -->
+                  <div class="item-box">
+                    <!-- img -->
+                    <a
+                      href="https://s-i-k.github.io/best-seller/"
+                      target="_blank"
+                    >
+                      <img src="./img/work-bestseller.png" alt="" />
+                    </a>
+                    <!-- text-box -->
+                    <div class="text-box">
+                      <div class="title">Best Seller</div>
+                      <div class="period">22.12.20 - 22.12.29</div>
+                      <div class="desc">
+                        디바이스에 따른 반응형 웹사이트로 제작된
+                        쇼핑몰입니다.<br />
+                        반응형 슬라이드와 카드UI, 아코디언 메뉴를 중점적으로
+                        디자인하여 배치하였습니다.
+                      </div>
+                      <div class="btn-area">
+                        <a
+                          href="https://github.com/S-I-K/best-seller.git"
+                          target="_blank"
+                          >깃허브 보기</a
+                        >
+                        <a
+                          href="https://s-i-k.github.io/best-seller/"
+                          target="_blank"
+                          >사이트 바로가기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide4 -->
+                <div class="swiper-slide">
+                  <!-- item-bg -->
+                  <div class="item-bg"></div>
+                  <!-- item-box -->
+                  <div class="item-box">
+                    <!-- img -->
+                    <a
+                      href="https://s-i-k.github.io/ssiikk-shopping-mall/"
+                      target="_blank"
+                    >
+                      <img src="./img/work-ssiik.png" alt="" />
+                    </a>
+                    <!-- text-box -->
+                    <div class="text-box">
+                      <div class="title">SSIIK shopping mall</div>
+                      <div class="period">22.11.18 - 22.11.29</div>
+                      <div class="desc">
+                        웹 디자인을 배우고 처음으로 제작된 저만의 웹
+                        쇼핑몰입니다.<br />
+                        로고, 파비콘, 와이어프레임, 컨셉을 기획하여
+                        제작하였습니다.<br />
+                      </div>
+                      <div class="btn-area">
+                        <a
+                          href="https://github.com/S-I-K/ssiikk-shopping-mall.git"
+                          target="_blank"
+                          >깃허브 보기</a
+                        >
+                        <a
+                          href="https://s-i-k.github.io/ssiikk-shopping-mall/"
+                          target="_blank"
+                          >사이트 바로가기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide5 -->
+                <div class="swiper-slide">
+                  <!-- item-bg -->
+                  <div class="item-bg"></div>
+                  <!-- item-box -->
+                  <div class="item-box">
+                    <!-- img -->
+                    <a
+                      href="https://s-i-k.github.io/espa-shopping-mall/"
+                      target="_blank"
+                    >
+                      <img src="./img/work-lego.png" alt="" />
+                    </a>
+                    <!-- text-box -->
+                    <div class="text-box">
+                      <div class="title">ESPA</div>
+                      <div class="period">22.11.24 - 22.11.29</div>
+                      <div class="desc">
+                        메인 배너 슬라이드와 컨텐츠 슬라이드 부분을 학습하기
+                        위해 제작된 홈페이지입니다.<br />
+                        css만을 이용해 카테고리별로 컨텐츠가 다르게 보여지게
+                        하였습니다.
+                      </div>
+                      <div class="btn-area">
+                        <a
+                          href="https://github.com/S-I-K/lego-renewal.git"
+                          target="_blank"
+                          >깃허브 보기</a
+                        >
+                        <a
+                          href="https://s-i-k.github.io/espa-shopping-mall/"
+                          target="_blank"
+                          >사이트 바로가기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <!-- slide -->
+            <div id="work" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- slide1 -->
+                <div class="swiper-slide">
+                  <!-- item-bg -->
+                  <div class="item-bg"></div>
+                  <!-- item-box -->
+                  <div class="item-box">
+                    <!-- img -->
+                    <a href="#" target="_blank">
+                      <img src="./img/work-item1.png" alt="" />
+                    </a>
+                    <!-- text-box -->
+                    <div class="text-box">
+                      <div class="title">Maplestory charactor</div>
+                      <div class="desc">
+                        학창시절을 책임져준 게임, 메이플스토리<br />
+                        가끔 마구 스케치하다보면<br />
+                        어느새 메이플스토리 팬아트를 그리곤 합니다.
+                      </div>
+                      <div class="btn-area">
+                        <a
+                          href="https://s-i-k.github.io/lego-renewal/"
+                          target="_blank"
+                          >사이트 바로가기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide2 -->
+                <div class="swiper-slide">
+                  <!-- item-bg -->
+                  <div class="item-bg"></div>
+                  <!-- item-box -->
+                  <div class="item-box">
+                    <!-- img -->
+                    <a href="#" target="_blank">
+                      <img src="./img/work-item2.png" alt="" />
+                    </a>
+                    <!-- text-box -->
+                    <div class="text-box">
+                      <div class="title">-</div>
+                      <div class="desc">
+                        여자친구와 100일 기념으로 주문제작케이크를 주문할 때<br />
+                        그렸던 여자친구와 저의 캐릭터 그림입니다.
+                      </div>
+                      <div class="btn-area">
+                        <a
+                          href="https://s-i-k.github.io/lego-renewal/"
+                          target="_blank"
+                          >사이트 바로가기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide3 -->
+                <div class="swiper-slide">
+                  <!-- item-bg -->
+                  <div class="item-bg"></div>
+                  <!-- item-box -->
+                  <div class="item-box">
+                    <!-- img -->
+                    <a
+                      href="https://s-i-k.github.io/lego-renewal/"
+                      target="_blank"
+                    >
+                      <img src="./img/work-item3.png" alt="" />
+                    </a>
+                    <!-- text-box -->
+                    <div class="text-box">
+                      <div class="title">-</div>
+                      <div class="desc">
+                        핀터레스트를 돌아다니다가 귀여운 그림이 있길래<br />
+                        모작하여 그린 낙서입니다.
+                      </div>
+                      <div class="btn-area">
+                        <a
+                          href="https://s-i-k.github.io/lego-renewal/"
+                          target="_blank"
+                          >사이트 바로가기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide4 -->
+                <div class="swiper-slide">
+                  <!-- item-bg -->
+                  <div class="item-bg"></div>
+                  <!-- item-box -->
+                  <div class="item-box">
+                    <!-- img -->
+                    <a
+                      href="https://s-i-k.github.io/lego-renewal/"
+                      target="_blank"
+                    >
+                      <img src="./img/work-item4.png" alt="" />
+                    </a>
+                    <!-- text-box -->
+                    <div class="text-box">
+                      <div class="title">Maplestory</div>
+                      <div class="desc">
+                        어느 게임이든 조용히 플레이하는걸 좋아합니다.<br />
+                        그런데 메이플에서는 친구목록에 친구가 없으면<br />
+                        이야기 할 친구가 없다고 뜨는게 마음이 아픕니다 흩흩,,
+                      </div>
+                      <div class="btn-area">
+                        <a
+                          href="https://s-i-k.github.io/lego-renewal/"
+                          target="_blank"
+                          >사이트 바로가기</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </main>
 
-        <!-- footer -->
-        <footer>
-            <div class="container">
-                <!-- logo -->
-                <div class="footer-img-box">
-                    <img src="./img/footer-logo.png" alt="footer logo">
-                </div>
-                <!-- sns -->
-                <ul class="footer-sns">
-                    <li><a href="https://github.com/S-I-K"><img src="./img/footer-icon-github.png" alt="github"></a></li>
-                    <li><a href="https://www.instagram.com/99.8.5.22.44/"><img src="./img/footer-icon-instagram.png" alt="instagram"></a></li>
-                    <li><a href="https://blog.naver.com/daesik99"><img src="./img/footer-icon-naver.png" alt="naver"></a></li>
-                </ul>
-                <!-- copy -->
-                <div class="copy">Copyright 2022. SIK. All rights reserved.</div>
-            </div>
-        </footer>
+      <!-- footer -->
+      <footer>
+        <div class="container">
+          <!-- logo -->
+          <div class="footer-img-box">
+            <img src="./img/footer-logo.png" alt="footer logo" />
+          </div>
+          <!-- sns -->
+          <ul class="footer-sns">
+            <li>
+              <a href="https://github.com/S-I-K"
+                ><img src="./img/footer-icon-github.png" alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/99.8.5.22.44/"
+                ><img src="./img/footer-icon-instagram.png" alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://blog.naver.com/daesik99"
+                ><img src="./img/footer-icon-naver.png" alt="naver"
+              /></a>
+            </li>
+          </ul>
+          <!-- copy -->
+          <div class="copy">Copyright 2022. SIK. All rights reserved.</div>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
