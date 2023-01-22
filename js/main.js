@@ -32,4 +32,22 @@ $(()=>{
             prevEl: ".swiper-button-prev",
         },
     });
+
+    /* 숫자 증가 애니메이션 */
+    $('.progress').each(function(){
+        /* 각각의 data-rate 옵션을 변수에 저장 */
+        let $this = $(this),
+            dataRate = $this.attr('data-rate');
+
+        /* animate 함수를 이용해서 숫자가 차례차례 올라가게 함 */
+        /* 임의의 함수 rate의 초기값을 정해주고 rate가 목표치까지 증가 */
+        $({rate: $this.text()}).animate({rate: dataRate}, {
+            duration: 3000,
+            easing: 'linear',
+            /* step이라는 기명함수로 각각의 숫자($this)에 목표치 숫자를 대입하여 UI에 표현 */
+            step: function(){
+                $this.text(Math.ceil(this.rate)+"%");
+            }
+        })
+    });
 });
