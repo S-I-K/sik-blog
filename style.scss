@@ -625,43 +625,93 @@ $white-color: #fff;
                 z-index: -1;
               }
               .item-box {
-                border: 1px solid red;
+                // border: 1px solid red;
+                width: 100%;
                 height: 100%;
                 display: flex;
                 align-items: flex-end;
-                justify-content: center;
-                a {
-                  display: block;
+                justify-content: space-between;
+                a.thumb {
+                  // border: 1px solid orange;
+                  display: flex;
+                  width: 48%;
+                  height: 100%;
+                  align-items: center;
+                  justify-content: flex-end;
                   img {
-                    width: 400px;
-                    margin-right: 40px;
+                    // border: 1px solid orange;
+                    width: 440px;
                     transition: all 0.4s;
                   }
                 }
-                a:hover {
+                a.thumb:hover {
                   img {
                     transform: scale(1.1);
                   }
                 }
                 .text-box {
+                  // border: 1px solid orange;
                   display: flex;
                   flex-direction: column;
                   align-items: flex-start;
                   justify-content: center;
-                  width: 400px;
-                  .title {
-                    color: $main-font-color;
-                    font-family: $en-font;
-                    letter-spacing: -3%;
-                    font-size: 28px;
-                    font-weight: 600;
+                  width: 48%;
+                  height: 100%;
+                  .title-period {
+                    display: flex;
+                    align-items: center;
+                    .title {
+                      color: $main-font-color;
+                      font-family: $en-font;
+                      letter-spacing: -3%;
+                      font-size: 24px;
+                      font-weight: 700;
+                      margin-right: 10px;
+                    }
+                    .period {
+                      color: $sub-font-color;
+                      font-family: $en-font;
+                      font-weight: 600;
+                      font-size: 16px;
+                      letter-spacing: -0.03em;
+                    }
                   }
-                  .period {
-                    color: $main-font-color;
-                    font-family: $en-font;
-                    font-weight: 600;
-                    font-size: 18px;
-                    letter-spacing: -0.03em;
+                  .person {
+                    display: flex;
+                    border: 1px solid $main-color;
+                    border-radius: 300px;
+                    padding: 4px 10px;
+                    margin: 8px 0;
+                    li {
+                      font-family: $kr-font;
+                      font-size: 16px;
+                      color: $main-font-color;
+                      font-weight: 500;
+                      display: flex;
+                      align-items: center;
+                      letter-spacing: -.03em;
+                      img {
+                        width: 22px;
+                        height: 22px;
+                        margin-right: 4px;
+                      }
+                    }
+                    li:not(:last-child){
+                      margin-right: 20px;
+                    }
+                  }
+                  .use-skill {
+                    display: flex;
+                    li {
+                      width: 26px;
+                      height: 26px;
+                      img {
+                        width: 100%;
+                      }
+                    }
+                    li:not(:last-child){
+                      margin-right: 10px;
+                    }
                   }
                   .desc {
                     color: #555555;
@@ -670,7 +720,7 @@ $white-color: #fff;
                     font-weight: 500;
                     text-align: left;
                     letter-spacing: -0.03em;
-                    margin: 20px 0;
+                    margin: 24px 0;
                   }
                   .btn-area {
                     display: flex;

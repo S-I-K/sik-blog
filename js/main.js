@@ -23,16 +23,15 @@ $(()=>{
     var work = new Swiper("#work", {
         slidesPerView: 'auto',
         spaceBetween: 40,
-        autoplay: {
+        /* autoplay: {
             delay: 5000,
             disableOnInteraction: false,
-        },
+        }, */
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
     });
-
     /* 숫자 증가 애니메이션 */
     $('.progress').each(function(){
         /* 각각의 data-rate 옵션을 변수에 저장 */
@@ -49,5 +48,11 @@ $(()=>{
                 $this.text(Math.ceil(this.rate)+"%");
             }
         })
+    });
+
+    $('.skill-box').scrollToGiveClass({
+        class: "action",
+        baseline: "middle",
+        add: 300,
     });
 });
