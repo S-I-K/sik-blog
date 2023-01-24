@@ -11,7 +11,7 @@
   #wrap header .container .logo-area .header-logo {
     height: 38px;
   }
-  #wrap header .container ul li a {
+  #wrap header .container ul.gnb li a {
     font-size: 0.9rem;
   }
   #wrap main {
@@ -197,7 +197,7 @@
     /* main */
     /* footer */
   }
-  #wrap header .container ul li a {
+  #wrap header .container ul.gnb li a {
     display: none;
   }
   #wrap main {

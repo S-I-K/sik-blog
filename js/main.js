@@ -55,4 +55,11 @@ $(()=>{
         baseline: "middle",
         add: 300,
     });
+
+    $('.gnb > li > a').click(function(){
+        $('html,body').stop().animate({scrollTop:$(this.hash).offset().top}, {
+            duration: 800,
+            easing: 'easeInOutQuad'
+        });
+    });
 });

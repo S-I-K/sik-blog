@@ -20,7 +20,7 @@
             height: 38px;
           }
         }
-        ul {
+        ul.gnb {
           li {
             a {
               font-size: 0.9rem;
@@ -282,7 +282,7 @@
     /* header */
     header {
       .container {
-        ul {
+        ul.gnb {
           li {
             a {
               display: none;

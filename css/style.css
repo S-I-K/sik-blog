@@ -69,12 +69,12 @@ li {
 #wrap header .container .logo-area .header-logo {
   height: 54px;
 }
-#wrap header .container ul {
+#wrap header .container ul.gnb {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#wrap header .container ul li a {
+#wrap header .container ul.gnb li a {
   display: block;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
@@ -82,10 +82,10 @@ li {
   color: #a8a8a8;
   transition: all 0.4s;
 }
-#wrap header .container ul li a:hover {
+#wrap header .container ul.gnb li a:hover {
   color: #fff;
 }
-#wrap header .container ul li:not(:last-child) {
+#wrap header .container ul.gnb li:not(:last-child) {
   margin-right: 40px;
 }
 #wrap main {
