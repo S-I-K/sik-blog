@@ -146,6 +146,33 @@
           }
         }
       }
+      .hobby.scrolled {
+        .container {
+          .hobby-box {
+            .char-wrap {
+              li {
+                .txt-box {
+                }
+              }
+              li:nth-child(1) {
+                .txt-box {
+                  transition-delay: 0s;
+                }
+              }
+              li:nth-child(3) {
+                .txt-box {
+                  transition-delay: 0.8s;
+                }
+              }
+              li:nth-child(1) {
+                .txt-box {
+                  transition-delay: 1.2s;
+                }
+              }
+            }
+          }
+        }
+      }
       /* skill */
       .skill {
         .container {

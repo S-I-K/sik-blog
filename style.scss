@@ -487,6 +487,8 @@ $white-color: #fff;
                 align-items: flex-start;
                 justify-content: center;
                 width: 110%;
+                transform: translateX(-300px);
+                opacity: 0;
                 .num {
                   font-family: $en-font;
                   font-size: 24px;
@@ -507,6 +509,7 @@ $white-color: #fff;
               .txt-box {
                 bottom: auto;
                 top: -120px;
+                transform: translateX(300px);
               }
             }
             li:not(:last-child) {
@@ -530,6 +533,36 @@ $white-color: #fff;
             }
             .circle:not(:last-child) {
               margin-right: 120px;
+            }
+          }
+        }
+      }
+    }
+    .hobby.scrolled {
+      .container {
+        .hobby-box {
+          .char-wrap {
+            li {
+              .txt-box {
+                opacity: 1;
+                transform: translateX(0);
+                transition: all 0.8s;
+              }
+            }
+            li:nth-child(4) {
+              .txt-box {
+                transition-delay: 0.4s;
+              }
+            }
+            li:nth-child(3) {
+              .txt-box {
+                transition-delay: 0.8s;
+              }
+            }
+            li:nth-child(1) {
+              .txt-box {
+                transition-delay: 1.2s;
+              }
             }
           }
         }

@@ -458,6 +458,8 @@ li {
   align-items: flex-start;
   justify-content: center;
   width: 110%;
+  transform: translateX(-300px);
+  opacity: 0;
 }
 #wrap main .hobby .container .hobby-box .char-wrap li .txt-box .num {
   font-family: "Montserrat", sans-serif;
@@ -476,6 +478,7 @@ li {
 #wrap main .hobby .container .hobby-box .char-wrap li:nth-child(even) .txt-box {
   bottom: auto;
   top: -120px;
+  transform: translateX(300px);
 }
 #wrap main .hobby .container .hobby-box .char-wrap li:not(:last-child) {
   margin-right: 40px;
@@ -498,6 +501,20 @@ li {
 }
 #wrap main .hobby .container .hobby-box .bg-wrap .circle:not(:last-child) {
   margin-right: 120px;
+}
+#wrap main .hobby.scrolled .container .hobby-box .char-wrap li .txt-box {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.8s;
+}
+#wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(4) .txt-box {
+  transition-delay: 0.4s;
+}
+#wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(3) .txt-box {
+  transition-delay: 0.8s;
+}
+#wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(1) .txt-box {
+  transition-delay: 1.2s;
 }
 #wrap main .skill {
   display: flex;

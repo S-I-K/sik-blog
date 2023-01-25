@@ -102,6 +102,15 @@
     margin-right: 0;
     margin-bottom: 40px;
   }
+  #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(1) .txt-box {
+    transition-delay: 0s;
+  }
+  #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(3) .txt-box {
+    transition-delay: 0.8s;
+  }
+  #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(1) .txt-box {
+    transition-delay: 1.2s;
+  }
   #wrap main .skill .container .title-wrap .title {
     font-size: 2rem;
   }

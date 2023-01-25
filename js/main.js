@@ -53,45 +53,22 @@ $(() => {
   //   );
   // });
 
-  var count0 = (count1 = count2 = 0);
-  var countNum = $(".counter").attr("data-count");
+  /* ezen: scroll reactive prgoress animation */
+  // var count0 = 0;
+  // var countNum = $(".counter").attr("data-count");
 
-  function timeCounter() {
-    id0 = setInterval(count0Fn, 25);
+  // function timeCounter() {
+  //   id0 = setInterval(count0Fn, 25);
 
-    function count0Fn() {
-      count0++;
-      if (count0 > countNum) {
-        clearInterval(id0);
-      } else {
-        $(".counter").eq(0).text(count0);
-      }
-    }
-  }
-
-  var currentDirection = ""; // 현재의 방향을 나타내는 변수
-  var lastScrollTop = 0; // 방향을 구하기 위해 사용되는 변수
-
-  $(window).scroll(function (event) {
-    var currentPos = $(this).scrollTop();
-    if ($(window).scrollTop() + $(window).height() > 2800) {
-      // 이벤트 실행시킬 지점
-      // 아래로 스크롤 중
-      if (currentDirection != "down") {
-        currentDirection = "down";
-        console.log("a");
-        timeCounter();
-      }
-    } else {
-      // 위로 스크롤 중
-      if (currentDirection != "up") {
-        currentDirection = "up";
-        console.log("b");
-        count0 = 0;
-      }
-    }
-    lastScrollTop = currentPos;
-  });
+  //   function count0Fn() {
+  //     count0++;
+  //     if (count0 > countNum) {
+  //       clearInterval(id0);
+  //     } else {
+  //       $(".counter").eq(0).text(count0);
+  //     }
+  //   }
+  // }
 
   /* gnb */
   $(".gnb > li > a").click(function () {
@@ -119,4 +96,46 @@ $(() => {
     baseline: "middle",
     add: 100,
   });
+  /* work */
+  $(".hobby").scrollToGiveClass({
+    class: "scrolled",
+    baseline: "middle",
+    add: 40,
+  });
 });
+
+(function ($) {
+  $(function () {
+    var currentDirection = ""; // 현재의 방향을 나타내는 변수
+    var lastScrollTop = 0; // 방향을 구하기 위해 사용되는 변수
+
+    $(window).scroll(function (event) {
+      var currentPos = $(this).scrollTop();
+      if ($(window).scrollTop() + $(window).height() > 2800) {
+        // 이벤트 실행시킬 지점
+        // 아래로 스크롤 중
+        if (currentDirection != "down") {
+          currentDirection = "down";
+          $("#ct-1").counterUp({
+            delay: 10,
+            time: 1000,
+          });
+          $("#ct-2").counterUp({
+            delay: 10,
+            time: 1000,
+          });
+          $("#ct-3").counterUp({
+            delay: 10,
+            time: 1000,
+          });
+        }
+      } else {
+        // 위로 스크롤 중
+        if (currentDirection != "up") {
+          currentDirection = "up";
+        }
+      }
+      lastScrollTop = currentPos;
+    });
+  });
+})(jQuery);
