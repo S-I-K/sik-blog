@@ -124,6 +124,9 @@
   #wrap main .work .container .title-wrap .title {
     font-size: 2rem;
   }
+  #wrap main .work .container #work {
+    width: 40%;
+  }
   #wrap main .work .container #work .swiper-wrapper .swiper-slide {
     height: 380px;
   }
@@ -132,6 +135,7 @@
   }
   #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box {
     padding: 0 40px;
+    opacity: 0;
   }
   #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a.thumb {
     width: 46%;
@@ -172,6 +176,14 @@
   #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .btn-area a {
     font-size: 0.8rem;
   }
+  #wrap main .work.scrolled .container #work {
+    width: 100%;
+  }
+  #wrap main .work.scrolled .container #work .swiper-wrapper .swiper-slide .item-box {
+    opacity: 1;
+    transition: all 1s;
+    transition-delay: 0.8s;
+  }
   #wrap footer .container .footer-img-box {
     width: 100px;
   }
@@ -197,8 +209,14 @@
     /* main */
     /* footer */
   }
-  #wrap header .container ul.gnb li a {
+  #wrap header .container {
+    justify-content: center;
+  }
+  #wrap header .container ul.gnb {
     display: none;
+  }
+  #wrap header .container .logo-area {
+    margin-right: 0;
   }
   #wrap main {
     /* intro */
@@ -261,8 +279,11 @@
     font-size: 1rem;
   }
   #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li a {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
+  }
+  #wrap main .about .container .about-box .sik-info .about-name-sns .sns-box li:not(:first-child) {
+    margin-left: 16px;
   }
   #wrap main .about .container .about-box .education-license {
     width: 100%;
@@ -429,3 +450,4 @@
     font-weight: 400;
   }
 }
+/* html >= 375px */

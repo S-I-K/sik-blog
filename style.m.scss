@@ -185,6 +185,7 @@
             }
           }
           #work {
+            width: 40%;
             .swiper-wrapper {
               .swiper-slide {
                 height: 380px;
@@ -195,6 +196,7 @@
                 }
                 .item-box {
                   padding: 0 40px;
+                  opacity: 0;
                   a.thumb {
                     width: 46%;
                     img {
@@ -203,7 +205,7 @@
                   }
                   .text-box {
                     width: 46%;
-                    .title-period{
+                    .title-period {
                       flex-direction: column;
                       align-items: flex-start;
                       .title {
@@ -212,14 +214,14 @@
                         margin-right: 0;
                       }
                       .period {
-                        font-size: .9rem;
+                        font-size: 0.9rem;
                         font-weight: 500;
                       }
                     }
                     .person {
-                      li{
-                        font-size: .84rem;
-                        img{
+                      li {
+                        font-size: 0.84rem;
+                        img {
                           width: 16px;
                           height: 16px;
                         }
@@ -230,7 +232,6 @@
                         width: 24px;
                         height: 24px;
                         img {
-
                         }
                       }
                     }
@@ -244,6 +245,22 @@
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+      .work.scrolled {
+        .container {
+          #work {
+            width: 100%;
+            .swiper-wrapper {
+              .swiper-slide {
+                .item-box {
+                  opacity: 1;
+                  transition: all 1s;
+                  transition-delay: 0.8s;
                 }
               }
             }
@@ -282,12 +299,16 @@
     /* header */
     header {
       .container {
+        justify-content: center;
         ul.gnb {
+          display: none;
           li {
             a {
-              display: none;
             }
           }
+        }
+        .logo-area {
+          margin-right: 0;
         }
       }
     }
@@ -368,9 +389,12 @@
                 .sns-box {
                   li {
                     a {
-                      width: 20px;
-                      height: 20px;
+                      width: 22px;
+                      height: 22px;
                     }
+                  }
+                  li:not(:first-child) {
+                    margin-left: 16px;
                   }
                 }
               }
@@ -596,6 +620,16 @@
           font-size: 0.7rem;
           font-weight: 400;
         }
+      }
+    }
+  }
+}
+
+/* html >= 375px */
+@media (min-width: 376px) {
+  #wrap {
+    header {
+      .container {
       }
     }
   }

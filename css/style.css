@@ -62,11 +62,51 @@ li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+  /* 
+  .hamburger {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    // border: 1px solid orange;
+    width: 30px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    span {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: #fff;
+      border-radius: 500px;
+      transition: all 0.4s;
+    }
+  }
+  .hamburger:hover {
+    span {
+      position: absolute;
+    }
+    span:first-child {
+      transform: rotate(-40deg);
+    }
+    span:last-child {
+      transform: rotate(40deg);
+      margin-top: 0;
+    }
+  }
+   */
 }
 #wrap header .container .logo-area {
   margin-right: 40px;
 }
-#wrap header .container .logo-area .header-logo {
+#wrap header .container .logo-area a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap header .container .logo-area a .header-logo {
   height: 54px;
 }
 #wrap header .container ul.gnb {
@@ -180,6 +220,8 @@ li {
   position: relative;
   padding: 40px 0;
   background: #fff;
+  transform: translateY(200px);
+  opacity: 0;
 }
 #wrap main .about .container .about-box .sik-comment img {
   position: absolute;
@@ -197,6 +239,10 @@ li {
   letter-spacing: -0.03%;
   line-height: 32.4px;
   z-index: 1;
+}
+#wrap main .about .container .about-box .sik-info {
+  transform: translateY(200px);
+  opacity: 0;
 }
 #wrap main .about .container .about-box .sik-info .about-img {
   width: 440px;
@@ -279,6 +325,8 @@ li {
   align-items: center;
   justify-content: center;
   position: relative;
+  transform: translateY(200px);
+  opacity: 0;
 }
 #wrap main .about .container .about-box .education-license .toggle-text-wrap {
   display: flex;
@@ -340,6 +388,23 @@ li {
 }
 #wrap main .about .container .about-box .education-license .license {
   display: none;
+}
+#wrap main .about.scrolled .container .about-box .sik-comment {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.8s;
+}
+#wrap main .about.scrolled .container .about-box .sik-info {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.8s;
+  transition-delay: 0.4s;
+}
+#wrap main .about.scrolled .container .about-box .education-license {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.8s;
+  transition-delay: 0.8s;
 }
 #wrap main .hobby {
   padding: 160px 0;
@@ -562,7 +627,8 @@ li {
   font-size: 42px;
 }
 #wrap main .work .container #work {
-  width: 100%;
+  width: 50%;
+  transition: all 0.8s;
 }
 #wrap main .work .container #work .swiper-wrapper .swiper-slide {
   width: 100%;
@@ -589,6 +655,7 @@ li {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  opacity: 0;
 }
 #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a.thumb {
   display: flex;
@@ -599,10 +666,6 @@ li {
 }
 #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a.thumb img {
   width: 440px;
-  transition: all 0.4s;
-}
-#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a.thumb:hover img {
-  transform: scale(1.1);
 }
 #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box {
   display: flex;
@@ -691,11 +754,30 @@ li {
   background: #1a1a1c;
   border-radius: 300px;
 }
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .btn-area a:first-child {
+  color: #1a1a1c;
+  background: transparent;
+  border: 1px solid #1a1a1c;
+}
 #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .btn-area a:not(:last-child) {
   margin-right: 10px;
 }
 #wrap main .work .container #work:not(:last-child) {
   margin-bottom: 40px;
+}
+#wrap main .work.scrolled #work {
+  width: 100%;
+}
+#wrap main .work.scrolled #work .swiper-wrapper .swiper-slide .item-box {
+  opacity: 1;
+  transition: all 1s;
+  transition-delay: 0.8s;
+}
+#wrap main .work.scrolled #work .swiper-wrapper .swiper-slide .item-box a.thumb img {
+  -webkit-animation: workImg 1s alternate 2 ease-in-out;
+          animation: workImg 1s alternate 2 ease-in-out;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 #wrap footer {
   margin-top: 160px;
@@ -795,5 +877,27 @@ li {
   }
   100% {
     transform: translateX(45px) rotate(15deg);
+  }
+}
+@-webkit-keyframes workImg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes workImg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }

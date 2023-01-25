@@ -65,10 +65,16 @@ $white-color: #fff;
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      position: relative;
       .logo-area {
         margin-right: 40px;
-        .header-logo {
-          height: 54px;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .header-logo {
+            height: 54px;
+          }
         }
       }
       ul.gnb {
@@ -92,6 +98,40 @@ $white-color: #fff;
           margin-right: 40px;
         }
       }
+      /* 
+      .hamburger {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        // border: 1px solid orange;
+        width: 30px;
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        span {
+          display: block;
+          width: 100%;
+          height: 4px;
+          background: #fff;
+          border-radius: 500px;
+          transition: all 0.4s;
+        }
+      }
+      .hamburger:hover {
+        span {
+          position: absolute;
+        }
+        span:first-child {
+          transform: rotate(-40deg);
+        }
+        span:last-child {
+          transform: rotate(40deg);
+          margin-top: 0;
+        }
+      }
+       */
     }
   }
   /* main */
@@ -188,6 +228,8 @@ $white-color: #fff;
             position: relative;
             padding: 40px 0;
             background: #fff;
+            transform: translateY(200px);
+            opacity: 0;
             img {
               position: absolute;
               z-index: 0;
@@ -208,6 +250,8 @@ $white-color: #fff;
           }
           /* center */
           .sik-info {
+            transform: translateY(200px);
+            opacity: 0;
             .about-img {
               // border: 1px solid red;
               width: 440px;
@@ -296,6 +340,8 @@ $white-color: #fff;
             align-items: center;
             justify-content: center;
             position: relative;
+            transform: translateY(200px);
+            opacity: 0;
             .toggle-text-wrap {
               display: flex;
               align-items: center;
@@ -362,6 +408,29 @@ $white-color: #fff;
             .license {
               display: none;
             }
+          }
+        }
+      }
+    }
+    .about.scrolled {
+      .container {
+        .about-box {
+          .sik-comment {
+            transform: translateY(0);
+            opacity: 1;
+            transition: all 0.8s;
+          }
+          .sik-info {
+            transform: translateY(0);
+            opacity: 1;
+            transition: all 0.8s;
+            transition-delay: 0.4s;
+          }
+          .education-license {
+            transform: translateY(0);
+            opacity: 1;
+            transition: all 0.8s;
+            transition-delay: 0.8s;
           }
         }
       }
@@ -603,7 +672,8 @@ $white-color: #fff;
           }
         }
         #work {
-          width: 100%;
+          width: 50%;
+          transition: all 0.8s;
           .swiper-wrapper {
             .swiper-slide {
               // border: 1px solid orange;
@@ -631,6 +701,7 @@ $white-color: #fff;
                 display: flex;
                 align-items: flex-end;
                 justify-content: space-between;
+                opacity: 0;
                 a.thumb {
                   // border: 1px solid orange;
                   display: flex;
@@ -641,12 +712,6 @@ $white-color: #fff;
                   img {
                     // border: 1px solid orange;
                     width: 440px;
-                    transition: all 0.4s;
-                  }
-                }
-                a.thumb:hover {
-                  img {
-                    transform: scale(1.1);
                   }
                 }
                 .text-box {
@@ -689,14 +754,14 @@ $white-color: #fff;
                       font-weight: 500;
                       display: flex;
                       align-items: center;
-                      letter-spacing: -.03em;
+                      letter-spacing: -0.03em;
                       img {
                         width: 22px;
                         height: 22px;
                         margin-right: 4px;
                       }
                     }
-                    li:not(:last-child){
+                    li:not(:last-child) {
                       margin-right: 20px;
                     }
                   }
@@ -709,7 +774,7 @@ $white-color: #fff;
                         width: 100%;
                       }
                     }
-                    li:not(:last-child){
+                    li:not(:last-child) {
                       margin-right: 10px;
                     }
                   }
@@ -735,6 +800,11 @@ $white-color: #fff;
                       background: #1a1a1c;
                       border-radius: 300px;
                     }
+                    a:first-child {
+                      color: $main-font-color;
+                      background: transparent;
+                      border: 1px solid $main-font-color;
+                    }
                     a:not(:last-child) {
                       margin-right: 10px;
                     }
@@ -746,6 +816,28 @@ $white-color: #fff;
         }
         #work:not(:last-child) {
           margin-bottom: 40px;
+        }
+      }
+    }
+    .work.scrolled {
+      #work {
+        width: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            .item-box {
+              opacity: 1;
+              transition: all 1s;
+              transition-delay: 0.8s;
+              a.thumb {
+                img {
+                  animation: workImg 1s alternate 2 ease-in-out;
+                  animation-delay: 0.8s;
+                }
+              }
+              .text-box {
+              }
+            }
+          }
         }
       }
     }
@@ -825,5 +917,16 @@ $white-color: #fff;
   }
   100% {
     transform: translateX(45px) rotate(15deg);
+  }
+}
+@keyframes workImg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }

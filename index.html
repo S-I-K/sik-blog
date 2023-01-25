@@ -36,7 +36,12 @@
     <!-- scrollToGiveClass.js -->
     <script src="./js/jquery.scrollToGiveClass.js" defer></script>
     <!-- jq ui -->
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+      defer
+      integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+      crossorigin="anonymous"
+    ></script>
     <!-- js -->
     <script src="./js/main.js" defer></script>
 
@@ -47,6 +52,7 @@
       <!-- header -->
       <header>
         <div class="container">
+          <!-- logo -->
           <div class="logo-area">
             <a href="#"
               ><img
@@ -55,6 +61,7 @@
                 alt="header logo"
             /></a>
           </div>
+          <!-- gnb -->
           <ul class="gnb">
             <li><a href="#about">about</a></li>
             <li><a href="#hobby">hobby</a></li>
@@ -62,6 +69,10 @@
             <li><a href="#workk">works</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
+          <!-- <div class="hamburger">
+            <span></span>
+            <span></span>
+          </div> -->
         </div>
       </header>
 
@@ -84,7 +95,7 @@
           </div>
         </div>
         <!-- about -->
-        <div id='about' class="about">
+        <div id="about" class="about">
           <div class="container">
             <!-- title -->
             <div class="title-wrap">
@@ -127,6 +138,11 @@
                       /></a>
                     </li>
                     <li>
+                      <a href="https://github.com/S-I-K"
+                        ><img src="./img/about-icon-kakao.png" alt="kakaotalk"
+                      /></a>
+                    </li>
+                    <li>
                       <a href="https://www.instagram.com/99.8.5.22.44/"
                         ><img
                           src="./img/about-icon-instagram.png"
@@ -145,10 +161,9 @@
               <div class="education-license">
                 <div class="toggle-text-wrap">
                   education
+                  <!-- toggle -->
                   <div class="toggle-wrap">
-                    <div class="toggle-switch">
-                      <!-- toggle -->
-                    </div>
+                    <div class="toggle-switch"></div>
                   </div>
                   license
                 </div>
@@ -213,7 +228,7 @@
           </div>
         </div>
         <!-- hobby -->
-        <div id='hobby' class="hobby">
+        <div id="hobby" class="hobby">
           <div class="container">
             <!-- title -->
             <div class="title-wrap">
@@ -295,7 +310,7 @@
           </div>
         </div>
         <!-- skill -->
-        <div id='skill' class="skill">
+        <div id="skill" class="skill">
           <div class="container">
             <!-- title-wrap -->
             <div class="title-wrap">
@@ -308,21 +323,21 @@
               <ul class="skill-icons">
                 <li>
                   <img src="./img/skill-ps.png" alt="" />
-                  <div class="progress" data-rate="70">0</div>
+                  <div class="counter" data-count="70">0</div>
                 </li>
                 <li>
                   <img src="./img/skill-ai.png" alt="" />
-                  <div class="progress" data-rate="80">0</div>
+                  <div class="counter" data-count="80">0</div>
                 </li>
                 <li>
                   <img src="./img/skill-figma.png" alt="" />
-                  <div class="progress" data-rate="60">0</div>
+                  <div class="counter" data-count="60">0</div>
                 </li>
               </ul>
               <ul class="keyword">
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Figma</li>
+                <li>#photoshop</li>
+                <li>#illustrator</li>
+                <li>#figma</li>
               </ul>
               <ul class="word">
                 <li>
@@ -350,7 +365,7 @@
               <ul class="skill-icons">
                 <li>
                   <img src="./img/skill-html.png" alt="" />
-                  <div class="progress" data-rate="100">0</div>
+                  <div class="counter" data-count="100">0</div>
                 </li>
                 <li>
                   <img src="./img/skill-css.png" alt="" />
@@ -370,12 +385,12 @@
                 </li>
               </ul>
               <ul class="keyword">
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>SCSS</li>
-                <li>Javascript(ES6+)</li>
-                <li>jQuery</li>
-                <li>React</li>
+                <li>#html5</li>
+                <li>#css</li>
+                <li>#scss</li>
+                <li>#javascript(ES6+)</li>
+                <li>#jquery</li>
+                <li>#react</li>
               </ul>
               <ul class="word">
                 <li>
@@ -403,7 +418,7 @@
           </div>
         </div>
         <!-- work -->
-        <div id='workk' class="work">
+        <div id="workk" class="work">
           <div class="container">
             <!-- title-wrap -->
             <div class="title-wrap">
@@ -420,7 +435,11 @@
                   <!-- item-box -->
                   <div class="item-box">
                     <!-- img -->
-                    <a class="thumb" href="https://s-i-k.github.io/lego-renewal/" target="_blank">
+                    <a
+                      class="thumb"
+                      href="https://s-i-k.github.io/lego-renewal/"
+                      target="_blank"
+                    >
                       <img src="./img/work-lego.png" alt="" />
                     </a>
                     <!-- text-box -->
@@ -433,20 +452,22 @@
                       <!-- person -->
                       <ul class="person">
                         <li>
-                          <img src="./img/icon-person.png" alt="">
+                          <img src="./img/icon-person.png" alt="" />
                           1명
                         </li>
-                        <li>
-                          기여도: 100%
-                        </li>
+                        <li>기여도: 100%</li>
                       </ul>
                       <!-- skill -->
                       <ul class="use-skill">
-                        <li><img src="./img/skill-ps.png" alt="photoshop"></li>
-                        <li><img src="./img/skill-ai.png" alt="Illustrator"></li>
-                        <li><img src="./img/skill-html.png" alt="html"></li>
-                        <li><img src="./img/skill-css.png" alt="css"></li>
-                        <li><img src="./img/skill-jq.png" alt="jquery"></li>
+                        <li>
+                          <img src="./img/skill-ps.png" alt="photoshop" />
+                        </li>
+                        <li>
+                          <img src="./img/skill-ai.png" alt="Illustrator" />
+                        </li>
+                        <li><img src="./img/skill-html.png" alt="html" /></li>
+                        <li><img src="./img/skill-css.png" alt="css" /></li>
+                        <li><img src="./img/skill-jq.png" alt="jquery" /></li>
                       </ul>
                       <!-- desc -->
                       <div class="desc">
@@ -477,7 +498,11 @@
                   <!-- item-box -->
                   <div class="item-box">
                     <!-- img -->
-                    <a class="thumb" href="https://s-i-k.github.io/ezen-crayon/" target="_blank">
+                    <a
+                      class="thumb"
+                      href="https://s-i-k.github.io/ezen-crayon/"
+                      target="_blank"
+                    >
                       <img src="./img/work-crayon.png" alt="" />
                     </a>
                     <!-- text-box -->
@@ -490,20 +515,22 @@
                       <!-- person -->
                       <ul class="person">
                         <li>
-                          <img src="./img/icon-person.png" alt="">
+                          <img src="./img/icon-person.png" alt="" />
                           4명
                         </li>
-                        <li>
-                          기여도: 50%
-                        </li>
+                        <li>기여도: 50%</li>
                       </ul>
                       <!-- skill -->
                       <ul class="use-skill">
-                        <li><img src="./img/skill-ps.png" alt="photoshop"></li>
-                        <li><img src="./img/skill-ai.png" alt="Illustrator"></li>
-                        <li><img src="./img/skill-html.png" alt="html"></li>
-                        <li><img src="./img/skill-css.png" alt="css"></li>
-                        <li><img src="./img/skill-jq.png" alt="jquery"></li>
+                        <li>
+                          <img src="./img/skill-ps.png" alt="photoshop" />
+                        </li>
+                        <li>
+                          <img src="./img/skill-ai.png" alt="Illustrator" />
+                        </li>
+                        <li><img src="./img/skill-html.png" alt="html" /></li>
+                        <li><img src="./img/skill-css.png" alt="css" /></li>
+                        <li><img src="./img/skill-jq.png" alt="jquery" /></li>
                       </ul>
                       <!-- desc -->
                       <div class="desc">
@@ -534,7 +561,11 @@
                   <!-- item-box -->
                   <div class="item-box">
                     <!-- img -->
-                    <a class='thumb' href="https://s-i-k.github.io/best-seller/" target="_blank">
+                    <a
+                      class="thumb"
+                      href="https://s-i-k.github.io/best-seller/"
+                      target="_blank"
+                    >
                       <img src="./img/work-bestseller.png" alt="" />
                     </a>
                     <!-- text-box -->
@@ -547,20 +578,22 @@
                       <!-- person -->
                       <ul class="person">
                         <li>
-                          <img src="./img/icon-person.png" alt="">
+                          <img src="./img/icon-person.png" alt="" />
                           1명
                         </li>
-                        <li>
-                          기여도: 100%
-                        </li>
+                        <li>기여도: 100%</li>
                       </ul>
                       <!-- skill -->
                       <ul class="use-skill">
-                        <li><img src="./img/skill-ps.png" alt="photoshop"></li>
-                        <li><img src="./img/skill-ai.png" alt="Illustrator"></li>
-                        <li><img src="./img/skill-html.png" alt="html"></li>
-                        <li><img src="./img/skill-css.png" alt="css"></li>
-                        <li><img src="./img/skill-jq.png" alt="jquery"></li>
+                        <li>
+                          <img src="./img/skill-ps.png" alt="photoshop" />
+                        </li>
+                        <li>
+                          <img src="./img/skill-ai.png" alt="Illustrator" />
+                        </li>
+                        <li><img src="./img/skill-html.png" alt="html" /></li>
+                        <li><img src="./img/skill-css.png" alt="css" /></li>
+                        <li><img src="./img/skill-jq.png" alt="jquery" /></li>
                       </ul>
                       <!-- desc -->
                       <div class="desc">
@@ -592,7 +625,11 @@
                   <!-- item-box -->
                   <div class="item-box">
                     <!-- img -->
-                    <a class="thumb" href="https://s-i-k.github.io/ssiikk-shopping-mall/" target="_blank">
+                    <a
+                      class="thumb"
+                      href="https://s-i-k.github.io/ssiikk-shopping-mall/"
+                      target="_blank"
+                    >
                       <img src="./img/work-ssiik.png" alt="" />
                     </a>
                     <!-- text-box -->
@@ -605,20 +642,22 @@
                       <!-- person -->
                       <ul class="person">
                         <li>
-                          <img src="./img/icon-person.png" alt="">
+                          <img src="./img/icon-person.png" alt="" />
                           1명
                         </li>
-                        <li>
-                          기여도: 100%
-                        </li>
+                        <li>기여도: 100%</li>
                       </ul>
                       <!-- skill -->
                       <ul class="use-skill">
-                        <li><img src="./img/skill-ps.png" alt="photoshop"></li>
-                        <li><img src="./img/skill-ai.png" alt="Illustrator"></li>
-                        <li><img src="./img/skill-html.png" alt="html"></li>
-                        <li><img src="./img/skill-css.png" alt="css"></li>
-                        <li><img src="./img/skill-jq.png" alt="jquery"></li>
+                        <li>
+                          <img src="./img/skill-ps.png" alt="photoshop" />
+                        </li>
+                        <li>
+                          <img src="./img/skill-ai.png" alt="Illustrator" />
+                        </li>
+                        <li><img src="./img/skill-html.png" alt="html" /></li>
+                        <li><img src="./img/skill-css.png" alt="css" /></li>
+                        <li><img src="./img/skill-jq.png" alt="jquery" /></li>
                       </ul>
                       <!-- desc -->
                       <div class="desc">
@@ -650,7 +689,11 @@
                   <!-- item-box -->
                   <div class="item-box">
                     <!-- img -->
-                    <a class="thumb" href="https://s-i-k.github.io/espa-shopping-mall/" target="_blank">
+                    <a
+                      class="thumb"
+                      href="https://s-i-k.github.io/espa-shopping-mall/"
+                      target="_blank"
+                    >
                       <img src="./img/work-espa.png" alt="" />
                     </a>
                     <!-- text-box -->
@@ -663,20 +706,22 @@
                       <!-- person -->
                       <ul class="person">
                         <li>
-                          <img src="./img/icon-person.png" alt="">
+                          <img src="./img/icon-person.png" alt="" />
                           1명
                         </li>
-                        <li>
-                          기여도: 100%
-                        </li>
+                        <li>기여도: 100%</li>
                       </ul>
                       <!-- skill -->
                       <ul class="use-skill">
-                        <li><img src="./img/skill-ps.png" alt="photoshop"></li>
-                        <li><img src="./img/skill-ai.png" alt="Illustrator"></li>
-                        <li><img src="./img/skill-html.png" alt="html"></li>
-                        <li><img src="./img/skill-css.png" alt="css"></li>
-                        <li><img src="./img/skill-jq.png" alt="jquery"></li>
+                        <li>
+                          <img src="./img/skill-ps.png" alt="photoshop" />
+                        </li>
+                        <li>
+                          <img src="./img/skill-ai.png" alt="Illustrator" />
+                        </li>
+                        <li><img src="./img/skill-html.png" alt="html" /></li>
+                        <li><img src="./img/skill-css.png" alt="css" /></li>
+                        <li><img src="./img/skill-jq.png" alt="jquery" /></li>
                       </ul>
                       <!-- desc -->
                       <div class="desc">
@@ -715,7 +760,7 @@
                   <!-- item-box -->
                   <div class="item-box">
                     <!-- img -->
-                    <a class='thumb'  href="#" target="_blank">
+                    <a class="thumb" href="#" target="_blank">
                       <img src="./img/work-item1.png" alt="" />
                     </a>
                     <!-- text-box -->
@@ -745,7 +790,7 @@
                   <!-- item-box -->
                   <div class="item-box">
                     <!-- img -->
-                    <a class='thumb'  href="#" target="_blank">
+                    <a class="thumb" href="#" target="_blank">
                       <img src="./img/work-item2.png" alt="" />
                     </a>
                     <!-- text-box -->
@@ -774,7 +819,11 @@
                   <!-- item-box -->
                   <div class="item-box">
                     <!-- img -->
-                    <a class='thumb'  href="https://s-i-k.github.io/lego-renewal/" target="_blank">
+                    <a
+                      class="thumb"
+                      href="https://s-i-k.github.io/lego-renewal/"
+                      target="_blank"
+                    >
                       <img src="./img/work-item3.png" alt="" />
                     </a>
                     <!-- text-box -->
@@ -803,7 +852,11 @@
                   <!-- item-box -->
                   <div class="item-box">
                     <!-- img -->
-                    <a class='thumb'  href="https://s-i-k.github.io/lego-renewal/" target="_blank">
+                    <a
+                      class="thumb"
+                      href="https://s-i-k.github.io/lego-renewal/"
+                      target="_blank"
+                    >
                       <img src="./img/work-item4.png" alt="" />
                     </a>
                     <!-- text-box -->
