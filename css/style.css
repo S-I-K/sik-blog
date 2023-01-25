@@ -222,6 +222,7 @@ li {
   background: #fff;
   transform: translateY(200px);
   opacity: 0;
+  transition: all 0.8s;
 }
 #wrap main .about .container .about-box .sik-comment img {
   position: absolute;
@@ -243,6 +244,8 @@ li {
 #wrap main .about .container .about-box .sik-info {
   transform: translateY(200px);
   opacity: 0;
+  transition: all 0.8s;
+  transition-delay: 0.4s;
 }
 #wrap main .about .container .about-box .sik-info .about-img {
   width: 440px;
@@ -327,6 +330,8 @@ li {
   position: relative;
   transform: translateY(200px);
   opacity: 0;
+  transition: all 0.8s;
+  transition-delay: 0.8s;
 }
 #wrap main .about .container .about-box .education-license .toggle-text-wrap {
   display: flex;
@@ -392,19 +397,14 @@ li {
 #wrap main .about.scrolled .container .about-box .sik-comment {
   transform: translateY(0);
   opacity: 1;
-  transition: all 0.8s;
 }
 #wrap main .about.scrolled .container .about-box .sik-info {
   transform: translateY(0);
   opacity: 1;
-  transition: all 0.8s;
-  transition-delay: 0.4s;
 }
 #wrap main .about.scrolled .container .about-box .education-license {
   transform: translateY(0);
   opacity: 1;
-  transition: all 0.8s;
-  transition-delay: 0.8s;
 }
 #wrap main .hobby {
   padding: 160px 0;
@@ -510,10 +510,10 @@ li {
 #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(4) .txt-box {
   transition-delay: 0.4s;
 }
-#wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(3) .txt-box {
+#wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(1) .txt-box {
   transition-delay: 0.8s;
 }
-#wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(1) .txt-box {
+#wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(3) .txt-box {
   transition-delay: 1.2s;
 }
 #wrap main .skill {
@@ -682,7 +682,11 @@ li {
   justify-content: flex-end;
 }
 #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a.thumb img {
+  transition: all 0.4s;
   width: 440px;
+}
+#wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box a.thumb img:hover {
+  transform: scale(1.1);
 }
 #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box {
   display: flex;
