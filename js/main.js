@@ -14,10 +14,14 @@ $(() => {
     $(this).toggleClass("active");
     if ($(this).hasClass("active")) {
       $(".license").show();
+      $('.license-toggle-txt').css({color: '#3fa9e8'});
       $(".education").hide();
+      $('.education-toggle-txt').css({color: '#bcbcbc'});
     } else {
       $(".education").show();
+      $('.education-toggle-txt').css({color: '#3fa9e8'});
       $(".license").hide();
+      $('.license-toggle-txt').css({color: '#bcbcbc'});
     }
   });
 
