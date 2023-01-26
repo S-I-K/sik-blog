@@ -58,6 +58,8 @@ $(() => {
         });
         executed = true;
       }
+    }else if($(window).scrollTop() < threshold){
+      executed = false;
     } //end: executed if
   });
 
