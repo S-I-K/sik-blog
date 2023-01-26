@@ -196,6 +196,8 @@ li {
 }
 #wrap main .about .container .title-wrap {
   margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(80px);
 }
 #wrap main .about .container .title-wrap .title {
   color: #1a1a1c;
@@ -221,7 +223,7 @@ li {
   position: relative;
   padding: 40px 0;
   background: #fff;
-  transform: translateY(200px);
+  transform: translateY(100px);
   opacity: 0;
 }
 #wrap main .about .container .about-box .sik-comment img {
@@ -242,7 +244,7 @@ li {
   z-index: 1;
 }
 #wrap main .about .container .about-box .sik-info {
-  transform: translateY(200px);
+  transform: translateY(100px);
   opacity: 0;
 }
 #wrap main .about .container .about-box .sik-info .about-img {
@@ -326,7 +328,7 @@ li {
   align-items: center;
   justify-content: center;
   position: relative;
-  transform: translateY(200px);
+  transform: translateY(100px);
   opacity: 0;
 }
 #wrap main .about .container .about-box .education-license .toggle-text-wrap {
@@ -390,21 +392,26 @@ li {
 #wrap main .about .container .about-box .education-license .license {
   display: none;
 }
+#wrap main .about.scrolled .container .title-wrap {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 2s ease-in-out;
+}
 #wrap main .about.scrolled .container .about-box .sik-comment {
   transform: translateY(0);
   opacity: 1;
-  transition: all 0.8s;
+  transition: all 2s ease-in-out;
 }
 #wrap main .about.scrolled .container .about-box .sik-info {
   transform: translateY(0);
   opacity: 1;
-  transition: all 0.8s;
+  transition: all 2s ease-in-out;
   transition-delay: 0.4s;
 }
 #wrap main .about.scrolled .container .about-box .education-license {
   transform: translateY(0);
   opacity: 1;
-  transition: all 0.8s;
+  transition: all 2s ease-in-out;
   transition-delay: 0.8s;
 }
 #wrap main .hobby {
@@ -421,6 +428,8 @@ li {
 }
 #wrap main .hobby .container .title-wrap {
   margin-bottom: 180px;
+  opacity: 0;
+  transform: translateY(80px);
 }
 #wrap main .hobby .container .title-wrap .title {
   color: #1a1a1c;
@@ -503,6 +512,11 @@ li {
 #wrap main .hobby .container .hobby-box .bg-wrap .circle:not(:last-child) {
   margin-right: 120px;
 }
+#wrap main .hobby.scrolled .container .title-wrap {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 2s ease-in-out;
+}
 #wrap main .hobby.scrolled .container .hobby-box .char-wrap li .txt-box {
   opacity: 1;
   transform: translateX(0);
@@ -531,6 +545,8 @@ li {
 }
 #wrap main .skill .container .title-wrap {
   margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(80px);
 }
 #wrap main .skill .container .title-wrap .title {
   color: #1a1a1c;
@@ -626,6 +642,11 @@ li {
 #wrap main .skill .container .skill-box:nth-child(2) {
   margin-bottom: 40px;
 }
+#wrap main .skill.scrolled .container .title-wrap {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 2s ease-in-out;
+}
 #wrap main .work {
   display: flex;
   align-items: center;
@@ -639,7 +660,7 @@ li {
   display: inline-block;
   margin-bottom: 60px;
   opacity: 0;
-  transform: translateY(200px);
+  transform: translateY(80px);
 }
 #wrap main .work .container .title-wrap .title {
   color: #1a1a1c;
@@ -791,8 +812,8 @@ li {
 }
 #wrap main .work.scrolled .container .title-wrap {
   opacity: 1;
-  transform: translateY(0);
-  transition: all 0.4s ease-in-out;
+  transform: translateY(0px);
+  transition: all 2s ease-in-out;
 }
 #wrap main .work.scrolled .container #work {
   width: 100%;

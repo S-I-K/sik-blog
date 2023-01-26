@@ -98,18 +98,24 @@ $(() => {
   $(".about").scrollToGiveClass({
     class: "scrolled",
     baseline: "middle",
-    add: 40,
+    add: 100,
+  });
+  /* hobby */
+  $(".hobby").scrollToGiveClass({
+    class: "scrolled",
+    baseline: "middle",
+    add: 100,
+  });
+  /* skill */
+  $(".skill").scrollToGiveClass({
+    class: "scrolled",
+    baseline: "middle",
+    add: 100,
   });
   /* work */
   $(".work").scrollToGiveClass({
     class: "scrolled",
     baseline: "middle",
     add: 100,
-  });
-  /* work */
-  $(".hobby").scrollToGiveClass({
-    class: "scrolled",
-    baseline: "middle",
-    add: 40,
   });
 });

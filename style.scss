@@ -202,6 +202,8 @@ $white-color: #fff;
         /* title */
         .title-wrap {
           margin-bottom: 60px;
+          opacity: 0;
+          transform: translateY(80px);
           .title {
             color: $main-font-color;
             font-weight: 700;
@@ -228,7 +230,7 @@ $white-color: #fff;
             position: relative;
             padding: 40px 0;
             background: #fff;
-            transform: translateY(200px);
+            transform: translateY(100px);
             opacity: 0;
             img {
               position: absolute;
@@ -250,7 +252,7 @@ $white-color: #fff;
           }
           /* center */
           .sik-info {
-            transform: translateY(200px);
+            transform: translateY(100px);
             opacity: 0;
             .about-img {
               // border: 1px solid red;
@@ -340,7 +342,7 @@ $white-color: #fff;
             align-items: center;
             justify-content: center;
             position: relative;
-            transform: translateY(200px);
+            transform: translateY(100px);
             opacity: 0;
             .toggle-text-wrap {
               display: flex;
@@ -414,22 +416,27 @@ $white-color: #fff;
     }
     .about.scrolled {
       .container {
+        .title-wrap {
+          opacity: 1;
+          transform: translateY(0px);
+          transition: all 2s ease-in-out;
+        }
         .about-box {
           .sik-comment {
             transform: translateY(0);
             opacity: 1;
-            transition: all 0.8s;
+            transition: all 2s ease-in-out;
           }
           .sik-info {
             transform: translateY(0);
             opacity: 1;
-            transition: all 0.8s;
+            transition: all 2s ease-in-out;
             transition-delay: 0.4s;
           }
           .education-license {
             transform: translateY(0);
             opacity: 1;
-            transition: all 0.8s;
+            transition: all 2s ease-in-out;
             transition-delay: 0.8s;
           }
         }
@@ -449,6 +456,8 @@ $white-color: #fff;
         align-items: center;
         .title-wrap {
           margin-bottom: 180px;
+          opacity: 0;
+          transform: translateY(80px);
           .title {
             color: $main-font-color;
             font-weight: 700;
@@ -540,6 +549,11 @@ $white-color: #fff;
     }
     .hobby.scrolled {
       .container {
+        .title-wrap {
+          opacity: 1;
+          transform: translateY(0px);
+          transition: all 2s ease-in-out;
+        }
         .hobby-box {
           .char-wrap {
             li {
@@ -582,6 +596,8 @@ $white-color: #fff;
         justify-content: center;
         .title-wrap {
           margin-bottom: 60px;
+          opacity: 0;
+          transform: translateY(80px);
           .bar {
           }
           .title {
@@ -684,6 +700,15 @@ $white-color: #fff;
         }
       }
     }
+    .skill.scrolled {
+      .container {
+        .title-wrap {
+          opacity: 1;
+          transform: translateY(0px);
+          transition: all 2s ease-in-out;
+        }
+      }
+    }
     /* work */
     .work {
       display: flex;
@@ -697,7 +722,7 @@ $white-color: #fff;
           display: inline-block;
           margin-bottom: 60px;
           opacity: 0;
-          transform: translateY(200px);
+          transform: translateY(80px);
           .bar {
           }
           .title {
@@ -862,8 +887,8 @@ $white-color: #fff;
       .container {
         .title-wrap {
           opacity: 1;
-          transform: translateY(0);
-          transition: all .4s ease-in-out;
+          transform: translateY(0px);
+          transition: all 2s ease-in-out;
         }
         #work {
           width: 100%;
