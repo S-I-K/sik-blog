@@ -40,6 +40,7 @@ li {
 
 /* css 변수 */
 #wrap {
+  overflow-x: hidden;
   width: 100%;
   height: auto;
   position: relative;
@@ -222,7 +223,6 @@ li {
   background: #fff;
   transform: translateY(200px);
   opacity: 0;
-  transition: all 0.8s;
 }
 #wrap main .about .container .about-box .sik-comment img {
   position: absolute;
@@ -244,8 +244,6 @@ li {
 #wrap main .about .container .about-box .sik-info {
   transform: translateY(200px);
   opacity: 0;
-  transition: all 0.8s;
-  transition-delay: 0.4s;
 }
 #wrap main .about .container .about-box .sik-info .about-img {
   width: 440px;
@@ -330,8 +328,6 @@ li {
   position: relative;
   transform: translateY(200px);
   opacity: 0;
-  transition: all 0.8s;
-  transition-delay: 0.8s;
 }
 #wrap main .about .container .about-box .education-license .toggle-text-wrap {
   display: flex;
@@ -397,14 +393,19 @@ li {
 #wrap main .about.scrolled .container .about-box .sik-comment {
   transform: translateY(0);
   opacity: 1;
+  transition: all 0.8s;
 }
 #wrap main .about.scrolled .container .about-box .sik-info {
   transform: translateY(0);
   opacity: 1;
+  transition: all 0.8s;
+  transition-delay: 0.4s;
 }
 #wrap main .about.scrolled .container .about-box .education-license {
   transform: translateY(0);
   opacity: 1;
+  transition: all 0.8s;
+  transition-delay: 0.8s;
 }
 #wrap main .hobby {
   padding: 160px 0;
@@ -505,7 +506,7 @@ li {
 #wrap main .hobby.scrolled .container .hobby-box .char-wrap li .txt-box {
   opacity: 1;
   transform: translateX(0);
-  transition: all 0.8s;
+  transition: all 0.8s ease-in-out;
 }
 #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(4) .txt-box {
   transition-delay: 0.4s;
@@ -637,6 +638,8 @@ li {
 #wrap main .work .container .title-wrap {
   display: inline-block;
   margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(200px);
 }
 #wrap main .work .container .title-wrap .title {
   color: #1a1a1c;
@@ -645,7 +648,7 @@ li {
 }
 #wrap main .work .container #work {
   width: 50%;
-  transition: all 0.8s;
+  transition: all 0.4s;
 }
 #wrap main .work .container #work .swiper-wrapper .swiper-slide {
   width: 100%;
@@ -786,15 +789,20 @@ li {
 #wrap main .work .container #work:not(:last-child) {
   margin-bottom: 40px;
 }
-#wrap main .work.scrolled #work {
+#wrap main .work.scrolled .container .title-wrap {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s ease-in-out;
+}
+#wrap main .work.scrolled .container #work {
   width: 100%;
 }
-#wrap main .work.scrolled #work .swiper-wrapper .swiper-slide .item-box {
+#wrap main .work.scrolled .container #work .swiper-wrapper .swiper-slide .item-box {
   opacity: 1;
-  transition: all 1s;
-  transition-delay: 0.8s;
+  transition: all 2s;
+  transition-delay: 0.6s;
 }
-#wrap main .work.scrolled #work .swiper-wrapper .swiper-slide .item-box a.thumb img {
+#wrap main .work.scrolled .container #work .swiper-wrapper .swiper-slide .item-box a.thumb img {
   -webkit-animation: workImg 1s alternate 2 ease-in-out;
           animation: workImg 1s alternate 2 ease-in-out;
   -webkit-animation-delay: 0.8s;

@@ -48,6 +48,24 @@
     order: -1;
     margin-bottom: 40px;
   }
+  #wrap main .about.scrolled .container .about-box .sik-comment {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.8s;
+    transition-delay: 0.4s;
+  }
+  #wrap main .about.scrolled .container .about-box .sik-info {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.8s;
+    transition-delay: 0s;
+  }
+  #wrap main .about.scrolled .container .about-box .education-license {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.8s;
+    transition-delay: 0.8s;
+  }
   #wrap main .hobby {
     padding: 160px 0 0 0;
   }
@@ -74,6 +92,7 @@
     bottom: 0px;
     left: auto;
     right: 0px;
+    transform: translateX(300px);
   }
   #wrap main .hobby .container .hobby-box .char-wrap li .txt-box .num {
     font-size: 1.4rem;
@@ -102,13 +121,21 @@
     margin-right: 0;
     margin-bottom: 40px;
   }
+  #wrap main .hobby.scrolled .container .hobby-box .char-wrap li .txt-box {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.8s;
+  }
   #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(1) .txt-box {
     transition-delay: 0s;
+  }
+  #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(2) .txt-box {
+    transition-delay: 0.4s;
   }
   #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(3) .txt-box {
     transition-delay: 0.8s;
   }
-  #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(1) .txt-box {
+  #wrap main .hobby.scrolled .container .hobby-box .char-wrap li:nth-child(4) .txt-box {
     transition-delay: 1.2s;
   }
   #wrap main .skill .container .title-wrap .title {

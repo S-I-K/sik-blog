@@ -58,9 +58,9 @@ $(() => {
         });
         executed = true;
       }
-    }else if($(window).scrollTop() < threshold){
+    }else if($(window).scrollTop() < threshold){ //window scroll value가 threshold 보다 작을 때는 애니메이션 재실행.
       executed = false;
-    } //end: executed if
+    }//end: executed if
   });
 
 

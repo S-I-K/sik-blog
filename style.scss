@@ -42,8 +42,8 @@ $en-font: "Montserrat", sans-serif;
 $main-font-color: #1a1a1c;
 $sub-font-color: #bcbcbc;
 $white-color: #fff;
-
 #wrap {
+  overflow-x: hidden;
   width: 100%;
   height: auto;
   position: relative;
@@ -230,7 +230,6 @@ $white-color: #fff;
             background: #fff;
             transform: translateY(200px);
             opacity: 0;
-            transition: all 0.8s;
             img {
               position: absolute;
               z-index: 0;
@@ -253,8 +252,6 @@ $white-color: #fff;
           .sik-info {
             transform: translateY(200px);
             opacity: 0;
-            transition: all 0.8s;
-            transition-delay: 0.4s;
             .about-img {
               // border: 1px solid red;
               width: 440px;
@@ -345,8 +342,6 @@ $white-color: #fff;
             position: relative;
             transform: translateY(200px);
             opacity: 0;
-            transition: all 0.8s;
-            transition-delay: 0.8s;
             .toggle-text-wrap {
               display: flex;
               align-items: center;
@@ -423,14 +418,19 @@ $white-color: #fff;
           .sik-comment {
             transform: translateY(0);
             opacity: 1;
+            transition: all 0.8s;
           }
           .sik-info {
             transform: translateY(0);
             opacity: 1;
+            transition: all 0.8s;
+            transition-delay: 0.4s;
           }
           .education-license {
             transform: translateY(0);
             opacity: 1;
+            transition: all 0.8s;
+            transition-delay: 0.8s;
           }
         }
       }
@@ -546,7 +546,7 @@ $white-color: #fff;
               .txt-box {
                 opacity: 1;
                 transform: translateX(0);
-                transition: all 0.8s;
+                transition: all 0.8s ease-in-out;
               }
             }
             li:nth-child(4) {
@@ -696,6 +696,8 @@ $white-color: #fff;
         .title-wrap {
           display: inline-block;
           margin-bottom: 60px;
+          opacity: 0;
+          transform: translateY(200px);
           .bar {
           }
           .title {
@@ -706,7 +708,7 @@ $white-color: #fff;
         }
         #work {
           width: 50%;
-          transition: all 0.8s;
+          transition: all 0.4s;
           .swiper-wrapper {
             .swiper-slide {
               // border: 1px solid orange;
@@ -857,21 +859,28 @@ $white-color: #fff;
       }
     }
     .work.scrolled {
-      #work {
-        width: 100%;
-        .swiper-wrapper {
-          .swiper-slide {
-            .item-box {
-              opacity: 1;
-              transition: all 1s;
-              transition-delay: 0.8s;
-              a.thumb {
-                img {
-                  animation: workImg 1s alternate 2 ease-in-out;
-                  animation-delay: 0.8s;
+      .container {
+        .title-wrap {
+          opacity: 1;
+          transform: translateY(0);
+          transition: all .4s ease-in-out;
+        }
+        #work {
+          width: 100%;
+          .swiper-wrapper {
+            .swiper-slide {
+              .item-box {
+                opacity: 1;
+                transition: all 2s;
+                transition-delay: 0.6s;
+                a.thumb {
+                  img {
+                    animation: workImg 1s alternate 2 ease-in-out;
+                    animation-delay: 0.8s;
+                  }
                 }
-              }
-              .text-box {
+                .text-box {
+                }
               }
             }
           }
