@@ -411,23 +411,23 @@ li {
 #wrap main .about.scrolled .container .title-wrap {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 #wrap main .about.scrolled .container .about-box .sik-comment {
   transform: translateY(0);
   opacity: 1;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 #wrap main .about.scrolled .container .about-box .sik-info {
   transform: translateY(0);
   opacity: 1;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
   transition-delay: 0.4s;
 }
 #wrap main .about.scrolled .container .about-box .education-license {
   transform: translateY(0);
   opacity: 1;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
   transition-delay: 0.8s;
 }
 #wrap main .hobby {
@@ -531,7 +531,7 @@ li {
 #wrap main .hobby.scrolled .container .title-wrap {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 #wrap main .hobby.scrolled .container .hobby-box .char-wrap li .txt-box {
   opacity: 1;
@@ -661,7 +661,7 @@ li {
 #wrap main .skill.scrolled .container .title-wrap {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 #wrap main .work {
   display: flex;
@@ -829,7 +829,7 @@ li {
 #wrap main .work.scrolled .container .title-wrap {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 #wrap main .work.scrolled .container #work {
   width: 100%;

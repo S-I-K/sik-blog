@@ -1,10 +1,10 @@
 /* a 태그 기본옵션 제거 */
-let a = document.querySelectorAll("a");
+/* let a = document.querySelectorAll("a");
 for (let i = 0; i < a.length; i++) {
   a[i].addEventListener("click", (e) => {
     e.preventDefault();
   });
-}
+} */
 
 /* jquery */
 $(() => {
@@ -71,7 +71,8 @@ $(() => {
 
 
   /* header global navigation bar function */
-  $(".gnb > li > a").click(function () {
+  $(".gnb > li > a").click(function (e) {
+    e.preventDefault();
     $("html,body")
       .stop()
       .animate(

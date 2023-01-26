@@ -51,19 +51,16 @@
   #wrap main .about.scrolled .container .about-box .sik-comment {
     transform: translateY(0);
     opacity: 1;
-    transition: all 0.8s;
     transition-delay: 0.4s;
   }
   #wrap main .about.scrolled .container .about-box .sik-info {
     transform: translateY(0);
     opacity: 1;
-    transition: all 0.8s;
     transition-delay: 0s;
   }
   #wrap main .about.scrolled .container .about-box .education-license {
     transform: translateY(0);
     opacity: 1;
-    transition: all 0.8s;
     transition-delay: 0.8s;
   }
   #wrap main .hobby {
