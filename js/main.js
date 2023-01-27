@@ -40,8 +40,8 @@ $(() => {
   let executed = false; //false 일때만 scroll event 실행
   $(window).scroll(function(){
     let threshold = $('.skill').offset().top - 300 ;
-    console.log("현재 skill section의 위치값: "+threshold);
-    console.log("현재 scroll: "+$(window).scrollTop());
+    // console.log("현재 skill section의 위치값: "+threshold);
+    // console.log("현재 scroll: "+$(window).scrollTop());
     if(!executed){
       if($(window).scrollTop() >= threshold){
         $(".progress").each(function () {
