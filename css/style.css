@@ -52,15 +52,15 @@ li {
   position: fixed;
   z-index: 999;
   color: #bcbcbc;
-  right: 0px;
-  bottom: 0px;
+  right: 4%;
+  bottom: 4%;
   color: #1a1a1c;
   font-size: 18px;
   font-family: "SUIT-Regular";
   letter-spacing: -0.03em;
   font-weight: 700;
-  -webkit-animation: notice 2s alternate 3 ease-in-out;
-          animation: notice 2s alternate 3 ease-in-out;
+  -webkit-animation: notice 3s alternate 2 ease-in-out;
+          animation: notice 3s alternate 2 ease-in-out;
 }
 #wrap .notice img {
   width: 400px;
@@ -858,8 +858,8 @@ li {
   transition-delay: 0.6s;
 }
 #wrap main .work.scrolled .container #work .swiper-wrapper .swiper-slide .item-box a.thumb img {
-  -webkit-animation: workImg 1s alternate 2 ease-in-out;
-          animation: workImg 1s alternate 2 ease-in-out;
+  -webkit-animation: workImg 1s alternate 1 ease-in-out;
+          animation: workImg 1s alternate 1 ease-in-out;
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }

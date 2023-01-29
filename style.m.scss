@@ -354,6 +354,15 @@
 /* html <= 375px */
 @media (max-width: 375px) {
   #wrap {
+    /* notice */
+    .notice {
+      right: 50%;
+      bottom: 50%;
+      transform: translate(50%, 50%);
+      img {
+        // width: 400px;
+      }
+    }
     /* header */
     header {
       .container {

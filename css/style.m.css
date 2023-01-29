@@ -238,9 +238,15 @@
 /* html <= 375px */
 @media (max-width: 375px) {
   #wrap {
+    /* notice */
     /* header */
     /* main */
     /* footer */
+  }
+  #wrap .notice {
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
   }
   #wrap header .container {
     justify-content: center;

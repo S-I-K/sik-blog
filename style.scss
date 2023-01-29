@@ -53,14 +53,14 @@ $white-color: #fff;
     position: fixed;
     z-index: 999;
     color: $sub-font-color;
-    right: 0px;
-    bottom: 0px;
+    right: 4%;
+    bottom: 4%;
     color: $main-font-color;
     font-size: 18px;
     font-family: $kr-font;
     letter-spacing: -.03em;
     font-weight: 700;
-    animation: notice 2s alternate 3 ease-in-out;
+    animation: notice 3s alternate 2 ease-in-out;
     img {
       // border: 1px solid orange;
       width: 400px;
@@ -936,7 +936,7 @@ $white-color: #fff;
                 transition-delay: 0.6s;
                 a.thumb {
                   img {
-                    animation: workImg 1s alternate 2 ease-in-out;
+                    animation: workImg 1s alternate 1 ease-in-out;
                     animation-delay: 0.8s;
                   }
                 }
