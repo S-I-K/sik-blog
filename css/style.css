@@ -52,8 +52,8 @@ li {
   position: fixed;
   z-index: 999;
   color: #bcbcbc;
-  right: 10px;
-  bottom: 10px;
+  right: 0px;
+  bottom: 0px;
   color: #1a1a1c;
   font-size: 18px;
   font-family: "SUIT-Regular";
@@ -61,6 +61,9 @@ li {
   font-weight: 700;
   -webkit-animation: notice 2s alternate 3 ease-in-out;
           animation: notice 2s alternate 3 ease-in-out;
+}
+#wrap .notice img {
+  width: 400px;
 }
 #wrap header {
   background: rgba(28, 56, 102, 0.9);
