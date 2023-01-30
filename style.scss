@@ -61,6 +61,7 @@ $white-color: #fff;
     letter-spacing: -.03em;
     font-weight: 700;
     animation: notice 3s alternate 2 ease-in-out;
+    pointer-events: none;
     img {
       // border: 1px solid orange;
       width: 400px;

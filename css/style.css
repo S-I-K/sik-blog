@@ -61,6 +61,7 @@ li {
   font-weight: 700;
   -webkit-animation: notice 3s alternate 2 ease-in-out;
           animation: notice 3s alternate 2 ease-in-out;
+  pointer-events: none;
 }
 #wrap .notice img {
   width: 400px;
