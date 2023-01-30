@@ -41,6 +41,17 @@ $en-font: "Montserrat", sans-serif;
 $main-font-color: #1a1a1c;
 $sub-font-color: #bcbcbc;
 $white-color: #fff;
+body::-webkit-scrollbar {
+  width: 8px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  height: 20%; /* 스크롤바의 길이 */
+  background: $main-color; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
 #wrap {
   overflow-x: hidden;
   width: 100%;
@@ -53,8 +64,8 @@ $white-color: #fff;
     position: fixed;
     z-index: 999;
     color: $sub-font-color;
-    right: 4%;
-    bottom: 4%;
+    right: 0px;
+    bottom: 0px;
     color: $main-font-color;
     font-size: 18px;
     font-family: $kr-font;
@@ -188,6 +199,12 @@ $white-color: #fff;
           font-weight: 600;
           letter-spacing: -0.025em;
           margin: 10px 0 30px 0;
+        }
+        .comment::after {
+          content: '';
+          margin-left: .4rem;
+          border-right: 4px solid #fff;
+          animation: cursor .9s infinite steps(2);
         }
         .img-wrap {
           a {
@@ -904,7 +921,7 @@ $white-color: #fff;
                     a:first-child {
                       color: $main-font-color;
                       background: transparent;
-                      border: 1px solid $main-font-color;
+                      border: 1px solid $sub-font-color;
                     }
                     a:not(:last-child) {
                       margin-right: 10px;
@@ -953,8 +970,8 @@ $white-color: #fff;
   footer {
     margin-top: 160px;
     width: 100%;
-    height: 80px;
-    background: $main-font-color;
+    height: 60px;
+    background: #242f3f;
     color: #fff;
     display: flex;
     align-items: center;
@@ -1000,6 +1017,10 @@ $white-color: #fff;
   }
 }
 
+@keyframes cursor {
+  from { border-right: 4px solid transparent; }
+  to { border-right: 4px solid #fff; }
+}
 @keyframes line {
   0% {
     width: 50%;
