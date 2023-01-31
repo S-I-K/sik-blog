@@ -912,13 +912,13 @@ body::-webkit-scrollbar-track {
   font-size: 42px;
 }
 #wrap main .contact .container .greeting {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 #wrap main .contact .container .greeting span {
   display: block;
   font-family: "SUIT-Regular";
-  font-size: 16px;
-  color: #bfbfbf;
+  font-size: 14px;
+  color: #aaaaaa;
   font-weight: 600;
   text-align: center;
   letter-spacing: -0.03em;
@@ -982,6 +982,11 @@ body::-webkit-scrollbar-track {
   transform: translateY(-50%);
   pointer-events: none;
 }
+#wrap main .contact .container .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #wrap main .contact .container .contact-form .int-area {
   width: 500px;
   position: relative;
@@ -989,17 +994,26 @@ body::-webkit-scrollbar-track {
 }
 #wrap main .contact .container .contact-form .int-area input, #wrap main .contact .container .contact-form .int-area textarea {
   width: 100%;
-  padding: 30px 10px 10px;
+  padding: 20px 10px 10px;
   background: transparent;
   border: 1px solid #DEDEDE;
   border-radius: 8px;
-  font-size: 18px;
   outline: none;
+  color: #1a1a1c;
+  font-size: 14px;
+  font-weight: 500;
+}
+#wrap main .contact .container .contact-form .int-area input {
+  font-family: "Montserrat", sans-serif;
+}
+#wrap main .contact .container .contact-form .int-area textarea {
+  font-family: "SUIT-Regular";
+  resize: none;
 }
 #wrap main .contact .container .contact-form .int-area input:focus + label,
 #wrap main .contact .container .contact-form .int-area input:valid + label,
 #wrap main .contact .container .contact-form .int-area textarea:focus + label {
-  top: 10px;
+  top: 2px;
   font-size: 12px;
   color: #3fa9e8;
 }
@@ -1008,9 +1022,13 @@ body::-webkit-scrollbar-track {
   left: 10px;
   top: 20px;
   font-size: 14px;
-  color: #999;
+  color: #bcbcbc;
   transition: all 0.4s ease;
   font-family: "Montserrat", sans-serif;
+  letter-spacing: -0.03em;
+}
+#wrap main .contact .container .contact-form .int-area .kr {
+  font-family: "SUIT-Regular";
 }
 #wrap main .contact .container .contact-form .int-area:first-child {
   margin-top: 0;
@@ -1020,13 +1038,17 @@ body::-webkit-scrollbar-track {
 }
 #wrap main .contact .container .contact-form .btn-area button {
   background: #3fa9e8;
-  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.03em;
   color: #fff;
+  border: none;
   border-radius: 8px;
   padding: 10px 20px;
 }
 #wrap footer {
-  margin-top: 160px;
+  margin-top: 60px;
   width: 100%;
   height: 60px;
   background: #242f3f;
