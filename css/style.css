@@ -613,6 +613,8 @@ body::-webkit-scrollbar-track {
 }
 #wrap main .skill .container .skill-box {
   width: 770px;
+  opacity: 0;
+  transform: translateY(80px);
 }
 #wrap main .skill .container .skill-box .title {
   font-family: "Montserrat", sans-serif;
@@ -703,7 +705,12 @@ body::-webkit-scrollbar-track {
 #wrap main .skill.scrolled .container .title-wrap {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 1s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+#wrap main .skill.scrolled .container .skill-box {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 2s ease-in-out;
 }
 #wrap main .work {
   display: flex;

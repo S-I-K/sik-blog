@@ -664,6 +664,8 @@ body::-webkit-scrollbar-track {
         .skill-box {
           // border: 1px solid blue;
           width: 770px;
+          opacity: 0;
+          transform: translateY(80px);
           .title {
             font-family: $en-font;
             color: $main-font-color;
@@ -760,7 +762,12 @@ body::-webkit-scrollbar-track {
         .title-wrap {
           opacity: 1;
           transform: translateY(0px);
-          transition: all 1s ease-in-out;
+          transition: all 2s ease-in-out;
+        }
+        .skill-box {
+          opacity: 1;
+          transform: translateY(0px);
+          transition: all 2s ease-in-out;
         }
       }
     }
