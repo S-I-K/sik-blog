@@ -20,6 +20,7 @@
     /* hobby */
     /* skill */
     /* work */
+    /* contact */
   }
   #wrap main .intro video {
     height: 100%;
@@ -217,6 +218,22 @@
     transition: all 1s;
     transition-delay: 0.8s;
   }
+  #wrap main .contact .container {
+    width: 100%;
+  }
+  #wrap main .contact .container .title-wrap .title {
+    font-size: 2rem;
+  }
+  #wrap main .contact .container .contact-info {
+    width: 100%;
+    padding: 60px 0;
+  }
+  #wrap main .contact .container .contact-form {
+    width: 100%;
+  }
+  #wrap main .contact .container .contact-form .int-area {
+    width: 100%;
+  }
   #wrap footer .container .footer-img-box {
     width: 100px;
   }
@@ -263,6 +280,7 @@
     /* hobby */
     /* skill */
     /* work */
+    /* contact */
   }
   #wrap main .intro video {
     height: 100%;
@@ -466,6 +484,35 @@
   #wrap main .work .container #work .swiper-wrapper .swiper-slide .item-box .text-box .btn-area a {
     font-size: 0.6rem;
     padding: 8px 14px;
+  }
+  #wrap main .contact .container {
+    width: 100%;
+  }
+  #wrap main .contact .container .title-wrap .title {
+    font-size: 1.4rem;
+  }
+  #wrap main .contact .container .greeting span {
+    font-size: 0.7rem;
+  }
+  #wrap main .contact .container .contact-info {
+    width: 100%;
+    padding: 60px 0;
+  }
+  #wrap main .contact .container .contact-info ul {
+    flex-direction: column;
+  }
+  #wrap main .contact .container .contact-info ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  #wrap main .contact .container .contact-info ul li:nth-child(2)::after {
+    display: none;
+  }
+  #wrap main .contact .container .contact-form {
+    width: 100%;
+  }
+  #wrap main .contact .container .contact-form .int-area {
+    width: 100%;
   }
   #wrap footer .container .footer-img-box {
     width: 100px;
